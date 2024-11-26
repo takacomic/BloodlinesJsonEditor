@@ -3,18 +3,12 @@ using Newtonsoft.Json.Linq;
 using Newtonsoft.Json.Serialization;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.IO;
 using System.IO.Compression;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Net.Mime.MediaTypeNames;
-//using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace BloodlineJsonEditor
 {
@@ -135,7 +129,7 @@ namespace BloodlineJsonEditor
 
         private void button4_Click(object sender, EventArgs e)
         {
-            List<JObject> spriteArray = json.Sprites;
+            List<SpriteObject> spriteArray = json.Sprites;
             if (pictureBox1.Image != null)
             {
                 string[] filename = pictureBox1.ImageLocation.Split('.');
@@ -148,29 +142,30 @@ namespace BloodlineJsonEditor
 
             for (int i = 0; i < tabControl2.TabPages.Count; i++)
             {
-                JObject sprite = jsonFile.baseSpriteJson();
+                SpriteObject sprite = new SpriteObject();
+                SpriteRect rect = new SpriteRect();
+                SpritePivot pivot = new SpritePivot();
                 
-                dynamic[] d = new dynamic[8];
-                d[0] = (int)rectXs[i].Value;
-                d[1] = (int)rectYs[i].Value;
-                d[2] = (int)rectWidths[i].Value;
-                d[3] = (int)rectHeights[i].Value;
-                d[4] = (int)pivotXs[i].Value;
-                d[5] = (int)pivotYs[i].Value;
-                d[6] = spriteNames[i].Text;
-                d[7] = textureNames[i].Text;
-
-                sprite = jsonFile.setSpriteJsonValues(sprite, d);
+                rect.X = (int)rectXs[i].Value;
+                rect.Y = (int)rectYs[i].Value;
+                rect.Width = (int)rectWidths[i].Value;
+                rect.Height = (int)rectHeights[i].Value;
+                pivot.X = (int)pivotXs[i].Value;
+                pivot.Y = (int)pivotYs[i].Value;
+                sprite.Rect = rect;
+                sprite.Pivot = pivot;
+                sprite.SpriteName = spriteNames[i].Text;
+                sprite.TextureName = textureNames[i].Text;
                 json.Sprites.Add(sprite);
 
-                if (!SkinSprite.Items.Contains(d[6]))
+                if (!SkinSprite.Items.Contains(sprite.SpriteName))
                 {
-                    SkinSprite.Items.Add(d[6]);
-                    spriteCombo.Items.Add(d[6]);
+                    SkinSprite.Items.Add(sprite.SpriteName);
+                    spriteCombo.Items.Add(sprite.SpriteName);
                 }
-                if (!SkinTexture.Items.Contains(d[7].Split('.')[0]))
+                if (!SkinTexture.Items.Contains(sprite.TextureName))
                 {
-                    SkinTexture.Items.Add(d[7].Split('.')[0]);
+                    SkinTexture.Items.Add(sprite.TextureName);
                 }
             }
             string parsedJson = JsonConvert.SerializeObject(json, Formatting.Indented,

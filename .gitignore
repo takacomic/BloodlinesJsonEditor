@@ -1,3 +1,5 @@
 BloodlineJsonEditor.csproj.user
 bin/
 obj/
+packages/
+.vs/

@@ -12,47 +12,6 @@ namespace BloodlineJsonEditor
 {
     internal class JsonFile
     {
-        public JObject baseSpriteJson()
-        {
-            JObject jObject = new JObject();
-            jObject["rect"] = spriteRect();
-            jObject["pivot"] = spritePivot();
-            jObject["spriteName"] = "";
-            jObject["textureName"] = "";
-            return jObject;
-        }
-
-        private JObject spriteRect()
-        {
-            JObject jObject = new JObject();
-            jObject["x"] = 0;
-            jObject["y"] = 0;
-            jObject["width"] = 0;
-            jObject["height"] = 0;
-            return jObject;
-        }
-
-        private JObject spritePivot()
-        {
-            JObject jObject = new JObject();
-            jObject["x"] = 0;
-            jObject["y"] = 0;
-            return jObject;
-        }
-
-        public JObject setSpriteJsonValues(JObject j, dynamic[] a)
-        {
-            j["rect"]["x"] = a[0];
-            j["rect"]["y"] = a[1];
-            j["rect"]["width"] = a[2];
-            j["rect"]["height"] = a[3];
-            j["pivot"]["x"] = a[4];
-            j["pivot"]["y"] = a[5];
-            j["spriteName"] = a[6];
-            j["textureName"] = a[7];
-            return j;
-        }
-
         public Dictionary<string, string> wepNameToKey { get; } = new Dictionary<string, string>();
         
         //Why this worked but not setting during initialization beats me
@@ -412,7 +371,7 @@ namespace BloodlineJsonEditor
         public List<CharacterObject> Characters { get; set; } = new List<CharacterObject>();
 
         [JsonProperty("spriteData")]
-        public List<JObject> Sprites { get; set; } = new List<JObject>();
+        public List<SpriteObject> Sprites { get; set; } = new List<SpriteObject>();
     }
     public class StatModifier
     {
@@ -757,4 +716,46 @@ namespace BloodlineJsonEditor
             return cleanedObject;
         }
     }
+    public class SpriteObject
+    {
+        [JsonProperty("rect")]
+        public SpriteRect Rect {  get; set; }
+
+        [JsonProperty("pivot")]
+        public SpritePivot Pivot { get; set; }
+
+        [JsonProperty("spriteName")]
+        public string SpriteName { get; set; }
+
+        [JsonProperty("textureName")]
+        public string TextureName { get; set; }
+    }
+    public class SpriteRect
+    {
+        [JsonProperty("x")]
+        [DefaultValue(-1)]
+        public int X { get; set; }
+
+        [JsonProperty("y")]
+        [DefaultValue(-1)]
+        public int Y { get; set; }
+        [JsonProperty("width")]
+        [DefaultValue(-1)]
+        public int Width { get; set; }
+
+        [JsonProperty("height")]
+        [DefaultValue(-1)]
+        public int Height { get; set; }
+    }
+    public class SpritePivot
+    {
+        [JsonProperty("x")]
+        [DefaultValue(-1)]
+        public int X { get; set; }
+
+        [JsonProperty("y")]
+        [DefaultValue(-1)]
+        public int Y { get; set; }
+    }
+
 }
