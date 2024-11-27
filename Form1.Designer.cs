@@ -6136,12 +6136,6 @@
             // 
             // OnCharm
             // 
-            this.OnCharm.DecimalPlaces = 1;
-            this.OnCharm.Increment = new decimal(new int[] {
-            1,
-            0,
-            0,
-            65536});
             this.OnCharm.Location = new System.Drawing.Point(95, 110);
             this.OnCharm.Maximum = new decimal(new int[] {
             10,
@@ -6608,21 +6602,24 @@
             // label149
             // 
             this.label149.AutoSize = true;
-            this.label149.Location = new System.Drawing.Point(149, 164);
+            this.label149.Enabled = false;
+            this.label149.Location = new System.Drawing.Point(541, 7);
             this.label149.Name = "label149";
             this.label149.Size = new System.Drawing.Size(53, 13);
             this.label149.TabIndex = 34;
             this.label149.Text = "Sine Area";
+            this.label149.Visible = false;
             // 
             // OnSineArea
             // 
             this.OnSineArea.DecimalPlaces = 1;
+            this.OnSineArea.Enabled = false;
             this.OnSineArea.Increment = new decimal(new int[] {
             1,
             0,
             0,
             65536});
-            this.OnSineArea.Location = new System.Drawing.Point(233, 160);
+            this.OnSineArea.Location = new System.Drawing.Point(625, 3);
             this.OnSineArea.Maximum = new decimal(new int[] {
             10,
             0,
@@ -6631,25 +6628,29 @@
             this.OnSineArea.Name = "OnSineArea";
             this.OnSineArea.Size = new System.Drawing.Size(48, 20);
             this.OnSineArea.TabIndex = 33;
+            this.OnSineArea.Visible = false;
             // 
             // label146
             // 
             this.label146.AutoSize = true;
-            this.label146.Location = new System.Drawing.Point(149, 190);
+            this.label146.Enabled = false;
+            this.label146.Location = new System.Drawing.Point(541, 33);
             this.label146.Name = "label146";
             this.label146.Size = new System.Drawing.Size(78, 13);
             this.label146.TabIndex = 32;
             this.label146.Text = "Sine Cooldown";
+            this.label146.Visible = false;
             // 
             // OnSineCooldown
             // 
             this.OnSineCooldown.DecimalPlaces = 1;
+            this.OnSineCooldown.Enabled = false;
             this.OnSineCooldown.Increment = new decimal(new int[] {
             1,
             0,
             0,
             65536});
-            this.OnSineCooldown.Location = new System.Drawing.Point(233, 186);
+            this.OnSineCooldown.Location = new System.Drawing.Point(625, 29);
             this.OnSineCooldown.Maximum = new decimal(new int[] {
             10,
             0,
@@ -6658,25 +6659,29 @@
             this.OnSineCooldown.Name = "OnSineCooldown";
             this.OnSineCooldown.Size = new System.Drawing.Size(48, 20);
             this.OnSineCooldown.TabIndex = 31;
+            this.OnSineCooldown.Visible = false;
             // 
             // label147
             // 
             this.label147.AutoSize = true;
-            this.label147.Location = new System.Drawing.Point(149, 216);
+            this.label147.Enabled = false;
+            this.label147.Location = new System.Drawing.Point(541, 59);
             this.label147.Name = "label147";
             this.label147.Size = new System.Drawing.Size(71, 13);
             this.label147.TabIndex = 30;
             this.label147.Text = "Sine Duration";
+            this.label147.Visible = false;
             // 
             // OnSineDuration
             // 
             this.OnSineDuration.DecimalPlaces = 1;
+            this.OnSineDuration.Enabled = false;
             this.OnSineDuration.Increment = new decimal(new int[] {
             1,
             0,
             0,
             65536});
-            this.OnSineDuration.Location = new System.Drawing.Point(233, 212);
+            this.OnSineDuration.Location = new System.Drawing.Point(625, 55);
             this.OnSineDuration.Maximum = new decimal(new int[] {
             10,
             0,
@@ -6685,25 +6690,29 @@
             this.OnSineDuration.Name = "OnSineDuration";
             this.OnSineDuration.Size = new System.Drawing.Size(48, 20);
             this.OnSineDuration.TabIndex = 29;
+            this.OnSineDuration.Visible = false;
             // 
             // label144
             // 
             this.label144.AutoSize = true;
-            this.label144.Location = new System.Drawing.Point(149, 242);
+            this.label144.Enabled = false;
+            this.label144.Location = new System.Drawing.Point(541, 85);
             this.label144.Name = "label144";
             this.label144.Size = new System.Drawing.Size(57, 13);
             this.label144.TabIndex = 28;
             this.label144.Text = "Sine Might";
+            this.label144.Visible = false;
             // 
             // OnSineMight
             // 
             this.OnSineMight.DecimalPlaces = 1;
+            this.OnSineMight.Enabled = false;
             this.OnSineMight.Increment = new decimal(new int[] {
             1,
             0,
             0,
             65536});
-            this.OnSineMight.Location = new System.Drawing.Point(233, 238);
+            this.OnSineMight.Location = new System.Drawing.Point(625, 81);
             this.OnSineMight.Maximum = new decimal(new int[] {
             10,
             0,
@@ -6712,25 +6721,29 @@
             this.OnSineMight.Name = "OnSineMight";
             this.OnSineMight.Size = new System.Drawing.Size(48, 20);
             this.OnSineMight.TabIndex = 27;
+            this.OnSineMight.Visible = false;
             // 
             // label145
             // 
             this.label145.AutoSize = true;
-            this.label145.Location = new System.Drawing.Point(149, 266);
+            this.label145.Enabled = false;
+            this.label145.Location = new System.Drawing.Point(541, 109);
             this.label145.Name = "label145";
             this.label145.Size = new System.Drawing.Size(62, 13);
             this.label145.TabIndex = 26;
             this.label145.Text = "Sine Speed";
+            this.label145.Visible = false;
             // 
             // OnSineSpeed
             // 
             this.OnSineSpeed.DecimalPlaces = 1;
+            this.OnSineSpeed.Enabled = false;
             this.OnSineSpeed.Increment = new decimal(new int[] {
             1,
             0,
             0,
             65536});
-            this.OnSineSpeed.Location = new System.Drawing.Point(233, 264);
+            this.OnSineSpeed.Location = new System.Drawing.Point(625, 107);
             this.OnSineSpeed.Maximum = new decimal(new int[] {
             10,
             0,
@@ -6739,11 +6752,12 @@
             this.OnSineSpeed.Name = "OnSineSpeed";
             this.OnSineSpeed.Size = new System.Drawing.Size(48, 20);
             this.OnSineSpeed.TabIndex = 25;
+            this.OnSineSpeed.Visible = false;
             // 
             // label142
             // 
             this.label142.AutoSize = true;
-            this.label142.Location = new System.Drawing.Point(149, 294);
+            this.label142.Location = new System.Drawing.Point(149, 164);
             this.label142.Name = "label142";
             this.label142.Size = new System.Drawing.Size(41, 13);
             this.label142.TabIndex = 24;
@@ -6757,7 +6771,7 @@
             0,
             0,
             65536});
-            this.OnShroud.Location = new System.Drawing.Point(233, 290);
+            this.OnShroud.Location = new System.Drawing.Point(233, 160);
             this.OnShroud.Maximum = new decimal(new int[] {
             10,
             0,
@@ -6770,7 +6784,7 @@
             // label143
             // 
             this.label143.AutoSize = true;
-            this.label143.Location = new System.Drawing.Point(149, 344);
+            this.label143.Location = new System.Drawing.Point(149, 214);
             this.label143.Name = "label143";
             this.label143.Size = new System.Drawing.Size(38, 13);
             this.label143.TabIndex = 22;
@@ -6784,7 +6798,7 @@
             0,
             0,
             65536});
-            this.OnSkips.Location = new System.Drawing.Point(233, 316);
+            this.OnSkips.Location = new System.Drawing.Point(233, 186);
             this.OnSkips.Maximum = new decimal(new int[] {
             10,
             0,
@@ -6797,7 +6811,7 @@
             // label141
             // 
             this.label141.AutoSize = true;
-            this.label141.Location = new System.Drawing.Point(149, 318);
+            this.label141.Location = new System.Drawing.Point(149, 188);
             this.label141.Name = "label141";
             this.label141.Size = new System.Drawing.Size(33, 13);
             this.label141.TabIndex = 20;
@@ -6811,7 +6825,7 @@
             0,
             0,
             65536});
-            this.OnSpeed.Location = new System.Drawing.Point(233, 342);
+            this.OnSpeed.Location = new System.Drawing.Point(233, 212);
             this.OnSpeed.Maximum = new decimal(new int[] {
             10,
             0,
@@ -6956,30 +6970,35 @@
             // label194
             // 
             this.label194.AutoSize = true;
-            this.label194.Location = new System.Drawing.Point(147, 318);
+            this.label194.Enabled = false;
+            this.label194.Location = new System.Drawing.Point(524, 112);
             this.label194.Name = "label194";
             this.label194.Size = new System.Drawing.Size(62, 13);
             this.label194.TabIndex = 26;
             this.label194.Text = "Sine Speed";
+            this.label194.Visible = false;
             // 
             // label192
             // 
             this.label192.AutoSize = true;
-            this.label192.Location = new System.Drawing.Point(147, 266);
+            this.label192.Enabled = false;
+            this.label192.Location = new System.Drawing.Point(524, 60);
             this.label192.Name = "label192";
             this.label192.Size = new System.Drawing.Size(71, 13);
             this.label192.TabIndex = 30;
             this.label192.Text = "Sine Duration";
+            this.label192.Visible = false;
             // 
             // statsSineSpeed
             // 
             this.statsSineSpeed.DecimalPlaces = 1;
+            this.statsSineSpeed.Enabled = false;
             this.statsSineSpeed.Increment = new decimal(new int[] {
             1,
             0,
             0,
             65536});
-            this.statsSineSpeed.Location = new System.Drawing.Point(231, 316);
+            this.statsSineSpeed.Location = new System.Drawing.Point(608, 110);
             this.statsSineSpeed.Maximum = new decimal(new int[] {
             10,
             0,
@@ -6988,11 +7007,12 @@
             this.statsSineSpeed.Name = "statsSineSpeed";
             this.statsSineSpeed.Size = new System.Drawing.Size(48, 20);
             this.statsSineSpeed.TabIndex = 25;
+            this.statsSineSpeed.Visible = false;
             // 
             // label195
             // 
             this.label195.AutoSize = true;
-            this.label195.Location = new System.Drawing.Point(147, 344);
+            this.label195.Location = new System.Drawing.Point(147, 214);
             this.label195.Name = "label195";
             this.label195.Size = new System.Drawing.Size(41, 13);
             this.label195.TabIndex = 24;
@@ -7029,7 +7049,7 @@
             0,
             0,
             65536});
-            this.statsShroud.Location = new System.Drawing.Point(231, 342);
+            this.statsShroud.Location = new System.Drawing.Point(231, 212);
             this.statsShroud.Maximum = new decimal(new int[] {
             10,
             0,
@@ -7042,12 +7062,13 @@
             // statsSineDuration
             // 
             this.statsSineDuration.DecimalPlaces = 1;
+            this.statsSineDuration.Enabled = false;
             this.statsSineDuration.Increment = new decimal(new int[] {
             1,
             0,
             0,
             65536});
-            this.statsSineDuration.Location = new System.Drawing.Point(231, 264);
+            this.statsSineDuration.Location = new System.Drawing.Point(608, 58);
             this.statsSineDuration.Maximum = new decimal(new int[] {
             10,
             0,
@@ -7056,11 +7077,12 @@
             this.statsSineDuration.Name = "statsSineDuration";
             this.statsSineDuration.Size = new System.Drawing.Size(48, 20);
             this.statsSineDuration.TabIndex = 29;
+            this.statsSineDuration.Visible = false;
             // 
             // label196
             // 
             this.label196.AutoSize = true;
-            this.label196.Location = new System.Drawing.Point(285, 6);
+            this.label196.Location = new System.Drawing.Point(147, 266);
             this.label196.Name = "label196";
             this.label196.Size = new System.Drawing.Size(38, 13);
             this.label196.TabIndex = 22;
@@ -7069,11 +7091,13 @@
             // label193
             // 
             this.label193.AutoSize = true;
-            this.label193.Location = new System.Drawing.Point(147, 292);
+            this.label193.Enabled = false;
+            this.label193.Location = new System.Drawing.Point(524, 86);
             this.label193.Name = "label193";
             this.label193.Size = new System.Drawing.Size(57, 13);
             this.label193.TabIndex = 28;
             this.label193.Text = "Sine Might";
+            this.label193.Visible = false;
             // 
             // statsSkips
             // 
@@ -7083,7 +7107,7 @@
             0,
             0,
             65536});
-            this.statsSkips.Location = new System.Drawing.Point(231, 368);
+            this.statsSkips.Location = new System.Drawing.Point(231, 238);
             this.statsSkips.Maximum = new decimal(new int[] {
             10,
             0,
@@ -7105,7 +7129,7 @@
             // label197
             // 
             this.label197.AutoSize = true;
-            this.label197.Location = new System.Drawing.Point(147, 368);
+            this.label197.Location = new System.Drawing.Point(147, 238);
             this.label197.Name = "label197";
             this.label197.Size = new System.Drawing.Size(33, 13);
             this.label197.TabIndex = 20;
@@ -7114,12 +7138,13 @@
             // statsSineMight
             // 
             this.statsSineMight.DecimalPlaces = 1;
+            this.statsSineMight.Enabled = false;
             this.statsSineMight.Increment = new decimal(new int[] {
             1,
             0,
             0,
             65536});
-            this.statsSineMight.Location = new System.Drawing.Point(231, 290);
+            this.statsSineMight.Location = new System.Drawing.Point(608, 84);
             this.statsSineMight.Maximum = new decimal(new int[] {
             10,
             0,
@@ -7128,6 +7153,7 @@
             this.statsSineMight.Name = "statsSineMight";
             this.statsSineMight.Size = new System.Drawing.Size(48, 20);
             this.statsSineMight.TabIndex = 27;
+            this.statsSineMight.Visible = false;
             // 
             // statsSpeed
             // 
@@ -7137,7 +7163,7 @@
             0,
             0,
             65536});
-            this.statsSpeed.Location = new System.Drawing.Point(329, 4);
+            this.statsSpeed.Location = new System.Drawing.Point(231, 264);
             this.statsSpeed.Maximum = new decimal(new int[] {
             10,
             0,
@@ -7553,12 +7579,6 @@
             // 
             // statsCharm
             // 
-            this.statsCharm.DecimalPlaces = 1;
-            this.statsCharm.Increment = new decimal(new int[] {
-            1,
-            0,
-            0,
-            65536});
             this.statsCharm.Location = new System.Drawing.Point(93, 108);
             this.statsCharm.Maximum = new decimal(new int[] {
             10,
@@ -7626,11 +7646,13 @@
             // label190
             // 
             this.label190.AutoSize = true;
-            this.label190.Location = new System.Drawing.Point(147, 214);
+            this.label190.Enabled = false;
+            this.label190.Location = new System.Drawing.Point(524, 8);
             this.label190.Name = "label190";
             this.label190.Size = new System.Drawing.Size(53, 13);
             this.label190.TabIndex = 34;
             this.label190.Text = "Sine Area";
+            this.label190.Visible = false;
             // 
             // label177
             // 
@@ -7644,12 +7666,13 @@
             // statsSineArea
             // 
             this.statsSineArea.DecimalPlaces = 1;
+            this.statsSineArea.Enabled = false;
             this.statsSineArea.Increment = new decimal(new int[] {
             1,
             0,
             0,
             65536});
-            this.statsSineArea.Location = new System.Drawing.Point(231, 212);
+            this.statsSineArea.Location = new System.Drawing.Point(608, 6);
             this.statsSineArea.Maximum = new decimal(new int[] {
             10,
             0,
@@ -7658,6 +7681,7 @@
             this.statsSineArea.Name = "statsSineArea";
             this.statsSineArea.Size = new System.Drawing.Size(48, 20);
             this.statsSineArea.TabIndex = 33;
+            this.statsSineArea.Visible = false;
             // 
             // statsCooldown
             // 
@@ -7680,11 +7704,13 @@
             // label191
             // 
             this.label191.AutoSize = true;
-            this.label191.Location = new System.Drawing.Point(147, 240);
+            this.label191.Enabled = false;
+            this.label191.Location = new System.Drawing.Point(524, 34);
             this.label191.Name = "label191";
             this.label191.Size = new System.Drawing.Size(78, 13);
             this.label191.TabIndex = 32;
             this.label191.Text = "Sine Cooldown";
+            this.label191.Visible = false;
             // 
             // statsDuration
             // 
@@ -7707,12 +7733,13 @@
             // statsSineCooldown
             // 
             this.statsSineCooldown.DecimalPlaces = 1;
+            this.statsSineCooldown.Enabled = false;
             this.statsSineCooldown.Increment = new decimal(new int[] {
             1,
             0,
             0,
             65536});
-            this.statsSineCooldown.Location = new System.Drawing.Point(231, 238);
+            this.statsSineCooldown.Location = new System.Drawing.Point(608, 32);
             this.statsSineCooldown.Maximum = new decimal(new int[] {
             10,
             0,
@@ -7721,6 +7748,7 @@
             this.statsSineCooldown.Name = "statsSineCooldown";
             this.statsSineCooldown.Size = new System.Drawing.Size(48, 20);
             this.statsSineCooldown.TabIndex = 31;
+            this.statsSineCooldown.Visible = false;
             // 
             // label174
             // 
@@ -7901,30 +7929,35 @@
             // label201
             // 
             this.label201.AutoSize = true;
-            this.label201.Location = new System.Drawing.Point(147, 341);
+            this.label201.Enabled = false;
+            this.label201.Location = new System.Drawing.Point(524, 109);
             this.label201.Name = "label201";
             this.label201.Size = new System.Drawing.Size(62, 13);
             this.label201.TabIndex = 26;
             this.label201.Text = "Sine Speed";
+            this.label201.Visible = false;
             // 
             // label202
             // 
             this.label202.AutoSize = true;
-            this.label202.Location = new System.Drawing.Point(147, 292);
+            this.label202.Enabled = false;
+            this.label202.Location = new System.Drawing.Point(524, 60);
             this.label202.Name = "label202";
             this.label202.Size = new System.Drawing.Size(71, 13);
             this.label202.TabIndex = 30;
             this.label202.Text = "Sine Duration";
+            this.label202.Visible = false;
             // 
             // AltSineSpeed
             // 
             this.AltSineSpeed.DecimalPlaces = 1;
+            this.AltSineSpeed.Enabled = false;
             this.AltSineSpeed.Increment = new decimal(new int[] {
             1,
             0,
             0,
             65536});
-            this.AltSineSpeed.Location = new System.Drawing.Point(231, 342);
+            this.AltSineSpeed.Location = new System.Drawing.Point(608, 110);
             this.AltSineSpeed.Maximum = new decimal(new int[] {
             10,
             0,
@@ -7933,11 +7966,12 @@
             this.AltSineSpeed.Name = "AltSineSpeed";
             this.AltSineSpeed.Size = new System.Drawing.Size(48, 20);
             this.AltSineSpeed.TabIndex = 25;
+            this.AltSineSpeed.Visible = false;
             // 
             // label203
             // 
             this.label203.AutoSize = true;
-            this.label203.Location = new System.Drawing.Point(147, 369);
+            this.label203.Location = new System.Drawing.Point(147, 187);
             this.label203.Name = "label203";
             this.label203.Size = new System.Drawing.Size(41, 13);
             this.label203.TabIndex = 24;
@@ -7968,7 +8002,7 @@
             0,
             0,
             65536});
-            this.AltShroud.Location = new System.Drawing.Point(231, 368);
+            this.AltShroud.Location = new System.Drawing.Point(231, 186);
             this.AltShroud.Maximum = new decimal(new int[] {
             10,
             0,
@@ -7981,12 +8015,13 @@
             // AltSineDuration
             // 
             this.AltSineDuration.DecimalPlaces = 1;
+            this.AltSineDuration.Enabled = false;
             this.AltSineDuration.Increment = new decimal(new int[] {
             1,
             0,
             0,
             65536});
-            this.AltSineDuration.Location = new System.Drawing.Point(231, 290);
+            this.AltSineDuration.Location = new System.Drawing.Point(608, 58);
             this.AltSineDuration.Maximum = new decimal(new int[] {
             10,
             0,
@@ -7995,11 +8030,12 @@
             this.AltSineDuration.Name = "AltSineDuration";
             this.AltSineDuration.Size = new System.Drawing.Size(48, 20);
             this.AltSineDuration.TabIndex = 29;
+            this.AltSineDuration.Visible = false;
             // 
             // label204
             // 
             this.label204.AutoSize = true;
-            this.label204.Location = new System.Drawing.Point(147, 32);
+            this.label204.Location = new System.Drawing.Point(147, 240);
             this.label204.Name = "label204";
             this.label204.Size = new System.Drawing.Size(38, 13);
             this.label204.TabIndex = 22;
@@ -8008,11 +8044,13 @@
             // label205
             // 
             this.label205.AutoSize = true;
-            this.label205.Location = new System.Drawing.Point(147, 318);
+            this.label205.Enabled = false;
+            this.label205.Location = new System.Drawing.Point(524, 86);
             this.label205.Name = "label205";
             this.label205.Size = new System.Drawing.Size(57, 13);
             this.label205.TabIndex = 28;
             this.label205.Text = "Sine Might";
+            this.label205.Visible = false;
             // 
             // AltSkips
             // 
@@ -8022,7 +8060,7 @@
             0,
             0,
             65536});
-            this.AltSkips.Location = new System.Drawing.Point(231, 4);
+            this.AltSkips.Location = new System.Drawing.Point(231, 212);
             this.AltSkips.Maximum = new decimal(new int[] {
             10,
             0,
@@ -8044,7 +8082,7 @@
             // label207
             // 
             this.label207.AutoSize = true;
-            this.label207.Location = new System.Drawing.Point(147, 6);
+            this.label207.Location = new System.Drawing.Point(147, 214);
             this.label207.Name = "label207";
             this.label207.Size = new System.Drawing.Size(33, 13);
             this.label207.TabIndex = 20;
@@ -8053,12 +8091,13 @@
             // AltSineMight
             // 
             this.AltSineMight.DecimalPlaces = 1;
+            this.AltSineMight.Enabled = false;
             this.AltSineMight.Increment = new decimal(new int[] {
             1,
             0,
             0,
             65536});
-            this.AltSineMight.Location = new System.Drawing.Point(231, 316);
+            this.AltSineMight.Location = new System.Drawing.Point(608, 84);
             this.AltSineMight.Maximum = new decimal(new int[] {
             10,
             0,
@@ -8067,6 +8106,7 @@
             this.AltSineMight.Name = "AltSineMight";
             this.AltSineMight.Size = new System.Drawing.Size(48, 20);
             this.AltSineMight.TabIndex = 27;
+            this.AltSineMight.Visible = false;
             // 
             // AltSpeed
             // 
@@ -8076,7 +8116,7 @@
             0,
             0,
             65536});
-            this.AltSpeed.Location = new System.Drawing.Point(231, 30);
+            this.AltSpeed.Location = new System.Drawing.Point(231, 238);
             this.AltSpeed.Maximum = new decimal(new int[] {
             10,
             0,
@@ -8188,7 +8228,7 @@
             // label211
             // 
             this.label211.AutoSize = true;
-            this.label211.Location = new System.Drawing.Point(147, 58);
+            this.label211.Location = new System.Drawing.Point(147, 6);
             this.label211.Name = "label211";
             this.label211.Size = new System.Drawing.Size(41, 13);
             this.label211.TabIndex = 48;
@@ -8214,7 +8254,7 @@
             // 
             // AltHp
             // 
-            this.AltHp.Location = new System.Drawing.Point(231, 56);
+            this.AltHp.Location = new System.Drawing.Point(231, 4);
             this.AltHp.Maximum = new decimal(new int[] {
             1000000,
             0,
@@ -8236,7 +8276,7 @@
             // label213
             // 
             this.label213.AutoSize = true;
-            this.label213.Location = new System.Drawing.Point(147, 84);
+            this.label213.Location = new System.Drawing.Point(147, 32);
             this.label213.Name = "label213";
             this.label213.Size = new System.Drawing.Size(68, 13);
             this.label213.TabIndex = 46;
@@ -8259,7 +8299,7 @@
             0,
             0,
             65536});
-            this.AltMove.Location = new System.Drawing.Point(231, 82);
+            this.AltMove.Location = new System.Drawing.Point(231, 30);
             this.AltMove.Maximum = new decimal(new int[] {
             10,
             0,
@@ -8290,7 +8330,7 @@
             // label215
             // 
             this.label215.AutoSize = true;
-            this.label215.Location = new System.Drawing.Point(147, 110);
+            this.label215.Location = new System.Drawing.Point(147, 58);
             this.label215.Name = "label215";
             this.label215.Size = new System.Drawing.Size(37, 13);
             this.label215.TabIndex = 44;
@@ -8322,7 +8362,7 @@
             0,
             0,
             65536});
-            this.AltPower.Location = new System.Drawing.Point(231, 108);
+            this.AltPower.Location = new System.Drawing.Point(231, 56);
             this.AltPower.Maximum = new decimal(new int[] {
             10,
             0,
@@ -8344,7 +8384,7 @@
             // label217
             // 
             this.label217.AutoSize = true;
-            this.label217.Location = new System.Drawing.Point(147, 136);
+            this.label217.Location = new System.Drawing.Point(147, 84);
             this.label217.Name = "label217";
             this.label217.Size = new System.Drawing.Size(39, 13);
             this.label217.TabIndex = 42;
@@ -8367,7 +8407,7 @@
             0,
             0,
             65536});
-            this.AltRegen.Location = new System.Drawing.Point(231, 134);
+            this.AltRegen.Location = new System.Drawing.Point(231, 82);
             this.AltRegen.Maximum = new decimal(new int[] {
             10,
             0,
@@ -8398,7 +8438,7 @@
             // label219
             // 
             this.label219.AutoSize = true;
-            this.label219.Location = new System.Drawing.Point(147, 162);
+            this.label219.Location = new System.Drawing.Point(147, 110);
             this.label219.Name = "label219";
             this.label219.Size = new System.Drawing.Size(39, 13);
             this.label219.TabIndex = 40;
@@ -8430,7 +8470,7 @@
             0,
             0,
             65536});
-            this.AltReroll.Location = new System.Drawing.Point(231, 160);
+            this.AltReroll.Location = new System.Drawing.Point(231, 108);
             this.AltReroll.Maximum = new decimal(new int[] {
             10,
             0,
@@ -8452,7 +8492,7 @@
             // label221
             // 
             this.label221.AutoSize = true;
-            this.label221.Location = new System.Drawing.Point(147, 188);
+            this.label221.Location = new System.Drawing.Point(147, 136);
             this.label221.Name = "label221";
             this.label221.Size = new System.Drawing.Size(48, 13);
             this.label221.TabIndex = 38;
@@ -8475,7 +8515,7 @@
             0,
             0,
             65536});
-            this.AltRevivals.Location = new System.Drawing.Point(231, 186);
+            this.AltRevivals.Location = new System.Drawing.Point(231, 134);
             this.AltRevivals.Maximum = new decimal(new int[] {
             10,
             0,
@@ -8506,7 +8546,7 @@
             // label223
             // 
             this.label223.AutoSize = true;
-            this.label223.Location = new System.Drawing.Point(147, 214);
+            this.label223.Location = new System.Drawing.Point(147, 162);
             this.label223.Name = "label223";
             this.label223.Size = new System.Drawing.Size(41, 13);
             this.label223.TabIndex = 36;
@@ -8538,7 +8578,7 @@
             0,
             0,
             65536});
-            this.AltShields.Location = new System.Drawing.Point(231, 212);
+            this.AltShields.Location = new System.Drawing.Point(231, 160);
             this.AltShields.Maximum = new decimal(new int[] {
             10,
             0,
@@ -8560,11 +8600,13 @@
             // label225
             // 
             this.label225.AutoSize = true;
-            this.label225.Location = new System.Drawing.Point(147, 240);
+            this.label225.Enabled = false;
+            this.label225.Location = new System.Drawing.Point(524, 8);
             this.label225.Name = "label225";
             this.label225.Size = new System.Drawing.Size(53, 13);
             this.label225.TabIndex = 34;
             this.label225.Text = "Sine Area";
+            this.label225.Visible = false;
             // 
             // label226
             // 
@@ -8578,12 +8620,13 @@
             // AltSineArea
             // 
             this.AltSineArea.DecimalPlaces = 1;
+            this.AltSineArea.Enabled = false;
             this.AltSineArea.Increment = new decimal(new int[] {
             1,
             0,
             0,
             65536});
-            this.AltSineArea.Location = new System.Drawing.Point(231, 238);
+            this.AltSineArea.Location = new System.Drawing.Point(608, 6);
             this.AltSineArea.Maximum = new decimal(new int[] {
             10,
             0,
@@ -8592,6 +8635,7 @@
             this.AltSineArea.Name = "AltSineArea";
             this.AltSineArea.Size = new System.Drawing.Size(48, 20);
             this.AltSineArea.TabIndex = 33;
+            this.AltSineArea.Visible = false;
             // 
             // AltCooldown
             // 
@@ -8614,11 +8658,13 @@
             // label227
             // 
             this.label227.AutoSize = true;
-            this.label227.Location = new System.Drawing.Point(147, 266);
+            this.label227.Enabled = false;
+            this.label227.Location = new System.Drawing.Point(524, 34);
             this.label227.Name = "label227";
             this.label227.Size = new System.Drawing.Size(78, 13);
             this.label227.TabIndex = 32;
             this.label227.Text = "Sine Cooldown";
+            this.label227.Visible = false;
             // 
             // AltDuration
             // 
@@ -8641,12 +8687,13 @@
             // AltSineCooldown
             // 
             this.AltSineCooldown.DecimalPlaces = 1;
+            this.AltSineCooldown.Enabled = false;
             this.AltSineCooldown.Increment = new decimal(new int[] {
             1,
             0,
             0,
             65536});
-            this.AltSineCooldown.Location = new System.Drawing.Point(231, 264);
+            this.AltSineCooldown.Location = new System.Drawing.Point(608, 32);
             this.AltSineCooldown.Maximum = new decimal(new int[] {
             10,
             0,
@@ -8655,6 +8702,7 @@
             this.AltSineCooldown.Name = "AltSineCooldown";
             this.AltSineCooldown.Size = new System.Drawing.Size(48, 20);
             this.AltSineCooldown.TabIndex = 31;
+            this.AltSineCooldown.Visible = false;
             // 
             // label228
             // 
@@ -10269,12 +10317,6 @@
             // 
             // SkinCharm
             // 
-            this.SkinCharm.DecimalPlaces = 1;
-            this.SkinCharm.Increment = new decimal(new int[] {
-            1,
-            0,
-            0,
-            65536});
             this.SkinCharm.Location = new System.Drawing.Point(80, 110);
             this.SkinCharm.Maximum = new decimal(new int[] {
             10,
@@ -10493,21 +10535,24 @@
             // label308
             // 
             this.label308.AutoSize = true;
-            this.label308.Location = new System.Drawing.Point(146, 216);
+            this.label308.Enabled = false;
+            this.label308.Location = new System.Drawing.Point(521, 8);
             this.label308.Name = "label308";
             this.label308.Size = new System.Drawing.Size(53, 13);
             this.label308.TabIndex = 136;
             this.label308.Text = "Sine Area";
+            this.label308.Visible = false;
             // 
             // SkinOnSineArea
             // 
             this.SkinOnSineArea.DecimalPlaces = 1;
+            this.SkinOnSineArea.Enabled = false;
             this.SkinOnSineArea.Increment = new decimal(new int[] {
             1,
             0,
             0,
             65536});
-            this.SkinOnSineArea.Location = new System.Drawing.Point(230, 214);
+            this.SkinOnSineArea.Location = new System.Drawing.Point(605, 6);
             this.SkinOnSineArea.Maximum = new decimal(new int[] {
             10,
             0,
@@ -10516,25 +10561,29 @@
             this.SkinOnSineArea.Name = "SkinOnSineArea";
             this.SkinOnSineArea.Size = new System.Drawing.Size(48, 20);
             this.SkinOnSineArea.TabIndex = 135;
+            this.SkinOnSineArea.Visible = false;
             // 
             // label309
             // 
             this.label309.AutoSize = true;
-            this.label309.Location = new System.Drawing.Point(146, 244);
+            this.label309.Enabled = false;
+            this.label309.Location = new System.Drawing.Point(521, 36);
             this.label309.Name = "label309";
             this.label309.Size = new System.Drawing.Size(78, 13);
             this.label309.TabIndex = 134;
             this.label309.Text = "Sine Cooldown";
+            this.label309.Visible = false;
             // 
             // SkinOnSineCooldown
             // 
             this.SkinOnSineCooldown.DecimalPlaces = 1;
+            this.SkinOnSineCooldown.Enabled = false;
             this.SkinOnSineCooldown.Increment = new decimal(new int[] {
             1,
             0,
             0,
             65536});
-            this.SkinOnSineCooldown.Location = new System.Drawing.Point(230, 240);
+            this.SkinOnSineCooldown.Location = new System.Drawing.Point(605, 32);
             this.SkinOnSineCooldown.Maximum = new decimal(new int[] {
             10,
             0,
@@ -10543,25 +10592,29 @@
             this.SkinOnSineCooldown.Name = "SkinOnSineCooldown";
             this.SkinOnSineCooldown.Size = new System.Drawing.Size(48, 20);
             this.SkinOnSineCooldown.TabIndex = 133;
+            this.SkinOnSineCooldown.Visible = false;
             // 
             // label310
             // 
             this.label310.AutoSize = true;
-            this.label310.Location = new System.Drawing.Point(146, 270);
+            this.label310.Enabled = false;
+            this.label310.Location = new System.Drawing.Point(521, 62);
             this.label310.Name = "label310";
             this.label310.Size = new System.Drawing.Size(71, 13);
             this.label310.TabIndex = 132;
             this.label310.Text = "Sine Duration";
+            this.label310.Visible = false;
             // 
             // SkinOnSineDuration
             // 
             this.SkinOnSineDuration.DecimalPlaces = 1;
+            this.SkinOnSineDuration.Enabled = false;
             this.SkinOnSineDuration.Increment = new decimal(new int[] {
             1,
             0,
             0,
             65536});
-            this.SkinOnSineDuration.Location = new System.Drawing.Point(230, 266);
+            this.SkinOnSineDuration.Location = new System.Drawing.Point(605, 58);
             this.SkinOnSineDuration.Maximum = new decimal(new int[] {
             10,
             0,
@@ -10570,25 +10623,29 @@
             this.SkinOnSineDuration.Name = "SkinOnSineDuration";
             this.SkinOnSineDuration.Size = new System.Drawing.Size(48, 20);
             this.SkinOnSineDuration.TabIndex = 131;
+            this.SkinOnSineDuration.Visible = false;
             // 
             // label311
             // 
             this.label311.AutoSize = true;
-            this.label311.Location = new System.Drawing.Point(146, 296);
+            this.label311.Enabled = false;
+            this.label311.Location = new System.Drawing.Point(521, 88);
             this.label311.Name = "label311";
             this.label311.Size = new System.Drawing.Size(57, 13);
             this.label311.TabIndex = 130;
             this.label311.Text = "Sine Might";
+            this.label311.Visible = false;
             // 
             // SkinOnSineMight
             // 
             this.SkinOnSineMight.DecimalPlaces = 1;
+            this.SkinOnSineMight.Enabled = false;
             this.SkinOnSineMight.Increment = new decimal(new int[] {
             1,
             0,
             0,
             65536});
-            this.SkinOnSineMight.Location = new System.Drawing.Point(230, 292);
+            this.SkinOnSineMight.Location = new System.Drawing.Point(605, 84);
             this.SkinOnSineMight.Maximum = new decimal(new int[] {
             10,
             0,
@@ -10597,25 +10654,29 @@
             this.SkinOnSineMight.Name = "SkinOnSineMight";
             this.SkinOnSineMight.Size = new System.Drawing.Size(48, 20);
             this.SkinOnSineMight.TabIndex = 129;
+            this.SkinOnSineMight.Visible = false;
             // 
             // label312
             // 
             this.label312.AutoSize = true;
-            this.label312.Location = new System.Drawing.Point(146, 320);
+            this.label312.Enabled = false;
+            this.label312.Location = new System.Drawing.Point(521, 112);
             this.label312.Name = "label312";
             this.label312.Size = new System.Drawing.Size(62, 13);
             this.label312.TabIndex = 128;
             this.label312.Text = "Sine Speed";
+            this.label312.Visible = false;
             // 
             // SkinOnSineSpeed
             // 
             this.SkinOnSineSpeed.DecimalPlaces = 1;
+            this.SkinOnSineSpeed.Enabled = false;
             this.SkinOnSineSpeed.Increment = new decimal(new int[] {
             1,
             0,
             0,
             65536});
-            this.SkinOnSineSpeed.Location = new System.Drawing.Point(230, 318);
+            this.SkinOnSineSpeed.Location = new System.Drawing.Point(605, 110);
             this.SkinOnSineSpeed.Maximum = new decimal(new int[] {
             10,
             0,
@@ -10624,11 +10685,12 @@
             this.SkinOnSineSpeed.Name = "SkinOnSineSpeed";
             this.SkinOnSineSpeed.Size = new System.Drawing.Size(48, 20);
             this.SkinOnSineSpeed.TabIndex = 127;
+            this.SkinOnSineSpeed.Visible = false;
             // 
             // label313
             // 
             this.label313.AutoSize = true;
-            this.label313.Location = new System.Drawing.Point(146, 348);
+            this.label313.Location = new System.Drawing.Point(146, 218);
             this.label313.Name = "label313";
             this.label313.Size = new System.Drawing.Size(41, 13);
             this.label313.TabIndex = 126;
@@ -10642,7 +10704,7 @@
             0,
             0,
             65536});
-            this.SkinOnShroud.Location = new System.Drawing.Point(230, 344);
+            this.SkinOnShroud.Location = new System.Drawing.Point(230, 214);
             this.SkinOnShroud.Maximum = new decimal(new int[] {
             10,
             0,
@@ -10655,7 +10717,7 @@
             // label237
             // 
             this.label237.AutoSize = true;
-            this.label237.Location = new System.Drawing.Point(284, 34);
+            this.label237.Location = new System.Drawing.Point(146, 268);
             this.label237.Name = "label237";
             this.label237.Size = new System.Drawing.Size(38, 13);
             this.label237.TabIndex = 118;
@@ -10669,7 +10731,7 @@
             0,
             0,
             65536});
-            this.SkinOnSkips.Location = new System.Drawing.Point(338, 6);
+            this.SkinOnSkips.Location = new System.Drawing.Point(230, 240);
             this.SkinOnSkips.Maximum = new decimal(new int[] {
             10,
             0,
@@ -10682,7 +10744,7 @@
             // label243
             // 
             this.label243.AutoSize = true;
-            this.label243.Location = new System.Drawing.Point(284, 8);
+            this.label243.Location = new System.Drawing.Point(146, 242);
             this.label243.Name = "label243";
             this.label243.Size = new System.Drawing.Size(33, 13);
             this.label243.TabIndex = 116;
@@ -10696,7 +10758,7 @@
             0,
             0,
             65536});
-            this.SkinOnSpeed.Location = new System.Drawing.Point(338, 32);
+            this.SkinOnSpeed.Location = new System.Drawing.Point(230, 266);
             this.SkinOnSpeed.Maximum = new decimal(new int[] {
             10,
             0,
@@ -11143,12 +11205,6 @@
             // 
             // SkinOnCharm
             // 
-            this.SkinOnCharm.DecimalPlaces = 1;
-            this.SkinOnCharm.Increment = new decimal(new int[] {
-            1,
-            0,
-            0,
-            65536});
             this.SkinOnCharm.Location = new System.Drawing.Point(92, 110);
             this.SkinOnCharm.Maximum = new decimal(new int[] {
             10,

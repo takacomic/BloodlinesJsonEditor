@@ -388,7 +388,7 @@ namespace BloodlineJsonEditor
         public float Banish { get; set; }
 
         [JsonProperty("charm")]
-        public float Charm { get; set; }
+        public int Charm { get; set; }
 
         [JsonProperty("cooldown")]
         public float Cooldown { get; set; }
@@ -444,20 +444,20 @@ namespace BloodlineJsonEditor
         [JsonProperty("shields")]
         public float Shields { get; set; }
 
-        [JsonProperty("sineArea")]
-        public float SineArea { get; set; }
+        /*[JsonProperty("sineArea")]
+        public string SineArea { get; set; }
 
         [JsonProperty("sineCooldown")]
-        public float SineCoolDown { get; set; }
+        public string SineCoolDown { get; set; }
 
         [JsonProperty("sineDuration")]
-        public float SineDuration { get; set; }
+        public string SineDuration { get; set; }
 
         [JsonProperty("sineMight")]
-        public float SineMight { get; set; }
+        public string SineMight { get; set; }
 
         [JsonProperty("sineSpeed")]
-        public float SineSpeed { get; set; }
+        public string SineSpeed { get; set; }*/
 
         [JsonProperty("shroud")]
         public float Shroud { get; set; }
