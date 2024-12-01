@@ -17,6 +17,7 @@ namespace BloodlineJsonEditor
         //Why this worked but not setting during initialization beats me
         public void wepSet()
         {
+            wepNameToKey.Add("Nothing", "VOID");
             wepNameToKey.Add("Magic Wand", "MAGIC_MISSILE");
             wepNameToKey.Add("Holy Wand", "HOLY_MISSILE" ); 
             wepNameToKey.Add("Whip", "WHIP" ); 
@@ -719,16 +720,32 @@ namespace BloodlineJsonEditor
     public class SpriteObject
     {
         [JsonProperty("rect")]
-        public SpriteRect Rect {  get; set; }
+        [DefaultValue(typeof(SpriteRect))]
+        public SpriteRect Rect { get; set; } = new SpriteRect();
 
         [JsonProperty("pivot")]
-        public SpritePivot Pivot { get; set; }
+        [DefaultValue(typeof(SpritePivot))]
+        public SpritePivot Pivot { get; set; } = new SpritePivot();
 
         [JsonProperty("spriteName")]
-        public string SpriteName { get; set; }
+        [DefaultValue("")]
+        public string SpriteName { get; set; } = "";
 
         [JsonProperty("textureName")]
-        public string TextureName { get; set; }
+        [DefaultValue("")]
+        public string TextureName { get; set; } = "";
+
+        [JsonIgnore]
+        public string AnimationType { get; set; }
+        public int SpritePlacement { get; set; }
+
+        public bool IsEmpty()
+        {
+            if (Rect.IsEmpty() && Pivot.IsEmpty() && SpriteName == "" && TextureName == "")
+                return false;
+
+            return true;
+        }
     }
     public class SpriteRect
     {
@@ -746,6 +763,14 @@ namespace BloodlineJsonEditor
         [JsonProperty("height")]
         [DefaultValue(-1)]
         public int Height { get; set; }
+
+        public bool IsEmpty()
+        {
+            if (Y == -1 && X == -1 && Width == -1 && Height == -1)
+                return false;
+
+            return true;
+        }
     }
     public class SpritePivot
     {
@@ -756,6 +781,14 @@ namespace BloodlineJsonEditor
         [JsonProperty("y")]
         [DefaultValue(-1)]
         public int Y { get; set; }
+
+        public bool IsEmpty()
+        {
+            if (Y == -1 && X == -1)
+                return false;
+
+            return true;
+        }
     }
 
 }

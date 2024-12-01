@@ -1,6 +1,6 @@
 ﻿namespace BloodlineJsonEditor
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,326 +28,64 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.SpriteTab = new System.Windows.Forms.TabPage();
+            this.GenerateSpriteInfo = new System.Windows.Forms.CheckBox();
+            this.EmptySpriteRows = new System.Windows.Forms.NumericUpDown();
+            this.label6 = new System.Windows.Forms.Label();
+            this.CurrentEditingSprite = new System.Windows.Forms.NumericUpDown();
+            this.label5 = new System.Windows.Forms.Label();
+            this.CurrentSpriteRow = new System.Windows.Forms.NumericUpDown();
+            this.label4 = new System.Windows.Forms.Label();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.SpriteNameAppend = new System.Windows.Forms.TextBox();
+            this.SpriteScaleX = new System.Windows.Forms.NumericUpDown();
+            this.label7 = new System.Windows.Forms.Label();
+            this.CustomPivot = new System.Windows.Forms.CheckBox();
+            this.SpritePlacement = new System.Windows.Forms.NumericUpDown();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.SpriteAnimation = new System.Windows.Forms.ComboBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.spriteBox = new System.Windows.Forms.PictureBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.numRectHeight = new System.Windows.Forms.NumericUpDown();
+            this.numRectWidth = new System.Windows.Forms.NumericUpDown();
+            this.numRectY = new System.Windows.Forms.NumericUpDown();
+            this.numRectX = new System.Windows.Forms.NumericUpDown();
+            this.RectHeight = new System.Windows.Forms.Label();
+            this.RectWidth = new System.Windows.Forms.Label();
+            this.RectY = new System.Windows.Forms.Label();
+            this.RectX = new System.Windows.Forms.Label();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.numPivotY = new System.Windows.Forms.NumericUpDown();
+            this.numPivotX = new System.Windows.Forms.NumericUpDown();
+            this.PivotY = new System.Windows.Forms.Label();
+            this.PivotX = new System.Windows.Forms.Label();
+            this.SpriteName1 = new System.Windows.Forms.Label();
+            this.TextureName1 = new System.Windows.Forms.Label();
+            this.SpriteName = new System.Windows.Forms.TextBox();
+            this.TextureName = new System.Windows.Forms.TextBox();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.ImageWidth = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.ImageHeight = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.SpriteRowNum = new System.Windows.Forms.NumericUpDown();
+            this.SpriteRows = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.SpritePerRow = new System.Windows.Forms.NumericUpDown();
             this.spriteCombo = new System.Windows.Forms.ComboBox();
             this.button11 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.tabControl2 = new System.Windows.Forms.TabControl();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.textSprite1 = new System.Windows.Forms.TextBox();
-            this.textTexture1 = new System.Windows.Forms.TextBox();
-            this.TextureName1 = new System.Windows.Forms.Label();
-            this.SpriteName1 = new System.Windows.Forms.Label();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.numPivotY1 = new System.Windows.Forms.NumericUpDown();
-            this.numPivotX1 = new System.Windows.Forms.NumericUpDown();
-            this.PivotY1 = new System.Windows.Forms.Label();
-            this.PivotX1 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.numRectHeight1 = new System.Windows.Forms.NumericUpDown();
-            this.numRectWidth1 = new System.Windows.Forms.NumericUpDown();
-            this.numRectY1 = new System.Windows.Forms.NumericUpDown();
-            this.numRectX1 = new System.Windows.Forms.NumericUpDown();
-            this.RectHeight1 = new System.Windows.Forms.Label();
-            this.RectWidth1 = new System.Windows.Forms.Label();
-            this.RectY1 = new System.Windows.Forms.Label();
-            this.RectX1 = new System.Windows.Forms.Label();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.textSprite2 = new System.Windows.Forms.TextBox();
-            this.textTexture2 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.numPivotY2 = new System.Windows.Forms.NumericUpDown();
-            this.numPivotX2 = new System.Windows.Forms.NumericUpDown();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.numRectHeight2 = new System.Windows.Forms.NumericUpDown();
-            this.numRectWidth2 = new System.Windows.Forms.NumericUpDown();
-            this.numRectY2 = new System.Windows.Forms.NumericUpDown();
-            this.numRectX2 = new System.Windows.Forms.NumericUpDown();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.textSprite3 = new System.Windows.Forms.TextBox();
-            this.textTexture3 = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.numPivotY3 = new System.Windows.Forms.NumericUpDown();
-            this.numPivotX3 = new System.Windows.Forms.NumericUpDown();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.numRectHeight3 = new System.Windows.Forms.NumericUpDown();
-            this.numRectWidth3 = new System.Windows.Forms.NumericUpDown();
-            this.numRectY3 = new System.Windows.Forms.NumericUpDown();
-            this.numRectX3 = new System.Windows.Forms.NumericUpDown();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.tabPage7 = new System.Windows.Forms.TabPage();
-            this.textSprite4 = new System.Windows.Forms.TextBox();
-            this.textTexture4 = new System.Windows.Forms.TextBox();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
-            this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.numPivotY4 = new System.Windows.Forms.NumericUpDown();
-            this.numPivotX4 = new System.Windows.Forms.NumericUpDown();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.groupBox9 = new System.Windows.Forms.GroupBox();
-            this.numRectHeight4 = new System.Windows.Forms.NumericUpDown();
-            this.numRectWidth4 = new System.Windows.Forms.NumericUpDown();
-            this.numRectY4 = new System.Windows.Forms.NumericUpDown();
-            this.numRectX4 = new System.Windows.Forms.NumericUpDown();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
-            this.tabPage8 = new System.Windows.Forms.TabPage();
-            this.textSprite5 = new System.Windows.Forms.TextBox();
-            this.textTexture5 = new System.Windows.Forms.TextBox();
-            this.label26 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.groupBox10 = new System.Windows.Forms.GroupBox();
-            this.numPivotY5 = new System.Windows.Forms.NumericUpDown();
-            this.numPivotX5 = new System.Windows.Forms.NumericUpDown();
-            this.label28 = new System.Windows.Forms.Label();
-            this.label29 = new System.Windows.Forms.Label();
-            this.groupBox11 = new System.Windows.Forms.GroupBox();
-            this.numRectHeight5 = new System.Windows.Forms.NumericUpDown();
-            this.numRectWidth5 = new System.Windows.Forms.NumericUpDown();
-            this.numRectY5 = new System.Windows.Forms.NumericUpDown();
-            this.numRectX5 = new System.Windows.Forms.NumericUpDown();
-            this.label30 = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
-            this.label33 = new System.Windows.Forms.Label();
-            this.tabPage9 = new System.Windows.Forms.TabPage();
-            this.textSprite6 = new System.Windows.Forms.TextBox();
-            this.textTexture6 = new System.Windows.Forms.TextBox();
-            this.label34 = new System.Windows.Forms.Label();
-            this.label35 = new System.Windows.Forms.Label();
-            this.groupBox12 = new System.Windows.Forms.GroupBox();
-            this.numPivotY6 = new System.Windows.Forms.NumericUpDown();
-            this.numPivotX6 = new System.Windows.Forms.NumericUpDown();
-            this.label36 = new System.Windows.Forms.Label();
-            this.label37 = new System.Windows.Forms.Label();
-            this.groupBox13 = new System.Windows.Forms.GroupBox();
-            this.numRectHeight6 = new System.Windows.Forms.NumericUpDown();
-            this.numRectWidth6 = new System.Windows.Forms.NumericUpDown();
-            this.numRectY6 = new System.Windows.Forms.NumericUpDown();
-            this.numRectX6 = new System.Windows.Forms.NumericUpDown();
-            this.label38 = new System.Windows.Forms.Label();
-            this.label39 = new System.Windows.Forms.Label();
-            this.label40 = new System.Windows.Forms.Label();
-            this.label41 = new System.Windows.Forms.Label();
-            this.tabPage10 = new System.Windows.Forms.TabPage();
-            this.textSprite7 = new System.Windows.Forms.TextBox();
-            this.textTexture7 = new System.Windows.Forms.TextBox();
-            this.label42 = new System.Windows.Forms.Label();
-            this.label43 = new System.Windows.Forms.Label();
-            this.groupBox14 = new System.Windows.Forms.GroupBox();
-            this.numPivotY7 = new System.Windows.Forms.NumericUpDown();
-            this.numPivotX7 = new System.Windows.Forms.NumericUpDown();
-            this.label44 = new System.Windows.Forms.Label();
-            this.label45 = new System.Windows.Forms.Label();
-            this.groupBox15 = new System.Windows.Forms.GroupBox();
-            this.numRectHeight7 = new System.Windows.Forms.NumericUpDown();
-            this.numRectWidth7 = new System.Windows.Forms.NumericUpDown();
-            this.numRectY7 = new System.Windows.Forms.NumericUpDown();
-            this.numRectX7 = new System.Windows.Forms.NumericUpDown();
-            this.label46 = new System.Windows.Forms.Label();
-            this.label47 = new System.Windows.Forms.Label();
-            this.label48 = new System.Windows.Forms.Label();
-            this.label49 = new System.Windows.Forms.Label();
-            this.tabPage11 = new System.Windows.Forms.TabPage();
-            this.textSprite8 = new System.Windows.Forms.TextBox();
-            this.textTexture8 = new System.Windows.Forms.TextBox();
-            this.label50 = new System.Windows.Forms.Label();
-            this.label51 = new System.Windows.Forms.Label();
-            this.groupBox16 = new System.Windows.Forms.GroupBox();
-            this.numPivotY8 = new System.Windows.Forms.NumericUpDown();
-            this.numPivotX8 = new System.Windows.Forms.NumericUpDown();
-            this.label52 = new System.Windows.Forms.Label();
-            this.label53 = new System.Windows.Forms.Label();
-            this.groupBox17 = new System.Windows.Forms.GroupBox();
-            this.numRectHeight8 = new System.Windows.Forms.NumericUpDown();
-            this.numRectWidth8 = new System.Windows.Forms.NumericUpDown();
-            this.numRectY8 = new System.Windows.Forms.NumericUpDown();
-            this.numRectX8 = new System.Windows.Forms.NumericUpDown();
-            this.label54 = new System.Windows.Forms.Label();
-            this.label55 = new System.Windows.Forms.Label();
-            this.label56 = new System.Windows.Forms.Label();
-            this.label57 = new System.Windows.Forms.Label();
-            this.tabPage12 = new System.Windows.Forms.TabPage();
-            this.textSprite9 = new System.Windows.Forms.TextBox();
-            this.textTexture9 = new System.Windows.Forms.TextBox();
-            this.label58 = new System.Windows.Forms.Label();
-            this.label59 = new System.Windows.Forms.Label();
-            this.groupBox18 = new System.Windows.Forms.GroupBox();
-            this.numPivotY9 = new System.Windows.Forms.NumericUpDown();
-            this.numPivotX9 = new System.Windows.Forms.NumericUpDown();
-            this.label60 = new System.Windows.Forms.Label();
-            this.label61 = new System.Windows.Forms.Label();
-            this.groupBox19 = new System.Windows.Forms.GroupBox();
-            this.numRectHeight9 = new System.Windows.Forms.NumericUpDown();
-            this.numRectWidth9 = new System.Windows.Forms.NumericUpDown();
-            this.numRectY9 = new System.Windows.Forms.NumericUpDown();
-            this.numRectX9 = new System.Windows.Forms.NumericUpDown();
-            this.label62 = new System.Windows.Forms.Label();
-            this.label63 = new System.Windows.Forms.Label();
-            this.label64 = new System.Windows.Forms.Label();
-            this.label65 = new System.Windows.Forms.Label();
-            this.tabPage13 = new System.Windows.Forms.TabPage();
-            this.textSprite10 = new System.Windows.Forms.TextBox();
-            this.textTexture10 = new System.Windows.Forms.TextBox();
-            this.label66 = new System.Windows.Forms.Label();
-            this.label67 = new System.Windows.Forms.Label();
-            this.groupBox20 = new System.Windows.Forms.GroupBox();
-            this.numPivotY10 = new System.Windows.Forms.NumericUpDown();
-            this.numPivotX10 = new System.Windows.Forms.NumericUpDown();
-            this.label68 = new System.Windows.Forms.Label();
-            this.label69 = new System.Windows.Forms.Label();
-            this.groupBox21 = new System.Windows.Forms.GroupBox();
-            this.numRectHeight10 = new System.Windows.Forms.NumericUpDown();
-            this.numRectWidth10 = new System.Windows.Forms.NumericUpDown();
-            this.numRectY10 = new System.Windows.Forms.NumericUpDown();
-            this.numRectX10 = new System.Windows.Forms.NumericUpDown();
-            this.label70 = new System.Windows.Forms.Label();
-            this.label71 = new System.Windows.Forms.Label();
-            this.label72 = new System.Windows.Forms.Label();
-            this.label73 = new System.Windows.Forms.Label();
-            this.tabPage14 = new System.Windows.Forms.TabPage();
-            this.textSprite11 = new System.Windows.Forms.TextBox();
-            this.textTexture11 = new System.Windows.Forms.TextBox();
-            this.label74 = new System.Windows.Forms.Label();
-            this.label75 = new System.Windows.Forms.Label();
-            this.groupBox22 = new System.Windows.Forms.GroupBox();
-            this.numPivotY11 = new System.Windows.Forms.NumericUpDown();
-            this.numPivotX11 = new System.Windows.Forms.NumericUpDown();
-            this.label76 = new System.Windows.Forms.Label();
-            this.label77 = new System.Windows.Forms.Label();
-            this.groupBox23 = new System.Windows.Forms.GroupBox();
-            this.numRectHeight11 = new System.Windows.Forms.NumericUpDown();
-            this.numRectWidth11 = new System.Windows.Forms.NumericUpDown();
-            this.numRectY11 = new System.Windows.Forms.NumericUpDown();
-            this.numRectX11 = new System.Windows.Forms.NumericUpDown();
-            this.label78 = new System.Windows.Forms.Label();
-            this.label79 = new System.Windows.Forms.Label();
-            this.label80 = new System.Windows.Forms.Label();
-            this.label81 = new System.Windows.Forms.Label();
-            this.tabPage15 = new System.Windows.Forms.TabPage();
-            this.textSprite12 = new System.Windows.Forms.TextBox();
-            this.textTexture12 = new System.Windows.Forms.TextBox();
-            this.label82 = new System.Windows.Forms.Label();
-            this.label83 = new System.Windows.Forms.Label();
-            this.groupBox24 = new System.Windows.Forms.GroupBox();
-            this.numPivotY12 = new System.Windows.Forms.NumericUpDown();
-            this.numPivotX12 = new System.Windows.Forms.NumericUpDown();
-            this.label84 = new System.Windows.Forms.Label();
-            this.label85 = new System.Windows.Forms.Label();
-            this.groupBox25 = new System.Windows.Forms.GroupBox();
-            this.numRectHeight12 = new System.Windows.Forms.NumericUpDown();
-            this.numRectWidth12 = new System.Windows.Forms.NumericUpDown();
-            this.numRectY12 = new System.Windows.Forms.NumericUpDown();
-            this.numRectX12 = new System.Windows.Forms.NumericUpDown();
-            this.label86 = new System.Windows.Forms.Label();
-            this.label87 = new System.Windows.Forms.Label();
-            this.label88 = new System.Windows.Forms.Label();
-            this.label89 = new System.Windows.Forms.Label();
-            this.tabPage16 = new System.Windows.Forms.TabPage();
-            this.textSprite13 = new System.Windows.Forms.TextBox();
-            this.textTexture13 = new System.Windows.Forms.TextBox();
-            this.label90 = new System.Windows.Forms.Label();
-            this.label91 = new System.Windows.Forms.Label();
-            this.groupBox26 = new System.Windows.Forms.GroupBox();
-            this.numPivotY13 = new System.Windows.Forms.NumericUpDown();
-            this.numPivotX13 = new System.Windows.Forms.NumericUpDown();
-            this.label92 = new System.Windows.Forms.Label();
-            this.label93 = new System.Windows.Forms.Label();
-            this.groupBox27 = new System.Windows.Forms.GroupBox();
-            this.numRectHeight13 = new System.Windows.Forms.NumericUpDown();
-            this.numRectWidth13 = new System.Windows.Forms.NumericUpDown();
-            this.numRectY13 = new System.Windows.Forms.NumericUpDown();
-            this.numRectX13 = new System.Windows.Forms.NumericUpDown();
-            this.label94 = new System.Windows.Forms.Label();
-            this.label95 = new System.Windows.Forms.Label();
-            this.label96 = new System.Windows.Forms.Label();
-            this.label97 = new System.Windows.Forms.Label();
-            this.tabPage17 = new System.Windows.Forms.TabPage();
-            this.textSprite14 = new System.Windows.Forms.TextBox();
-            this.textTexture14 = new System.Windows.Forms.TextBox();
-            this.label98 = new System.Windows.Forms.Label();
-            this.label99 = new System.Windows.Forms.Label();
-            this.groupBox28 = new System.Windows.Forms.GroupBox();
-            this.numPivotY14 = new System.Windows.Forms.NumericUpDown();
-            this.numPivotX14 = new System.Windows.Forms.NumericUpDown();
-            this.label100 = new System.Windows.Forms.Label();
-            this.label101 = new System.Windows.Forms.Label();
-            this.groupBox29 = new System.Windows.Forms.GroupBox();
-            this.numRectHeight14 = new System.Windows.Forms.NumericUpDown();
-            this.numRectWidth14 = new System.Windows.Forms.NumericUpDown();
-            this.numRectY14 = new System.Windows.Forms.NumericUpDown();
-            this.numRectX14 = new System.Windows.Forms.NumericUpDown();
-            this.label102 = new System.Windows.Forms.Label();
-            this.label103 = new System.Windows.Forms.Label();
-            this.label104 = new System.Windows.Forms.Label();
-            this.label105 = new System.Windows.Forms.Label();
-            this.tabPage18 = new System.Windows.Forms.TabPage();
-            this.textSprite15 = new System.Windows.Forms.TextBox();
-            this.textTexture15 = new System.Windows.Forms.TextBox();
-            this.label106 = new System.Windows.Forms.Label();
-            this.label107 = new System.Windows.Forms.Label();
-            this.groupBox30 = new System.Windows.Forms.GroupBox();
-            this.numPivotY15 = new System.Windows.Forms.NumericUpDown();
-            this.numPivotX15 = new System.Windows.Forms.NumericUpDown();
-            this.label108 = new System.Windows.Forms.Label();
-            this.label109 = new System.Windows.Forms.Label();
-            this.groupBox31 = new System.Windows.Forms.GroupBox();
-            this.numRectHeight15 = new System.Windows.Forms.NumericUpDown();
-            this.numRectWidth15 = new System.Windows.Forms.NumericUpDown();
-            this.numRectY15 = new System.Windows.Forms.NumericUpDown();
-            this.numRectX15 = new System.Windows.Forms.NumericUpDown();
-            this.label110 = new System.Windows.Forms.Label();
-            this.label111 = new System.Windows.Forms.Label();
-            this.label112 = new System.Windows.Forms.Label();
-            this.label113 = new System.Windows.Forms.Label();
-            this.tabPage19 = new System.Windows.Forms.TabPage();
-            this.textSprite16 = new System.Windows.Forms.TextBox();
-            this.textTexture16 = new System.Windows.Forms.TextBox();
-            this.label114 = new System.Windows.Forms.Label();
-            this.label115 = new System.Windows.Forms.Label();
-            this.groupBox32 = new System.Windows.Forms.GroupBox();
-            this.numPivotY16 = new System.Windows.Forms.NumericUpDown();
-            this.numPivotX16 = new System.Windows.Forms.NumericUpDown();
-            this.label116 = new System.Windows.Forms.Label();
-            this.label117 = new System.Windows.Forms.Label();
-            this.groupBox33 = new System.Windows.Forms.GroupBox();
-            this.numRectHeight16 = new System.Windows.Forms.NumericUpDown();
-            this.numRectWidth16 = new System.Windows.Forms.NumericUpDown();
-            this.numRectY16 = new System.Windows.Forms.NumericUpDown();
-            this.numRectX16 = new System.Windows.Forms.NumericUpDown();
-            this.label118 = new System.Windows.Forms.Label();
-            this.label119 = new System.Windows.Forms.Label();
-            this.label120 = new System.Windows.Forms.Label();
-            this.label121 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.SpriteSheetBox = new System.Windows.Forms.PictureBox();
+            this.LoadSpriteSheet = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.CharacterCombo = new System.Windows.Forms.ComboBox();
             this.button8 = new System.Windows.Forms.Button();
@@ -731,159 +469,32 @@
             this.label286 = new System.Windows.Forms.Label();
             this.SkinOnCurse = new System.Windows.Forms.NumericUpDown();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.JsonView = new System.Windows.Forms.RichTextBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.groupBox1.SuspendLayout();
             this.tabControl1.SuspendLayout();
-            this.tabPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            this.tabControl2.SuspendLayout();
-            this.tabPage4.SuspendLayout();
-            this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numPivotY1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numPivotX1)).BeginInit();
-            this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectHeight1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectWidth1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectY1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectX1)).BeginInit();
-            this.tabPage5.SuspendLayout();
-            this.groupBox4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numPivotY2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numPivotX2)).BeginInit();
+            this.SpriteTab.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.EmptySpriteRows)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CurrentEditingSprite)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CurrentSpriteRow)).BeginInit();
             this.groupBox5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectHeight2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectWidth2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectY2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectX2)).BeginInit();
-            this.tabPage6.SuspendLayout();
-            this.groupBox6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numPivotY3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numPivotX3)).BeginInit();
-            this.groupBox7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectHeight3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectWidth3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectY3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectX3)).BeginInit();
-            this.tabPage7.SuspendLayout();
-            this.groupBox8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numPivotY4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numPivotX4)).BeginInit();
-            this.groupBox9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectHeight4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectWidth4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectY4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectX4)).BeginInit();
-            this.tabPage8.SuspendLayout();
-            this.groupBox10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numPivotY5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numPivotX5)).BeginInit();
-            this.groupBox11.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectHeight5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectWidth5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectY5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectX5)).BeginInit();
-            this.tabPage9.SuspendLayout();
-            this.groupBox12.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numPivotY6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numPivotX6)).BeginInit();
-            this.groupBox13.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectHeight6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectWidth6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectY6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectX6)).BeginInit();
-            this.tabPage10.SuspendLayout();
-            this.groupBox14.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numPivotY7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numPivotX7)).BeginInit();
-            this.groupBox15.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectHeight7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectWidth7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectY7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectX7)).BeginInit();
-            this.tabPage11.SuspendLayout();
-            this.groupBox16.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numPivotY8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numPivotX8)).BeginInit();
-            this.groupBox17.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectHeight8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectWidth8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectY8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectX8)).BeginInit();
-            this.tabPage12.SuspendLayout();
-            this.groupBox18.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numPivotY9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numPivotX9)).BeginInit();
-            this.groupBox19.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectHeight9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectWidth9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectY9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectX9)).BeginInit();
-            this.tabPage13.SuspendLayout();
-            this.groupBox20.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numPivotY10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numPivotX10)).BeginInit();
-            this.groupBox21.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectHeight10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectWidth10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectY10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectX10)).BeginInit();
-            this.tabPage14.SuspendLayout();
-            this.groupBox22.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numPivotY11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numPivotX11)).BeginInit();
-            this.groupBox23.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectHeight11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectWidth11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectY11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectX11)).BeginInit();
-            this.tabPage15.SuspendLayout();
-            this.groupBox24.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numPivotY12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numPivotX12)).BeginInit();
-            this.groupBox25.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectHeight12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectWidth12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectY12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectX12)).BeginInit();
-            this.tabPage16.SuspendLayout();
-            this.groupBox26.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numPivotY13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numPivotX13)).BeginInit();
-            this.groupBox27.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectHeight13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectWidth13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectY13)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectX13)).BeginInit();
-            this.tabPage17.SuspendLayout();
-            this.groupBox28.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numPivotY14)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numPivotX14)).BeginInit();
-            this.groupBox29.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectHeight14)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectWidth14)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectY14)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectX14)).BeginInit();
-            this.tabPage18.SuspendLayout();
-            this.groupBox30.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numPivotY15)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numPivotX15)).BeginInit();
-            this.groupBox31.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectHeight15)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectWidth15)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectY15)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectX15)).BeginInit();
-            this.tabPage19.SuspendLayout();
-            this.groupBox32.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numPivotY16)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numPivotX16)).BeginInit();
-            this.groupBox33.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectHeight16)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectWidth16)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectY16)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectX16)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SpriteScaleX)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SpritePlacement)).BeginInit();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.spriteBox)).BeginInit();
+            this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numRectHeight)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numRectWidth)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numRectY)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numRectX)).BeginInit();
+            this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numPivotY)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numPivotX)).BeginInit();
+            this.groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.SpriteRowNum)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SpritePerRow)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SpriteSheetBox)).BeginInit();
             this.tabPage2.SuspendLayout();
             this.tabControlChar.SuspendLayout();
             this.tabPage21.SuspendLayout();
@@ -1051,6 +662,7 @@
             // 
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.button10);
             this.groupBox1.Controls.Add(this.button9);
             this.groupBox1.Location = new System.Drawing.Point(16, 12);
@@ -1060,9 +672,18 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Save Options";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(6, 19);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(173, 23);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Load Json";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // button10
             // 
-            this.button10.Location = new System.Drawing.Point(6, 19);
+            this.button10.Location = new System.Drawing.Point(259, 19);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(173, 23);
             this.button10.TabIndex = 1;
@@ -1072,6 +693,7 @@
             // 
             // button9
             // 
+            this.button9.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.button9.Location = new System.Drawing.Point(518, 19);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(173, 23);
@@ -1085,40 +707,616 @@
             this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.SpriteTab);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Location = new System.Drawing.Point(12, 64);
             this.tabControl1.Multiline = true;
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(701, 510);
+            this.tabControl1.Size = new System.Drawing.Size(701, 511);
             this.tabControl1.TabIndex = 1;
             // 
-            // tabPage1
+            // SpriteTab
             // 
-            this.tabPage1.Controls.Add(this.spriteCombo);
-            this.tabPage1.Controls.Add(this.button11);
-            this.tabPage1.Controls.Add(this.button4);
-            this.tabPage1.Controls.Add(this.numericUpDown1);
-            this.tabPage1.Controls.Add(this.tabControl2);
-            this.tabPage1.Controls.Add(this.button3);
-            this.tabPage1.Controls.Add(this.label1);
-            this.tabPage1.Controls.Add(this.button2);
-            this.tabPage1.Controls.Add(this.pictureBox1);
-            this.tabPage1.Controls.Add(this.button1);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(693, 484);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Sprites";
-            this.tabPage1.UseVisualStyleBackColor = true;
+            this.SpriteTab.Controls.Add(this.GenerateSpriteInfo);
+            this.SpriteTab.Controls.Add(this.EmptySpriteRows);
+            this.SpriteTab.Controls.Add(this.label6);
+            this.SpriteTab.Controls.Add(this.CurrentEditingSprite);
+            this.SpriteTab.Controls.Add(this.label5);
+            this.SpriteTab.Controls.Add(this.CurrentSpriteRow);
+            this.SpriteTab.Controls.Add(this.label4);
+            this.SpriteTab.Controls.Add(this.groupBox5);
+            this.SpriteTab.Controls.Add(this.groupBox4);
+            this.SpriteTab.Controls.Add(this.spriteCombo);
+            this.SpriteTab.Controls.Add(this.button11);
+            this.SpriteTab.Controls.Add(this.button4);
+            this.SpriteTab.Controls.Add(this.SpriteSheetBox);
+            this.SpriteTab.Controls.Add(this.LoadSpriteSheet);
+            this.SpriteTab.Location = new System.Drawing.Point(4, 22);
+            this.SpriteTab.Name = "SpriteTab";
+            this.SpriteTab.Padding = new System.Windows.Forms.Padding(3);
+            this.SpriteTab.Size = new System.Drawing.Size(693, 485);
+            this.SpriteTab.TabIndex = 0;
+            this.SpriteTab.Text = "Sprites";
+            this.SpriteTab.UseVisualStyleBackColor = true;
+            // 
+            // GenerateSpriteInfo
+            // 
+            this.GenerateSpriteInfo.AutoSize = true;
+            this.GenerateSpriteInfo.Location = new System.Drawing.Point(6, 128);
+            this.GenerateSpriteInfo.Name = "GenerateSpriteInfo";
+            this.GenerateSpriteInfo.Size = new System.Drawing.Size(121, 17);
+            this.GenerateSpriteInfo.TabIndex = 21;
+            this.GenerateSpriteInfo.Text = "Generate Sprite Info";
+            this.GenerateSpriteInfo.UseVisualStyleBackColor = true;
+            this.GenerateSpriteInfo.CheckedChanged += new System.EventHandler(this.GenerateSpriteInfo_CheckedChanged);
+            // 
+            // EmptySpriteRows
+            // 
+            this.EmptySpriteRows.Location = new System.Drawing.Point(154, 78);
+            this.EmptySpriteRows.Maximum = new decimal(new int[] {
+            0,
+            0,
+            0,
+            0});
+            this.EmptySpriteRows.Name = "EmptySpriteRows";
+            this.EmptySpriteRows.Size = new System.Drawing.Size(36, 20);
+            this.EmptySpriteRows.TabIndex = 20;
+            this.EmptySpriteRows.ValueChanged += new System.EventHandler(this.EmptySpriteRows_ValueChanged);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(6, 80);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(128, 13);
+            this.label6.TabIndex = 19;
+            this.label6.Text = "Empty Sprite Slots in Row";
+            // 
+            // CurrentEditingSprite
+            // 
+            this.CurrentEditingSprite.Location = new System.Drawing.Point(154, 104);
+            this.CurrentEditingSprite.Maximum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.CurrentEditingSprite.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.CurrentEditingSprite.Name = "CurrentEditingSprite";
+            this.CurrentEditingSprite.Size = new System.Drawing.Size(36, 20);
+            this.CurrentEditingSprite.TabIndex = 18;
+            this.CurrentEditingSprite.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.CurrentEditingSprite.ValueChanged += new System.EventHandler(this.CurrrentEditingSprite_ValueChanged);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(6, 106);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(142, 13);
+            this.label5.TabIndex = 17;
+            this.label5.Text = "Current Editing Sprite in Row";
+            // 
+            // CurrentSpriteRow
+            // 
+            this.CurrentSpriteRow.Location = new System.Drawing.Point(154, 52);
+            this.CurrentSpriteRow.Maximum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.CurrentSpriteRow.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.CurrentSpriteRow.Name = "CurrentSpriteRow";
+            this.CurrentSpriteRow.Size = new System.Drawing.Size(36, 20);
+            this.CurrentSpriteRow.TabIndex = 16;
+            this.CurrentSpriteRow.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.CurrentSpriteRow.ValueChanged += new System.EventHandler(this.CurrentSpriteRow_ValueChanged);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(6, 54);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(101, 13);
+            this.label4.TabIndex = 15;
+            this.label4.Text = "Current Editing Row";
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox5.Controls.Add(this.label10);
+            this.groupBox5.Controls.Add(this.SpriteNameAppend);
+            this.groupBox5.Controls.Add(this.SpriteScaleX);
+            this.groupBox5.Controls.Add(this.label7);
+            this.groupBox5.Controls.Add(this.CustomPivot);
+            this.groupBox5.Controls.Add(this.SpritePlacement);
+            this.groupBox5.Controls.Add(this.label9);
+            this.groupBox5.Controls.Add(this.label8);
+            this.groupBox5.Controls.Add(this.SpriteAnimation);
+            this.groupBox5.Controls.Add(this.panel1);
+            this.groupBox5.Controls.Add(this.groupBox2);
+            this.groupBox5.Controls.Add(this.groupBox3);
+            this.groupBox5.Controls.Add(this.SpriteName1);
+            this.groupBox5.Controls.Add(this.TextureName1);
+            this.groupBox5.Controls.Add(this.SpriteName);
+            this.groupBox5.Controls.Add(this.TextureName);
+            this.groupBox5.Location = new System.Drawing.Point(6, 159);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(681, 230);
+            this.groupBox5.TabIndex = 14;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Sprite Info";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(114, 173);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(75, 13);
+            this.label10.TabIndex = 28;
+            this.label10.Text = "Name Append";
+            // 
+            // SpriteNameAppend
+            // 
+            this.SpriteNameAppend.Enabled = false;
+            this.SpriteNameAppend.Location = new System.Drawing.Point(201, 170);
+            this.SpriteNameAppend.Name = "SpriteNameAppend";
+            this.SpriteNameAppend.ReadOnly = true;
+            this.SpriteNameAppend.Size = new System.Drawing.Size(100, 20);
+            this.SpriteNameAppend.TabIndex = 29;
+            this.SpriteNameAppend.Text = "_walk01";
+            this.SpriteNameAppend.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // SpriteScaleX
+            // 
+            this.SpriteScaleX.Location = new System.Drawing.Point(638, 11);
+            this.SpriteScaleX.Maximum = new decimal(new int[] {
+            2,
+            0,
+            0,
+            0});
+            this.SpriteScaleX.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.SpriteScaleX.Name = "SpriteScaleX";
+            this.SpriteScaleX.Size = new System.Drawing.Size(36, 20);
+            this.SpriteScaleX.TabIndex = 24;
+            this.SpriteScaleX.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.SpriteScaleX.ValueChanged += new System.EventHandler(this.SpriteScaleX_ValueChanged);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(565, 13);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(67, 13);
+            this.label7.TabIndex = 23;
+            this.label7.Text = "Sprite Scaler";
+            // 
+            // CustomPivot
+            // 
+            this.CustomPivot.AutoSize = true;
+            this.CustomPivot.Location = new System.Drawing.Point(9, 202);
+            this.CustomPivot.Name = "CustomPivot";
+            this.CustomPivot.Size = new System.Drawing.Size(88, 17);
+            this.CustomPivot.TabIndex = 27;
+            this.CustomPivot.Text = "Custom Pivot";
+            this.CustomPivot.UseVisualStyleBackColor = true;
+            this.CustomPivot.CheckedChanged += new System.EventHandler(this.CustomPivot_CheckedChanged);
+            // 
+            // SpritePlacement
+            // 
+            this.SpritePlacement.Location = new System.Drawing.Point(117, 102);
+            this.SpritePlacement.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.SpritePlacement.Name = "SpritePlacement";
+            this.SpritePlacement.Size = new System.Drawing.Size(44, 20);
+            this.SpritePlacement.TabIndex = 26;
+            this.SpritePlacement.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.SpritePlacement.ValueChanged += new System.EventHandler(this.SpritePlacement_ValueChanged);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(114, 87);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(147, 13);
+            this.label9.TabIndex = 25;
+            this.label9.Text = "Sprite Placement in Animation";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(114, 36);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(110, 13);
+            this.label8.TabIndex = 24;
+            this.label8.Text = "Sprite Animation Type";
+            // 
+            // SpriteAnimation
+            // 
+            this.SpriteAnimation.FormattingEnabled = true;
+            this.SpriteAnimation.Items.AddRange(new object[] {
+            "Walk",
+            "Idle",
+            "Melee",
+            "Melee 2",
+            "Ranged",
+            "Magic",
+            "Special"});
+            this.SpriteAnimation.Location = new System.Drawing.Point(118, 57);
+            this.SpriteAnimation.Name = "SpriteAnimation";
+            this.SpriteAnimation.Size = new System.Drawing.Size(106, 21);
+            this.SpriteAnimation.TabIndex = 23;
+            this.SpriteAnimation.Text = "Walk";
+            this.SpriteAnimation.SelectedIndexChanged += new System.EventHandler(this.SpriteAnimation_SelectedIndexChanged);
+            // 
+            // panel1
+            // 
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.spriteBox);
+            this.panel1.Location = new System.Drawing.Point(307, 34);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(368, 185);
+            this.panel1.TabIndex = 22;
+            // 
+            // spriteBox
+            // 
+            this.spriteBox.Location = new System.Drawing.Point(-1, -1);
+            this.spriteBox.Name = "spriteBox";
+            this.spriteBox.Size = new System.Drawing.Size(367, 185);
+            this.spriteBox.TabIndex = 21;
+            this.spriteBox.TabStop = false;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.numRectHeight);
+            this.groupBox2.Controls.Add(this.numRectWidth);
+            this.groupBox2.Controls.Add(this.numRectY);
+            this.groupBox2.Controls.Add(this.numRectX);
+            this.groupBox2.Controls.Add(this.RectHeight);
+            this.groupBox2.Controls.Add(this.RectWidth);
+            this.groupBox2.Controls.Add(this.RectY);
+            this.groupBox2.Controls.Add(this.RectX);
+            this.groupBox2.Location = new System.Drawing.Point(6, 19);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(102, 107);
+            this.groupBox2.TabIndex = 0;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Rect";
+            // 
+            // numRectHeight
+            // 
+            this.numRectHeight.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.numRectHeight.Location = new System.Drawing.Point(50, 81);
+            this.numRectHeight.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.numRectHeight.Name = "numRectHeight";
+            this.numRectHeight.Size = new System.Drawing.Size(46, 20);
+            this.numRectHeight.TabIndex = 7;
+            this.numRectHeight.ValueChanged += new System.EventHandler(this.numRectHeight_ValueChanged);
+            // 
+            // numRectWidth
+            // 
+            this.numRectWidth.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.numRectWidth.Location = new System.Drawing.Point(50, 59);
+            this.numRectWidth.Maximum = new decimal(new int[] {
+            1000,
+            0,
+            0,
+            0});
+            this.numRectWidth.Name = "numRectWidth";
+            this.numRectWidth.Size = new System.Drawing.Size(46, 20);
+            this.numRectWidth.TabIndex = 6;
+            this.numRectWidth.ValueChanged += new System.EventHandler(this.numRectWidth_ValueChanged);
+            // 
+            // numRectY
+            // 
+            this.numRectY.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.numRectY.Location = new System.Drawing.Point(50, 37);
+            this.numRectY.Maximum = new decimal(new int[] {
+            1024,
+            0,
+            0,
+            0});
+            this.numRectY.Name = "numRectY";
+            this.numRectY.Size = new System.Drawing.Size(46, 20);
+            this.numRectY.TabIndex = 5;
+            this.numRectY.ValueChanged += new System.EventHandler(this.numRectY_ValueChanged);
+            // 
+            // numRectX
+            // 
+            this.numRectX.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.numRectX.Location = new System.Drawing.Point(50, 15);
+            this.numRectX.Maximum = new decimal(new int[] {
+            1024,
+            0,
+            0,
+            0});
+            this.numRectX.Name = "numRectX";
+            this.numRectX.Size = new System.Drawing.Size(46, 20);
+            this.numRectX.TabIndex = 4;
+            this.numRectX.ValueChanged += new System.EventHandler(this.numRectX_ValueChanged);
+            // 
+            // RectHeight
+            // 
+            this.RectHeight.AutoSize = true;
+            this.RectHeight.Location = new System.Drawing.Point(6, 81);
+            this.RectHeight.Name = "RectHeight";
+            this.RectHeight.Size = new System.Drawing.Size(36, 13);
+            this.RectHeight.TabIndex = 3;
+            this.RectHeight.Text = "height";
+            // 
+            // RectWidth
+            // 
+            this.RectWidth.AutoSize = true;
+            this.RectWidth.Location = new System.Drawing.Point(6, 59);
+            this.RectWidth.Name = "RectWidth";
+            this.RectWidth.Size = new System.Drawing.Size(32, 13);
+            this.RectWidth.TabIndex = 2;
+            this.RectWidth.Text = "width";
+            // 
+            // RectY
+            // 
+            this.RectY.AutoSize = true;
+            this.RectY.Location = new System.Drawing.Point(6, 37);
+            this.RectY.Name = "RectY";
+            this.RectY.Size = new System.Drawing.Size(12, 13);
+            this.RectY.TabIndex = 1;
+            this.RectY.Text = "y";
+            // 
+            // RectX
+            // 
+            this.RectX.AutoSize = true;
+            this.RectX.Location = new System.Drawing.Point(6, 15);
+            this.RectX.Name = "RectX";
+            this.RectX.Size = new System.Drawing.Size(12, 13);
+            this.RectX.TabIndex = 0;
+            this.RectX.Text = "x";
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.numPivotY);
+            this.groupBox3.Controls.Add(this.numPivotX);
+            this.groupBox3.Controls.Add(this.PivotY);
+            this.groupBox3.Controls.Add(this.PivotX);
+            this.groupBox3.Location = new System.Drawing.Point(6, 132);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(102, 64);
+            this.groupBox3.TabIndex = 1;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Pivot";
+            // 
+            // numPivotY
+            // 
+            this.numPivotY.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.numPivotY.Enabled = false;
+            this.numPivotY.Location = new System.Drawing.Point(45, 37);
+            this.numPivotY.Name = "numPivotY";
+            this.numPivotY.ReadOnly = true;
+            this.numPivotY.Size = new System.Drawing.Size(51, 20);
+            this.numPivotY.TabIndex = 5;
+            // 
+            // numPivotX
+            // 
+            this.numPivotX.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.numPivotX.Enabled = false;
+            this.numPivotX.Location = new System.Drawing.Point(45, 13);
+            this.numPivotX.Name = "numPivotX";
+            this.numPivotX.ReadOnly = true;
+            this.numPivotX.Size = new System.Drawing.Size(51, 20);
+            this.numPivotX.TabIndex = 4;
+            // 
+            // PivotY
+            // 
+            this.PivotY.AutoSize = true;
+            this.PivotY.Location = new System.Drawing.Point(6, 37);
+            this.PivotY.Name = "PivotY";
+            this.PivotY.Size = new System.Drawing.Size(12, 13);
+            this.PivotY.TabIndex = 1;
+            this.PivotY.Text = "y";
+            // 
+            // PivotX
+            // 
+            this.PivotX.AutoSize = true;
+            this.PivotX.Location = new System.Drawing.Point(6, 15);
+            this.PivotX.Name = "PivotX";
+            this.PivotX.Size = new System.Drawing.Size(12, 13);
+            this.PivotX.TabIndex = 0;
+            this.PivotX.Text = "x";
+            // 
+            // SpriteName1
+            // 
+            this.SpriteName1.AutoSize = true;
+            this.SpriteName1.Location = new System.Drawing.Point(114, 147);
+            this.SpriteName1.Name = "SpriteName1";
+            this.SpriteName1.Size = new System.Drawing.Size(65, 13);
+            this.SpriteName1.TabIndex = 2;
+            this.SpriteName1.Text = "Sprite Name";
+            // 
+            // TextureName1
+            // 
+            this.TextureName1.AutoSize = true;
+            this.TextureName1.Location = new System.Drawing.Point(114, 199);
+            this.TextureName1.Name = "TextureName1";
+            this.TextureName1.Size = new System.Drawing.Size(74, 13);
+            this.TextureName1.TabIndex = 3;
+            this.TextureName1.Text = "Texture Name";
+            // 
+            // SpriteName
+            // 
+            this.SpriteName.Location = new System.Drawing.Point(201, 144);
+            this.SpriteName.Name = "SpriteName";
+            this.SpriteName.Size = new System.Drawing.Size(100, 20);
+            this.SpriteName.TabIndex = 5;
+            this.SpriteName.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.SpriteName_KeyPress);
+            // 
+            // TextureName
+            // 
+            this.TextureName.Enabled = false;
+            this.TextureName.Location = new System.Drawing.Point(201, 196);
+            this.TextureName.Name = "TextureName";
+            this.TextureName.ReadOnly = true;
+            this.TextureName.Size = new System.Drawing.Size(100, 20);
+            this.TextureName.TabIndex = 4;
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox4.Controls.Add(this.ImageWidth);
+            this.groupBox4.Controls.Add(this.label2);
+            this.groupBox4.Controls.Add(this.ImageHeight);
+            this.groupBox4.Controls.Add(this.label3);
+            this.groupBox4.Controls.Add(this.SpriteRowNum);
+            this.groupBox4.Controls.Add(this.SpriteRows);
+            this.groupBox4.Controls.Add(this.label1);
+            this.groupBox4.Controls.Add(this.SpritePerRow);
+            this.groupBox4.Location = new System.Drawing.Point(259, 6);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(182, 102);
+            this.groupBox4.TabIndex = 13;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Image Info";
+            // 
+            // ImageWidth
+            // 
+            this.ImageWidth.Enabled = false;
+            this.ImageWidth.Location = new System.Drawing.Point(50, 19);
+            this.ImageWidth.Name = "ImageWidth";
+            this.ImageWidth.ReadOnly = true;
+            this.ImageWidth.Size = new System.Drawing.Size(36, 20);
+            this.ImageWidth.TabIndex = 17;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(96, 22);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(38, 13);
+            this.label2.TabIndex = 14;
+            this.label2.Text = "Height";
+            // 
+            // ImageHeight
+            // 
+            this.ImageHeight.Enabled = false;
+            this.ImageHeight.Location = new System.Drawing.Point(140, 19);
+            this.ImageHeight.Name = "ImageHeight";
+            this.ImageHeight.ReadOnly = true;
+            this.ImageHeight.Size = new System.Drawing.Size(36, 20);
+            this.ImageHeight.TabIndex = 15;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(6, 22);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(35, 13);
+            this.label3.TabIndex = 16;
+            this.label3.Text = "Width";
+            // 
+            // SpriteRowNum
+            // 
+            this.SpriteRowNum.Location = new System.Drawing.Point(139, 49);
+            this.SpriteRowNum.Maximum = new decimal(new int[] {
+            16,
+            0,
+            0,
+            0});
+            this.SpriteRowNum.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.SpriteRowNum.Name = "SpriteRowNum";
+            this.SpriteRowNum.Size = new System.Drawing.Size(36, 20);
+            this.SpriteRowNum.TabIndex = 12;
+            this.SpriteRowNum.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.SpriteRowNum.ValueChanged += new System.EventHandler(this.SpriteRowNum_ValueChanged);
+            // 
+            // SpriteRows
+            // 
+            this.SpriteRows.AutoSize = true;
+            this.SpriteRows.Location = new System.Drawing.Point(6, 51);
+            this.SpriteRows.Name = "SpriteRows";
+            this.SpriteRows.Size = new System.Drawing.Size(86, 13);
+            this.SpriteRows.TabIndex = 11;
+            this.SpriteRows.Text = "# of Sprite Rows";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(6, 76);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(129, 13);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Max # of Sprites in a Row";
+            // 
+            // SpritePerRow
+            // 
+            this.SpritePerRow.Location = new System.Drawing.Point(139, 75);
+            this.SpritePerRow.Maximum = new decimal(new int[] {
+            16,
+            0,
+            0,
+            0});
+            this.SpritePerRow.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.SpritePerRow.Name = "SpritePerRow";
+            this.SpritePerRow.Size = new System.Drawing.Size(36, 20);
+            this.SpritePerRow.TabIndex = 7;
+            this.SpritePerRow.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.SpritePerRow.ValueChanged += new System.EventHandler(this.SpritePerRow_ValueChanged);
             // 
             // spriteCombo
             // 
+            this.spriteCombo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.spriteCombo.FormattingEnabled = true;
-            this.spriteCombo.Location = new System.Drawing.Point(35, 437);
+            this.spriteCombo.Location = new System.Drawing.Point(286, 428);
             this.spriteCombo.Name = "spriteCombo";
             this.spriteCombo.Size = new System.Drawing.Size(121, 21);
             this.spriteCombo.TabIndex = 10;
@@ -1127,7 +1325,7 @@
             // button11
             // 
             this.button11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button11.Location = new System.Drawing.Point(191, 417);
+            this.button11.Location = new System.Drawing.Point(442, 408);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(245, 58);
             this.button11.TabIndex = 9;
@@ -1138,7 +1336,7 @@
             // button4
             // 
             this.button4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button4.Location = new System.Drawing.Point(442, 417);
+            this.button4.Location = new System.Drawing.Point(6, 409);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(245, 58);
             this.button4.TabIndex = 8;
@@ -1146,3206 +1344,26 @@
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // numericUpDown1
-            // 
-            this.numericUpDown1.Location = new System.Drawing.Point(100, 41);
-            this.numericUpDown1.Maximum = new decimal(new int[] {
-            16,
-            0,
-            0,
-            0});
-            this.numericUpDown1.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(36, 20);
-            this.numericUpDown1.TabIndex = 7;
-            this.numericUpDown1.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
-            // tabControl2
-            // 
-            this.tabControl2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tabControl2.Controls.Add(this.tabPage4);
-            this.tabControl2.Controls.Add(this.tabPage5);
-            this.tabControl2.Controls.Add(this.tabPage6);
-            this.tabControl2.Controls.Add(this.tabPage7);
-            this.tabControl2.Controls.Add(this.tabPage8);
-            this.tabControl2.Controls.Add(this.tabPage9);
-            this.tabControl2.Controls.Add(this.tabPage10);
-            this.tabControl2.Controls.Add(this.tabPage11);
-            this.tabControl2.Controls.Add(this.tabPage12);
-            this.tabControl2.Controls.Add(this.tabPage13);
-            this.tabControl2.Controls.Add(this.tabPage14);
-            this.tabControl2.Controls.Add(this.tabPage15);
-            this.tabControl2.Controls.Add(this.tabPage16);
-            this.tabControl2.Controls.Add(this.tabPage17);
-            this.tabControl2.Controls.Add(this.tabPage18);
-            this.tabControl2.Controls.Add(this.tabPage19);
-            this.tabControl2.Location = new System.Drawing.Point(6, 67);
-            this.tabControl2.Name = "tabControl2";
-            this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(683, 348);
-            this.tabControl2.TabIndex = 6;
-            // 
-            // tabPage4
-            // 
-            this.tabPage4.Controls.Add(this.textSprite1);
-            this.tabPage4.Controls.Add(this.textTexture1);
-            this.tabPage4.Controls.Add(this.TextureName1);
-            this.tabPage4.Controls.Add(this.SpriteName1);
-            this.tabPage4.Controls.Add(this.groupBox3);
-            this.tabPage4.Controls.Add(this.groupBox2);
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(675, 322);
-            this.tabPage4.TabIndex = 0;
-            this.tabPage4.Text = "Sprite 1";
-            this.tabPage4.UseVisualStyleBackColor = true;
-            // 
-            // textSprite1
-            // 
-            this.textSprite1.Location = new System.Drawing.Point(90, 192);
-            this.textSprite1.Name = "textSprite1";
-            this.textSprite1.Size = new System.Drawing.Size(100, 20);
-            this.textSprite1.TabIndex = 5;
-            // 
-            // textTexture1
-            // 
-            this.textTexture1.Location = new System.Drawing.Point(90, 219);
-            this.textTexture1.Name = "textTexture1";
-            this.textTexture1.Size = new System.Drawing.Size(100, 20);
-            this.textTexture1.TabIndex = 4;
-            // 
-            // TextureName1
-            // 
-            this.TextureName1.AutoSize = true;
-            this.TextureName1.Location = new System.Drawing.Point(3, 222);
-            this.TextureName1.Name = "TextureName1";
-            this.TextureName1.Size = new System.Drawing.Size(74, 13);
-            this.TextureName1.TabIndex = 3;
-            this.TextureName1.Text = "Texture Name";
-            // 
-            // SpriteName1
-            // 
-            this.SpriteName1.AutoSize = true;
-            this.SpriteName1.Location = new System.Drawing.Point(3, 195);
-            this.SpriteName1.Name = "SpriteName1";
-            this.SpriteName1.Size = new System.Drawing.Size(65, 13);
-            this.SpriteName1.TabIndex = 2;
-            this.SpriteName1.Text = "Sprite Name";
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.numPivotY1);
-            this.groupBox3.Controls.Add(this.numPivotX1);
-            this.groupBox3.Controls.Add(this.PivotY1);
-            this.groupBox3.Controls.Add(this.PivotX1);
-            this.groupBox3.Location = new System.Drawing.Point(7, 119);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(211, 64);
-            this.groupBox3.TabIndex = 1;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Pivot";
-            // 
-            // numPivotY1
-            // 
-            this.numPivotY1.Location = new System.Drawing.Point(80, 37);
-            this.numPivotY1.Name = "numPivotY1";
-            this.numPivotY1.Size = new System.Drawing.Size(120, 20);
-            this.numPivotY1.TabIndex = 5;
-            // 
-            // numPivotX1
-            // 
-            this.numPivotX1.Location = new System.Drawing.Point(80, 15);
-            this.numPivotX1.Name = "numPivotX1";
-            this.numPivotX1.Size = new System.Drawing.Size(120, 20);
-            this.numPivotX1.TabIndex = 4;
-            // 
-            // PivotY1
-            // 
-            this.PivotY1.AutoSize = true;
-            this.PivotY1.Location = new System.Drawing.Point(6, 37);
-            this.PivotY1.Name = "PivotY1";
-            this.PivotY1.Size = new System.Drawing.Size(12, 13);
-            this.PivotY1.TabIndex = 1;
-            this.PivotY1.Text = "y";
-            // 
-            // PivotX1
-            // 
-            this.PivotX1.AutoSize = true;
-            this.PivotX1.Location = new System.Drawing.Point(6, 15);
-            this.PivotX1.Name = "PivotX1";
-            this.PivotX1.Size = new System.Drawing.Size(12, 13);
-            this.PivotX1.TabIndex = 0;
-            this.PivotX1.Text = "x";
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.numRectHeight1);
-            this.groupBox2.Controls.Add(this.numRectWidth1);
-            this.groupBox2.Controls.Add(this.numRectY1);
-            this.groupBox2.Controls.Add(this.numRectX1);
-            this.groupBox2.Controls.Add(this.RectHeight1);
-            this.groupBox2.Controls.Add(this.RectWidth1);
-            this.groupBox2.Controls.Add(this.RectY1);
-            this.groupBox2.Controls.Add(this.RectX1);
-            this.groupBox2.Location = new System.Drawing.Point(7, 6);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(211, 107);
-            this.groupBox2.TabIndex = 0;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Rect";
-            // 
-            // numRectHeight1
-            // 
-            this.numRectHeight1.Location = new System.Drawing.Point(80, 81);
-            this.numRectHeight1.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.numRectHeight1.Name = "numRectHeight1";
-            this.numRectHeight1.Size = new System.Drawing.Size(120, 20);
-            this.numRectHeight1.TabIndex = 7;
-            // 
-            // numRectWidth1
-            // 
-            this.numRectWidth1.Location = new System.Drawing.Point(80, 59);
-            this.numRectWidth1.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.numRectWidth1.Name = "numRectWidth1";
-            this.numRectWidth1.Size = new System.Drawing.Size(120, 20);
-            this.numRectWidth1.TabIndex = 6;
-            // 
-            // numRectY1
-            // 
-            this.numRectY1.Location = new System.Drawing.Point(80, 37);
-            this.numRectY1.Maximum = new decimal(new int[] {
-            1024,
-            0,
-            0,
-            0});
-            this.numRectY1.Name = "numRectY1";
-            this.numRectY1.Size = new System.Drawing.Size(120, 20);
-            this.numRectY1.TabIndex = 5;
-            // 
-            // numRectX1
-            // 
-            this.numRectX1.Location = new System.Drawing.Point(80, 15);
-            this.numRectX1.Maximum = new decimal(new int[] {
-            1024,
-            0,
-            0,
-            0});
-            this.numRectX1.Name = "numRectX1";
-            this.numRectX1.Size = new System.Drawing.Size(120, 20);
-            this.numRectX1.TabIndex = 4;
-            // 
-            // RectHeight1
-            // 
-            this.RectHeight1.AutoSize = true;
-            this.RectHeight1.Location = new System.Drawing.Point(6, 81);
-            this.RectHeight1.Name = "RectHeight1";
-            this.RectHeight1.Size = new System.Drawing.Size(36, 13);
-            this.RectHeight1.TabIndex = 3;
-            this.RectHeight1.Text = "height";
-            // 
-            // RectWidth1
-            // 
-            this.RectWidth1.AutoSize = true;
-            this.RectWidth1.Location = new System.Drawing.Point(6, 59);
-            this.RectWidth1.Name = "RectWidth1";
-            this.RectWidth1.Size = new System.Drawing.Size(32, 13);
-            this.RectWidth1.TabIndex = 2;
-            this.RectWidth1.Text = "width";
-            // 
-            // RectY1
-            // 
-            this.RectY1.AutoSize = true;
-            this.RectY1.Location = new System.Drawing.Point(6, 37);
-            this.RectY1.Name = "RectY1";
-            this.RectY1.Size = new System.Drawing.Size(12, 13);
-            this.RectY1.TabIndex = 1;
-            this.RectY1.Text = "y";
-            // 
-            // RectX1
-            // 
-            this.RectX1.AutoSize = true;
-            this.RectX1.Location = new System.Drawing.Point(6, 15);
-            this.RectX1.Name = "RectX1";
-            this.RectX1.Size = new System.Drawing.Size(12, 13);
-            this.RectX1.TabIndex = 0;
-            this.RectX1.Text = "x";
-            // 
-            // tabPage5
-            // 
-            this.tabPage5.Controls.Add(this.textSprite2);
-            this.tabPage5.Controls.Add(this.textTexture2);
-            this.tabPage5.Controls.Add(this.label2);
-            this.tabPage5.Controls.Add(this.label3);
-            this.tabPage5.Controls.Add(this.groupBox4);
-            this.tabPage5.Controls.Add(this.groupBox5);
-            this.tabPage5.Location = new System.Drawing.Point(4, 22);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(675, 322);
-            this.tabPage5.TabIndex = 1;
-            this.tabPage5.Text = "Sprite 2";
-            this.tabPage5.UseVisualStyleBackColor = true;
-            // 
-            // textSprite2
-            // 
-            this.textSprite2.Location = new System.Drawing.Point(90, 192);
-            this.textSprite2.Name = "textSprite2";
-            this.textSprite2.Size = new System.Drawing.Size(100, 20);
-            this.textSprite2.TabIndex = 5;
-            // 
-            // textTexture2
-            // 
-            this.textTexture2.Location = new System.Drawing.Point(90, 219);
-            this.textTexture2.Name = "textTexture2";
-            this.textTexture2.Size = new System.Drawing.Size(100, 20);
-            this.textTexture2.TabIndex = 4;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(3, 222);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(74, 13);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Texture Name";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(3, 195);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(65, 13);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Sprite Name";
-            // 
-            // groupBox4
-            // 
-            this.groupBox4.Controls.Add(this.numPivotY2);
-            this.groupBox4.Controls.Add(this.numPivotX2);
-            this.groupBox4.Controls.Add(this.label4);
-            this.groupBox4.Controls.Add(this.label5);
-            this.groupBox4.Location = new System.Drawing.Point(7, 119);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(211, 64);
-            this.groupBox4.TabIndex = 1;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Pivot";
-            // 
-            // numPivotY2
-            // 
-            this.numPivotY2.Location = new System.Drawing.Point(80, 37);
-            this.numPivotY2.Name = "numPivotY2";
-            this.numPivotY2.Size = new System.Drawing.Size(120, 20);
-            this.numPivotY2.TabIndex = 5;
-            // 
-            // numPivotX2
-            // 
-            this.numPivotX2.Location = new System.Drawing.Point(80, 15);
-            this.numPivotX2.Name = "numPivotX2";
-            this.numPivotX2.Size = new System.Drawing.Size(120, 20);
-            this.numPivotX2.TabIndex = 4;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 37);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(12, 13);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "y";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(6, 15);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(12, 13);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "x";
-            // 
-            // groupBox5
-            // 
-            this.groupBox5.Controls.Add(this.numRectHeight2);
-            this.groupBox5.Controls.Add(this.numRectWidth2);
-            this.groupBox5.Controls.Add(this.numRectY2);
-            this.groupBox5.Controls.Add(this.numRectX2);
-            this.groupBox5.Controls.Add(this.label6);
-            this.groupBox5.Controls.Add(this.label7);
-            this.groupBox5.Controls.Add(this.label8);
-            this.groupBox5.Controls.Add(this.label9);
-            this.groupBox5.Location = new System.Drawing.Point(7, 6);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(211, 107);
-            this.groupBox5.TabIndex = 0;
-            this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Rect";
-            // 
-            // numRectHeight2
-            // 
-            this.numRectHeight2.Location = new System.Drawing.Point(80, 81);
-            this.numRectHeight2.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.numRectHeight2.Name = "numRectHeight2";
-            this.numRectHeight2.Size = new System.Drawing.Size(120, 20);
-            this.numRectHeight2.TabIndex = 7;
-            // 
-            // numRectWidth2
-            // 
-            this.numRectWidth2.Location = new System.Drawing.Point(80, 59);
-            this.numRectWidth2.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.numRectWidth2.Name = "numRectWidth2";
-            this.numRectWidth2.Size = new System.Drawing.Size(120, 20);
-            this.numRectWidth2.TabIndex = 6;
-            // 
-            // numRectY2
-            // 
-            this.numRectY2.Location = new System.Drawing.Point(80, 37);
-            this.numRectY2.Maximum = new decimal(new int[] {
-            1024,
-            0,
-            0,
-            0});
-            this.numRectY2.Name = "numRectY2";
-            this.numRectY2.Size = new System.Drawing.Size(120, 20);
-            this.numRectY2.TabIndex = 5;
-            // 
-            // numRectX2
-            // 
-            this.numRectX2.Location = new System.Drawing.Point(80, 15);
-            this.numRectX2.Maximum = new decimal(new int[] {
-            1024,
-            0,
-            0,
-            0});
-            this.numRectX2.Name = "numRectX2";
-            this.numRectX2.Size = new System.Drawing.Size(120, 20);
-            this.numRectX2.TabIndex = 4;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(6, 81);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(36, 13);
-            this.label6.TabIndex = 3;
-            this.label6.Text = "height";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(6, 59);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(32, 13);
-            this.label7.TabIndex = 2;
-            this.label7.Text = "width";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(6, 37);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(12, 13);
-            this.label8.TabIndex = 1;
-            this.label8.Text = "y";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(6, 15);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(12, 13);
-            this.label9.TabIndex = 0;
-            this.label9.Text = "x";
-            // 
-            // tabPage6
-            // 
-            this.tabPage6.Controls.Add(this.textSprite3);
-            this.tabPage6.Controls.Add(this.textTexture3);
-            this.tabPage6.Controls.Add(this.label10);
-            this.tabPage6.Controls.Add(this.label11);
-            this.tabPage6.Controls.Add(this.groupBox6);
-            this.tabPage6.Controls.Add(this.groupBox7);
-            this.tabPage6.Location = new System.Drawing.Point(4, 22);
-            this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(675, 322);
-            this.tabPage6.TabIndex = 2;
-            this.tabPage6.Text = "Sprite 3";
-            this.tabPage6.UseVisualStyleBackColor = true;
-            // 
-            // textSprite3
-            // 
-            this.textSprite3.Location = new System.Drawing.Point(90, 192);
-            this.textSprite3.Name = "textSprite3";
-            this.textSprite3.Size = new System.Drawing.Size(100, 20);
-            this.textSprite3.TabIndex = 5;
-            // 
-            // textTexture3
-            // 
-            this.textTexture3.Location = new System.Drawing.Point(90, 219);
-            this.textTexture3.Name = "textTexture3";
-            this.textTexture3.Size = new System.Drawing.Size(100, 20);
-            this.textTexture3.TabIndex = 4;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(3, 222);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(74, 13);
-            this.label10.TabIndex = 3;
-            this.label10.Text = "Texture Name";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(3, 195);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(65, 13);
-            this.label11.TabIndex = 2;
-            this.label11.Text = "Sprite Name";
-            // 
-            // groupBox6
-            // 
-            this.groupBox6.Controls.Add(this.numPivotY3);
-            this.groupBox6.Controls.Add(this.numPivotX3);
-            this.groupBox6.Controls.Add(this.label12);
-            this.groupBox6.Controls.Add(this.label13);
-            this.groupBox6.Location = new System.Drawing.Point(7, 119);
-            this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(211, 64);
-            this.groupBox6.TabIndex = 1;
-            this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "Pivot";
-            // 
-            // numPivotY3
-            // 
-            this.numPivotY3.Location = new System.Drawing.Point(80, 37);
-            this.numPivotY3.Name = "numPivotY3";
-            this.numPivotY3.Size = new System.Drawing.Size(120, 20);
-            this.numPivotY3.TabIndex = 5;
-            // 
-            // numPivotX3
-            // 
-            this.numPivotX3.Location = new System.Drawing.Point(80, 15);
-            this.numPivotX3.Name = "numPivotX3";
-            this.numPivotX3.Size = new System.Drawing.Size(120, 20);
-            this.numPivotX3.TabIndex = 4;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(6, 37);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(12, 13);
-            this.label12.TabIndex = 1;
-            this.label12.Text = "y";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(6, 15);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(12, 13);
-            this.label13.TabIndex = 0;
-            this.label13.Text = "x";
-            // 
-            // groupBox7
-            // 
-            this.groupBox7.Controls.Add(this.numRectHeight3);
-            this.groupBox7.Controls.Add(this.numRectWidth3);
-            this.groupBox7.Controls.Add(this.numRectY3);
-            this.groupBox7.Controls.Add(this.numRectX3);
-            this.groupBox7.Controls.Add(this.label14);
-            this.groupBox7.Controls.Add(this.label15);
-            this.groupBox7.Controls.Add(this.label16);
-            this.groupBox7.Controls.Add(this.label17);
-            this.groupBox7.Location = new System.Drawing.Point(7, 6);
-            this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(211, 107);
-            this.groupBox7.TabIndex = 0;
-            this.groupBox7.TabStop = false;
-            this.groupBox7.Text = "Rect";
-            // 
-            // numRectHeight3
-            // 
-            this.numRectHeight3.Location = new System.Drawing.Point(80, 81);
-            this.numRectHeight3.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.numRectHeight3.Name = "numRectHeight3";
-            this.numRectHeight3.Size = new System.Drawing.Size(120, 20);
-            this.numRectHeight3.TabIndex = 7;
-            // 
-            // numRectWidth3
-            // 
-            this.numRectWidth3.Location = new System.Drawing.Point(80, 59);
-            this.numRectWidth3.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.numRectWidth3.Name = "numRectWidth3";
-            this.numRectWidth3.Size = new System.Drawing.Size(120, 20);
-            this.numRectWidth3.TabIndex = 6;
-            // 
-            // numRectY3
-            // 
-            this.numRectY3.Location = new System.Drawing.Point(80, 37);
-            this.numRectY3.Maximum = new decimal(new int[] {
-            1024,
-            0,
-            0,
-            0});
-            this.numRectY3.Name = "numRectY3";
-            this.numRectY3.Size = new System.Drawing.Size(120, 20);
-            this.numRectY3.TabIndex = 5;
-            // 
-            // numRectX3
-            // 
-            this.numRectX3.Location = new System.Drawing.Point(80, 15);
-            this.numRectX3.Maximum = new decimal(new int[] {
-            1024,
-            0,
-            0,
-            0});
-            this.numRectX3.Name = "numRectX3";
-            this.numRectX3.Size = new System.Drawing.Size(120, 20);
-            this.numRectX3.TabIndex = 4;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(6, 81);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(36, 13);
-            this.label14.TabIndex = 3;
-            this.label14.Text = "height";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(6, 59);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(32, 13);
-            this.label15.TabIndex = 2;
-            this.label15.Text = "width";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(6, 37);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(12, 13);
-            this.label16.TabIndex = 1;
-            this.label16.Text = "y";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(6, 15);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(12, 13);
-            this.label17.TabIndex = 0;
-            this.label17.Text = "x";
-            // 
-            // tabPage7
-            // 
-            this.tabPage7.Controls.Add(this.textSprite4);
-            this.tabPage7.Controls.Add(this.textTexture4);
-            this.tabPage7.Controls.Add(this.label18);
-            this.tabPage7.Controls.Add(this.label19);
-            this.tabPage7.Controls.Add(this.groupBox8);
-            this.tabPage7.Controls.Add(this.groupBox9);
-            this.tabPage7.Location = new System.Drawing.Point(4, 22);
-            this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage7.Size = new System.Drawing.Size(675, 322);
-            this.tabPage7.TabIndex = 3;
-            this.tabPage7.Text = "Sprite 4";
-            this.tabPage7.UseVisualStyleBackColor = true;
-            // 
-            // textSprite4
-            // 
-            this.textSprite4.Location = new System.Drawing.Point(90, 192);
-            this.textSprite4.Name = "textSprite4";
-            this.textSprite4.Size = new System.Drawing.Size(100, 20);
-            this.textSprite4.TabIndex = 5;
-            // 
-            // textTexture4
-            // 
-            this.textTexture4.Location = new System.Drawing.Point(90, 219);
-            this.textTexture4.Name = "textTexture4";
-            this.textTexture4.Size = new System.Drawing.Size(100, 20);
-            this.textTexture4.TabIndex = 4;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(3, 222);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(74, 13);
-            this.label18.TabIndex = 3;
-            this.label18.Text = "Texture Name";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(3, 195);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(65, 13);
-            this.label19.TabIndex = 2;
-            this.label19.Text = "Sprite Name";
-            // 
-            // groupBox8
-            // 
-            this.groupBox8.Controls.Add(this.numPivotY4);
-            this.groupBox8.Controls.Add(this.numPivotX4);
-            this.groupBox8.Controls.Add(this.label20);
-            this.groupBox8.Controls.Add(this.label21);
-            this.groupBox8.Location = new System.Drawing.Point(7, 119);
-            this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(211, 64);
-            this.groupBox8.TabIndex = 1;
-            this.groupBox8.TabStop = false;
-            this.groupBox8.Text = "Pivot";
-            // 
-            // numPivotY4
-            // 
-            this.numPivotY4.Location = new System.Drawing.Point(80, 37);
-            this.numPivotY4.Name = "numPivotY4";
-            this.numPivotY4.Size = new System.Drawing.Size(120, 20);
-            this.numPivotY4.TabIndex = 5;
-            // 
-            // numPivotX4
-            // 
-            this.numPivotX4.Location = new System.Drawing.Point(80, 15);
-            this.numPivotX4.Name = "numPivotX4";
-            this.numPivotX4.Size = new System.Drawing.Size(120, 20);
-            this.numPivotX4.TabIndex = 4;
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(6, 37);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(12, 13);
-            this.label20.TabIndex = 1;
-            this.label20.Text = "y";
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(6, 15);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(12, 13);
-            this.label21.TabIndex = 0;
-            this.label21.Text = "x";
-            // 
-            // groupBox9
-            // 
-            this.groupBox9.Controls.Add(this.numRectHeight4);
-            this.groupBox9.Controls.Add(this.numRectWidth4);
-            this.groupBox9.Controls.Add(this.numRectY4);
-            this.groupBox9.Controls.Add(this.numRectX4);
-            this.groupBox9.Controls.Add(this.label22);
-            this.groupBox9.Controls.Add(this.label23);
-            this.groupBox9.Controls.Add(this.label24);
-            this.groupBox9.Controls.Add(this.label25);
-            this.groupBox9.Location = new System.Drawing.Point(7, 6);
-            this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Size = new System.Drawing.Size(211, 107);
-            this.groupBox9.TabIndex = 0;
-            this.groupBox9.TabStop = false;
-            this.groupBox9.Text = "Rect";
-            // 
-            // numRectHeight4
-            // 
-            this.numRectHeight4.Location = new System.Drawing.Point(80, 81);
-            this.numRectHeight4.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.numRectHeight4.Name = "numRectHeight4";
-            this.numRectHeight4.Size = new System.Drawing.Size(120, 20);
-            this.numRectHeight4.TabIndex = 7;
-            // 
-            // numRectWidth4
-            // 
-            this.numRectWidth4.Location = new System.Drawing.Point(80, 59);
-            this.numRectWidth4.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.numRectWidth4.Name = "numRectWidth4";
-            this.numRectWidth4.Size = new System.Drawing.Size(120, 20);
-            this.numRectWidth4.TabIndex = 6;
-            // 
-            // numRectY4
-            // 
-            this.numRectY4.Location = new System.Drawing.Point(80, 37);
-            this.numRectY4.Maximum = new decimal(new int[] {
-            1024,
-            0,
-            0,
-            0});
-            this.numRectY4.Name = "numRectY4";
-            this.numRectY4.Size = new System.Drawing.Size(120, 20);
-            this.numRectY4.TabIndex = 5;
-            // 
-            // numRectX4
-            // 
-            this.numRectX4.Location = new System.Drawing.Point(80, 15);
-            this.numRectX4.Maximum = new decimal(new int[] {
-            1024,
-            0,
-            0,
-            0});
-            this.numRectX4.Name = "numRectX4";
-            this.numRectX4.Size = new System.Drawing.Size(120, 20);
-            this.numRectX4.TabIndex = 4;
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(6, 81);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(36, 13);
-            this.label22.TabIndex = 3;
-            this.label22.Text = "height";
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(6, 59);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(32, 13);
-            this.label23.TabIndex = 2;
-            this.label23.Text = "width";
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(6, 37);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(12, 13);
-            this.label24.TabIndex = 1;
-            this.label24.Text = "y";
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(6, 15);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(12, 13);
-            this.label25.TabIndex = 0;
-            this.label25.Text = "x";
-            // 
-            // tabPage8
-            // 
-            this.tabPage8.Controls.Add(this.textSprite5);
-            this.tabPage8.Controls.Add(this.textTexture5);
-            this.tabPage8.Controls.Add(this.label26);
-            this.tabPage8.Controls.Add(this.label27);
-            this.tabPage8.Controls.Add(this.groupBox10);
-            this.tabPage8.Controls.Add(this.groupBox11);
-            this.tabPage8.Location = new System.Drawing.Point(4, 22);
-            this.tabPage8.Name = "tabPage8";
-            this.tabPage8.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage8.Size = new System.Drawing.Size(675, 322);
-            this.tabPage8.TabIndex = 4;
-            this.tabPage8.Text = "Sprite 5";
-            this.tabPage8.UseVisualStyleBackColor = true;
-            // 
-            // textSprite5
-            // 
-            this.textSprite5.Location = new System.Drawing.Point(90, 192);
-            this.textSprite5.Name = "textSprite5";
-            this.textSprite5.Size = new System.Drawing.Size(100, 20);
-            this.textSprite5.TabIndex = 5;
-            // 
-            // textTexture5
-            // 
-            this.textTexture5.Location = new System.Drawing.Point(90, 219);
-            this.textTexture5.Name = "textTexture5";
-            this.textTexture5.Size = new System.Drawing.Size(100, 20);
-            this.textTexture5.TabIndex = 4;
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(3, 222);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(74, 13);
-            this.label26.TabIndex = 3;
-            this.label26.Text = "Texture Name";
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(3, 195);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(65, 13);
-            this.label27.TabIndex = 2;
-            this.label27.Text = "Sprite Name";
-            // 
-            // groupBox10
-            // 
-            this.groupBox10.Controls.Add(this.numPivotY5);
-            this.groupBox10.Controls.Add(this.numPivotX5);
-            this.groupBox10.Controls.Add(this.label28);
-            this.groupBox10.Controls.Add(this.label29);
-            this.groupBox10.Location = new System.Drawing.Point(7, 119);
-            this.groupBox10.Name = "groupBox10";
-            this.groupBox10.Size = new System.Drawing.Size(211, 64);
-            this.groupBox10.TabIndex = 1;
-            this.groupBox10.TabStop = false;
-            this.groupBox10.Text = "Pivot";
-            // 
-            // numPivotY5
-            // 
-            this.numPivotY5.Location = new System.Drawing.Point(80, 37);
-            this.numPivotY5.Name = "numPivotY5";
-            this.numPivotY5.Size = new System.Drawing.Size(120, 20);
-            this.numPivotY5.TabIndex = 5;
-            // 
-            // numPivotX5
-            // 
-            this.numPivotX5.Location = new System.Drawing.Point(80, 15);
-            this.numPivotX5.Name = "numPivotX5";
-            this.numPivotX5.Size = new System.Drawing.Size(120, 20);
-            this.numPivotX5.TabIndex = 4;
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(6, 37);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(12, 13);
-            this.label28.TabIndex = 1;
-            this.label28.Text = "y";
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(6, 15);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(12, 13);
-            this.label29.TabIndex = 0;
-            this.label29.Text = "x";
-            // 
-            // groupBox11
-            // 
-            this.groupBox11.Controls.Add(this.numRectHeight5);
-            this.groupBox11.Controls.Add(this.numRectWidth5);
-            this.groupBox11.Controls.Add(this.numRectY5);
-            this.groupBox11.Controls.Add(this.numRectX5);
-            this.groupBox11.Controls.Add(this.label30);
-            this.groupBox11.Controls.Add(this.label31);
-            this.groupBox11.Controls.Add(this.label32);
-            this.groupBox11.Controls.Add(this.label33);
-            this.groupBox11.Location = new System.Drawing.Point(7, 6);
-            this.groupBox11.Name = "groupBox11";
-            this.groupBox11.Size = new System.Drawing.Size(211, 107);
-            this.groupBox11.TabIndex = 0;
-            this.groupBox11.TabStop = false;
-            this.groupBox11.Text = "Rect";
-            // 
-            // numRectHeight5
-            // 
-            this.numRectHeight5.Location = new System.Drawing.Point(80, 81);
-            this.numRectHeight5.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.numRectHeight5.Name = "numRectHeight5";
-            this.numRectHeight5.Size = new System.Drawing.Size(120, 20);
-            this.numRectHeight5.TabIndex = 7;
-            // 
-            // numRectWidth5
-            // 
-            this.numRectWidth5.Location = new System.Drawing.Point(80, 59);
-            this.numRectWidth5.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.numRectWidth5.Name = "numRectWidth5";
-            this.numRectWidth5.Size = new System.Drawing.Size(120, 20);
-            this.numRectWidth5.TabIndex = 6;
-            // 
-            // numRectY5
-            // 
-            this.numRectY5.Location = new System.Drawing.Point(80, 37);
-            this.numRectY5.Maximum = new decimal(new int[] {
-            1024,
-            0,
-            0,
-            0});
-            this.numRectY5.Name = "numRectY5";
-            this.numRectY5.Size = new System.Drawing.Size(120, 20);
-            this.numRectY5.TabIndex = 5;
-            // 
-            // numRectX5
-            // 
-            this.numRectX5.Location = new System.Drawing.Point(80, 15);
-            this.numRectX5.Maximum = new decimal(new int[] {
-            1024,
-            0,
-            0,
-            0});
-            this.numRectX5.Name = "numRectX5";
-            this.numRectX5.Size = new System.Drawing.Size(120, 20);
-            this.numRectX5.TabIndex = 4;
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(6, 81);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(36, 13);
-            this.label30.TabIndex = 3;
-            this.label30.Text = "height";
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(6, 59);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(32, 13);
-            this.label31.TabIndex = 2;
-            this.label31.Text = "width";
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(6, 37);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(12, 13);
-            this.label32.TabIndex = 1;
-            this.label32.Text = "y";
-            // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(6, 15);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(12, 13);
-            this.label33.TabIndex = 0;
-            this.label33.Text = "x";
-            // 
-            // tabPage9
-            // 
-            this.tabPage9.Controls.Add(this.textSprite6);
-            this.tabPage9.Controls.Add(this.textTexture6);
-            this.tabPage9.Controls.Add(this.label34);
-            this.tabPage9.Controls.Add(this.label35);
-            this.tabPage9.Controls.Add(this.groupBox12);
-            this.tabPage9.Controls.Add(this.groupBox13);
-            this.tabPage9.Location = new System.Drawing.Point(4, 22);
-            this.tabPage9.Name = "tabPage9";
-            this.tabPage9.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage9.Size = new System.Drawing.Size(675, 322);
-            this.tabPage9.TabIndex = 5;
-            this.tabPage9.Text = "Sprite 6";
-            this.tabPage9.UseVisualStyleBackColor = true;
-            // 
-            // textSprite6
-            // 
-            this.textSprite6.Location = new System.Drawing.Point(90, 192);
-            this.textSprite6.Name = "textSprite6";
-            this.textSprite6.Size = new System.Drawing.Size(100, 20);
-            this.textSprite6.TabIndex = 5;
-            // 
-            // textTexture6
-            // 
-            this.textTexture6.Location = new System.Drawing.Point(90, 219);
-            this.textTexture6.Name = "textTexture6";
-            this.textTexture6.Size = new System.Drawing.Size(100, 20);
-            this.textTexture6.TabIndex = 4;
-            // 
-            // label34
-            // 
-            this.label34.AutoSize = true;
-            this.label34.Location = new System.Drawing.Point(3, 222);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(74, 13);
-            this.label34.TabIndex = 3;
-            this.label34.Text = "Texture Name";
-            // 
-            // label35
-            // 
-            this.label35.AutoSize = true;
-            this.label35.Location = new System.Drawing.Point(3, 195);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(65, 13);
-            this.label35.TabIndex = 2;
-            this.label35.Text = "Sprite Name";
-            // 
-            // groupBox12
-            // 
-            this.groupBox12.Controls.Add(this.numPivotY6);
-            this.groupBox12.Controls.Add(this.numPivotX6);
-            this.groupBox12.Controls.Add(this.label36);
-            this.groupBox12.Controls.Add(this.label37);
-            this.groupBox12.Location = new System.Drawing.Point(7, 119);
-            this.groupBox12.Name = "groupBox12";
-            this.groupBox12.Size = new System.Drawing.Size(211, 64);
-            this.groupBox12.TabIndex = 1;
-            this.groupBox12.TabStop = false;
-            this.groupBox12.Text = "Pivot";
-            // 
-            // numPivotY6
-            // 
-            this.numPivotY6.Location = new System.Drawing.Point(80, 37);
-            this.numPivotY6.Name = "numPivotY6";
-            this.numPivotY6.Size = new System.Drawing.Size(120, 20);
-            this.numPivotY6.TabIndex = 5;
-            // 
-            // numPivotX6
-            // 
-            this.numPivotX6.Location = new System.Drawing.Point(80, 15);
-            this.numPivotX6.Name = "numPivotX6";
-            this.numPivotX6.Size = new System.Drawing.Size(120, 20);
-            this.numPivotX6.TabIndex = 4;
-            // 
-            // label36
-            // 
-            this.label36.AutoSize = true;
-            this.label36.Location = new System.Drawing.Point(6, 37);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(12, 13);
-            this.label36.TabIndex = 1;
-            this.label36.Text = "y";
-            // 
-            // label37
-            // 
-            this.label37.AutoSize = true;
-            this.label37.Location = new System.Drawing.Point(6, 15);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(12, 13);
-            this.label37.TabIndex = 0;
-            this.label37.Text = "x";
-            // 
-            // groupBox13
-            // 
-            this.groupBox13.Controls.Add(this.numRectHeight6);
-            this.groupBox13.Controls.Add(this.numRectWidth6);
-            this.groupBox13.Controls.Add(this.numRectY6);
-            this.groupBox13.Controls.Add(this.numRectX6);
-            this.groupBox13.Controls.Add(this.label38);
-            this.groupBox13.Controls.Add(this.label39);
-            this.groupBox13.Controls.Add(this.label40);
-            this.groupBox13.Controls.Add(this.label41);
-            this.groupBox13.Location = new System.Drawing.Point(7, 6);
-            this.groupBox13.Name = "groupBox13";
-            this.groupBox13.Size = new System.Drawing.Size(211, 107);
-            this.groupBox13.TabIndex = 0;
-            this.groupBox13.TabStop = false;
-            this.groupBox13.Text = "Rect";
-            // 
-            // numRectHeight6
-            // 
-            this.numRectHeight6.Location = new System.Drawing.Point(80, 81);
-            this.numRectHeight6.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.numRectHeight6.Name = "numRectHeight6";
-            this.numRectHeight6.Size = new System.Drawing.Size(120, 20);
-            this.numRectHeight6.TabIndex = 7;
-            // 
-            // numRectWidth6
-            // 
-            this.numRectWidth6.Location = new System.Drawing.Point(80, 59);
-            this.numRectWidth6.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.numRectWidth6.Name = "numRectWidth6";
-            this.numRectWidth6.Size = new System.Drawing.Size(120, 20);
-            this.numRectWidth6.TabIndex = 6;
-            // 
-            // numRectY6
-            // 
-            this.numRectY6.Location = new System.Drawing.Point(80, 37);
-            this.numRectY6.Maximum = new decimal(new int[] {
-            1024,
-            0,
-            0,
-            0});
-            this.numRectY6.Name = "numRectY6";
-            this.numRectY6.Size = new System.Drawing.Size(120, 20);
-            this.numRectY6.TabIndex = 5;
-            // 
-            // numRectX6
-            // 
-            this.numRectX6.Location = new System.Drawing.Point(80, 15);
-            this.numRectX6.Maximum = new decimal(new int[] {
-            1024,
-            0,
-            0,
-            0});
-            this.numRectX6.Name = "numRectX6";
-            this.numRectX6.Size = new System.Drawing.Size(120, 20);
-            this.numRectX6.TabIndex = 4;
-            // 
-            // label38
-            // 
-            this.label38.AutoSize = true;
-            this.label38.Location = new System.Drawing.Point(6, 81);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(36, 13);
-            this.label38.TabIndex = 3;
-            this.label38.Text = "height";
-            // 
-            // label39
-            // 
-            this.label39.AutoSize = true;
-            this.label39.Location = new System.Drawing.Point(6, 59);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(32, 13);
-            this.label39.TabIndex = 2;
-            this.label39.Text = "width";
-            // 
-            // label40
-            // 
-            this.label40.AutoSize = true;
-            this.label40.Location = new System.Drawing.Point(6, 37);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(12, 13);
-            this.label40.TabIndex = 1;
-            this.label40.Text = "y";
-            // 
-            // label41
-            // 
-            this.label41.AutoSize = true;
-            this.label41.Location = new System.Drawing.Point(6, 15);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(12, 13);
-            this.label41.TabIndex = 0;
-            this.label41.Text = "x";
-            // 
-            // tabPage10
-            // 
-            this.tabPage10.Controls.Add(this.textSprite7);
-            this.tabPage10.Controls.Add(this.textTexture7);
-            this.tabPage10.Controls.Add(this.label42);
-            this.tabPage10.Controls.Add(this.label43);
-            this.tabPage10.Controls.Add(this.groupBox14);
-            this.tabPage10.Controls.Add(this.groupBox15);
-            this.tabPage10.Location = new System.Drawing.Point(4, 22);
-            this.tabPage10.Name = "tabPage10";
-            this.tabPage10.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage10.Size = new System.Drawing.Size(675, 322);
-            this.tabPage10.TabIndex = 6;
-            this.tabPage10.Text = "Sprite 7";
-            this.tabPage10.UseVisualStyleBackColor = true;
-            // 
-            // textSprite7
-            // 
-            this.textSprite7.Location = new System.Drawing.Point(90, 192);
-            this.textSprite7.Name = "textSprite7";
-            this.textSprite7.Size = new System.Drawing.Size(100, 20);
-            this.textSprite7.TabIndex = 5;
-            // 
-            // textTexture7
-            // 
-            this.textTexture7.Location = new System.Drawing.Point(90, 219);
-            this.textTexture7.Name = "textTexture7";
-            this.textTexture7.Size = new System.Drawing.Size(100, 20);
-            this.textTexture7.TabIndex = 4;
-            // 
-            // label42
-            // 
-            this.label42.AutoSize = true;
-            this.label42.Location = new System.Drawing.Point(3, 222);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(74, 13);
-            this.label42.TabIndex = 3;
-            this.label42.Text = "Texture Name";
-            // 
-            // label43
-            // 
-            this.label43.AutoSize = true;
-            this.label43.Location = new System.Drawing.Point(3, 195);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(65, 13);
-            this.label43.TabIndex = 2;
-            this.label43.Text = "Sprite Name";
-            // 
-            // groupBox14
-            // 
-            this.groupBox14.Controls.Add(this.numPivotY7);
-            this.groupBox14.Controls.Add(this.numPivotX7);
-            this.groupBox14.Controls.Add(this.label44);
-            this.groupBox14.Controls.Add(this.label45);
-            this.groupBox14.Location = new System.Drawing.Point(7, 119);
-            this.groupBox14.Name = "groupBox14";
-            this.groupBox14.Size = new System.Drawing.Size(211, 64);
-            this.groupBox14.TabIndex = 1;
-            this.groupBox14.TabStop = false;
-            this.groupBox14.Text = "Pivot";
-            // 
-            // numPivotY7
-            // 
-            this.numPivotY7.Location = new System.Drawing.Point(80, 37);
-            this.numPivotY7.Name = "numPivotY7";
-            this.numPivotY7.Size = new System.Drawing.Size(120, 20);
-            this.numPivotY7.TabIndex = 5;
-            // 
-            // numPivotX7
-            // 
-            this.numPivotX7.Location = new System.Drawing.Point(80, 15);
-            this.numPivotX7.Name = "numPivotX7";
-            this.numPivotX7.Size = new System.Drawing.Size(120, 20);
-            this.numPivotX7.TabIndex = 4;
-            // 
-            // label44
-            // 
-            this.label44.AutoSize = true;
-            this.label44.Location = new System.Drawing.Point(6, 37);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(12, 13);
-            this.label44.TabIndex = 1;
-            this.label44.Text = "y";
-            // 
-            // label45
-            // 
-            this.label45.AutoSize = true;
-            this.label45.Location = new System.Drawing.Point(6, 15);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(12, 13);
-            this.label45.TabIndex = 0;
-            this.label45.Text = "x";
-            // 
-            // groupBox15
-            // 
-            this.groupBox15.Controls.Add(this.numRectHeight7);
-            this.groupBox15.Controls.Add(this.numRectWidth7);
-            this.groupBox15.Controls.Add(this.numRectY7);
-            this.groupBox15.Controls.Add(this.numRectX7);
-            this.groupBox15.Controls.Add(this.label46);
-            this.groupBox15.Controls.Add(this.label47);
-            this.groupBox15.Controls.Add(this.label48);
-            this.groupBox15.Controls.Add(this.label49);
-            this.groupBox15.Location = new System.Drawing.Point(7, 6);
-            this.groupBox15.Name = "groupBox15";
-            this.groupBox15.Size = new System.Drawing.Size(211, 107);
-            this.groupBox15.TabIndex = 0;
-            this.groupBox15.TabStop = false;
-            this.groupBox15.Text = "Rect";
-            // 
-            // numRectHeight7
-            // 
-            this.numRectHeight7.Location = new System.Drawing.Point(80, 81);
-            this.numRectHeight7.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.numRectHeight7.Name = "numRectHeight7";
-            this.numRectHeight7.Size = new System.Drawing.Size(120, 20);
-            this.numRectHeight7.TabIndex = 7;
-            // 
-            // numRectWidth7
-            // 
-            this.numRectWidth7.Location = new System.Drawing.Point(80, 59);
-            this.numRectWidth7.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.numRectWidth7.Name = "numRectWidth7";
-            this.numRectWidth7.Size = new System.Drawing.Size(120, 20);
-            this.numRectWidth7.TabIndex = 6;
-            // 
-            // numRectY7
-            // 
-            this.numRectY7.Location = new System.Drawing.Point(80, 37);
-            this.numRectY7.Maximum = new decimal(new int[] {
-            1024,
-            0,
-            0,
-            0});
-            this.numRectY7.Name = "numRectY7";
-            this.numRectY7.Size = new System.Drawing.Size(120, 20);
-            this.numRectY7.TabIndex = 5;
-            // 
-            // numRectX7
-            // 
-            this.numRectX7.Location = new System.Drawing.Point(80, 15);
-            this.numRectX7.Maximum = new decimal(new int[] {
-            1024,
-            0,
-            0,
-            0});
-            this.numRectX7.Name = "numRectX7";
-            this.numRectX7.Size = new System.Drawing.Size(120, 20);
-            this.numRectX7.TabIndex = 4;
-            // 
-            // label46
-            // 
-            this.label46.AutoSize = true;
-            this.label46.Location = new System.Drawing.Point(6, 81);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(36, 13);
-            this.label46.TabIndex = 3;
-            this.label46.Text = "height";
-            // 
-            // label47
-            // 
-            this.label47.AutoSize = true;
-            this.label47.Location = new System.Drawing.Point(6, 59);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(32, 13);
-            this.label47.TabIndex = 2;
-            this.label47.Text = "width";
-            // 
-            // label48
-            // 
-            this.label48.AutoSize = true;
-            this.label48.Location = new System.Drawing.Point(6, 37);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(12, 13);
-            this.label48.TabIndex = 1;
-            this.label48.Text = "y";
-            // 
-            // label49
-            // 
-            this.label49.AutoSize = true;
-            this.label49.Location = new System.Drawing.Point(6, 15);
-            this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(12, 13);
-            this.label49.TabIndex = 0;
-            this.label49.Text = "x";
-            // 
-            // tabPage11
-            // 
-            this.tabPage11.Controls.Add(this.textSprite8);
-            this.tabPage11.Controls.Add(this.textTexture8);
-            this.tabPage11.Controls.Add(this.label50);
-            this.tabPage11.Controls.Add(this.label51);
-            this.tabPage11.Controls.Add(this.groupBox16);
-            this.tabPage11.Controls.Add(this.groupBox17);
-            this.tabPage11.Location = new System.Drawing.Point(4, 22);
-            this.tabPage11.Name = "tabPage11";
-            this.tabPage11.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage11.Size = new System.Drawing.Size(675, 322);
-            this.tabPage11.TabIndex = 7;
-            this.tabPage11.Text = "Sprite 8";
-            this.tabPage11.UseVisualStyleBackColor = true;
-            // 
-            // textSprite8
-            // 
-            this.textSprite8.Location = new System.Drawing.Point(90, 192);
-            this.textSprite8.Name = "textSprite8";
-            this.textSprite8.Size = new System.Drawing.Size(100, 20);
-            this.textSprite8.TabIndex = 5;
-            // 
-            // textTexture8
-            // 
-            this.textTexture8.Location = new System.Drawing.Point(90, 219);
-            this.textTexture8.Name = "textTexture8";
-            this.textTexture8.Size = new System.Drawing.Size(100, 20);
-            this.textTexture8.TabIndex = 4;
-            // 
-            // label50
-            // 
-            this.label50.AutoSize = true;
-            this.label50.Location = new System.Drawing.Point(3, 222);
-            this.label50.Name = "label50";
-            this.label50.Size = new System.Drawing.Size(74, 13);
-            this.label50.TabIndex = 3;
-            this.label50.Text = "Texture Name";
-            // 
-            // label51
-            // 
-            this.label51.AutoSize = true;
-            this.label51.Location = new System.Drawing.Point(3, 195);
-            this.label51.Name = "label51";
-            this.label51.Size = new System.Drawing.Size(65, 13);
-            this.label51.TabIndex = 2;
-            this.label51.Text = "Sprite Name";
-            // 
-            // groupBox16
-            // 
-            this.groupBox16.Controls.Add(this.numPivotY8);
-            this.groupBox16.Controls.Add(this.numPivotX8);
-            this.groupBox16.Controls.Add(this.label52);
-            this.groupBox16.Controls.Add(this.label53);
-            this.groupBox16.Location = new System.Drawing.Point(7, 119);
-            this.groupBox16.Name = "groupBox16";
-            this.groupBox16.Size = new System.Drawing.Size(211, 64);
-            this.groupBox16.TabIndex = 1;
-            this.groupBox16.TabStop = false;
-            this.groupBox16.Text = "Pivot";
-            // 
-            // numPivotY8
-            // 
-            this.numPivotY8.Location = new System.Drawing.Point(80, 37);
-            this.numPivotY8.Name = "numPivotY8";
-            this.numPivotY8.Size = new System.Drawing.Size(120, 20);
-            this.numPivotY8.TabIndex = 5;
-            // 
-            // numPivotX8
-            // 
-            this.numPivotX8.Location = new System.Drawing.Point(80, 15);
-            this.numPivotX8.Name = "numPivotX8";
-            this.numPivotX8.Size = new System.Drawing.Size(120, 20);
-            this.numPivotX8.TabIndex = 4;
-            // 
-            // label52
-            // 
-            this.label52.AutoSize = true;
-            this.label52.Location = new System.Drawing.Point(6, 37);
-            this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(12, 13);
-            this.label52.TabIndex = 1;
-            this.label52.Text = "y";
-            // 
-            // label53
-            // 
-            this.label53.AutoSize = true;
-            this.label53.Location = new System.Drawing.Point(6, 15);
-            this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(12, 13);
-            this.label53.TabIndex = 0;
-            this.label53.Text = "x";
-            // 
-            // groupBox17
-            // 
-            this.groupBox17.Controls.Add(this.numRectHeight8);
-            this.groupBox17.Controls.Add(this.numRectWidth8);
-            this.groupBox17.Controls.Add(this.numRectY8);
-            this.groupBox17.Controls.Add(this.numRectX8);
-            this.groupBox17.Controls.Add(this.label54);
-            this.groupBox17.Controls.Add(this.label55);
-            this.groupBox17.Controls.Add(this.label56);
-            this.groupBox17.Controls.Add(this.label57);
-            this.groupBox17.Location = new System.Drawing.Point(7, 6);
-            this.groupBox17.Name = "groupBox17";
-            this.groupBox17.Size = new System.Drawing.Size(211, 107);
-            this.groupBox17.TabIndex = 0;
-            this.groupBox17.TabStop = false;
-            this.groupBox17.Text = "Rect";
-            // 
-            // numRectHeight8
-            // 
-            this.numRectHeight8.Location = new System.Drawing.Point(80, 81);
-            this.numRectHeight8.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.numRectHeight8.Name = "numRectHeight8";
-            this.numRectHeight8.Size = new System.Drawing.Size(120, 20);
-            this.numRectHeight8.TabIndex = 7;
-            // 
-            // numRectWidth8
-            // 
-            this.numRectWidth8.Location = new System.Drawing.Point(80, 59);
-            this.numRectWidth8.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.numRectWidth8.Name = "numRectWidth8";
-            this.numRectWidth8.Size = new System.Drawing.Size(120, 20);
-            this.numRectWidth8.TabIndex = 6;
-            // 
-            // numRectY8
-            // 
-            this.numRectY8.Location = new System.Drawing.Point(80, 37);
-            this.numRectY8.Maximum = new decimal(new int[] {
-            1024,
-            0,
-            0,
-            0});
-            this.numRectY8.Name = "numRectY8";
-            this.numRectY8.Size = new System.Drawing.Size(120, 20);
-            this.numRectY8.TabIndex = 5;
-            // 
-            // numRectX8
-            // 
-            this.numRectX8.Location = new System.Drawing.Point(80, 15);
-            this.numRectX8.Maximum = new decimal(new int[] {
-            1024,
-            0,
-            0,
-            0});
-            this.numRectX8.Name = "numRectX8";
-            this.numRectX8.Size = new System.Drawing.Size(120, 20);
-            this.numRectX8.TabIndex = 4;
-            // 
-            // label54
-            // 
-            this.label54.AutoSize = true;
-            this.label54.Location = new System.Drawing.Point(6, 81);
-            this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(36, 13);
-            this.label54.TabIndex = 3;
-            this.label54.Text = "height";
-            // 
-            // label55
-            // 
-            this.label55.AutoSize = true;
-            this.label55.Location = new System.Drawing.Point(6, 59);
-            this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(32, 13);
-            this.label55.TabIndex = 2;
-            this.label55.Text = "width";
-            // 
-            // label56
-            // 
-            this.label56.AutoSize = true;
-            this.label56.Location = new System.Drawing.Point(6, 37);
-            this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(12, 13);
-            this.label56.TabIndex = 1;
-            this.label56.Text = "y";
-            // 
-            // label57
-            // 
-            this.label57.AutoSize = true;
-            this.label57.Location = new System.Drawing.Point(6, 15);
-            this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(12, 13);
-            this.label57.TabIndex = 0;
-            this.label57.Text = "x";
-            // 
-            // tabPage12
-            // 
-            this.tabPage12.Controls.Add(this.textSprite9);
-            this.tabPage12.Controls.Add(this.textTexture9);
-            this.tabPage12.Controls.Add(this.label58);
-            this.tabPage12.Controls.Add(this.label59);
-            this.tabPage12.Controls.Add(this.groupBox18);
-            this.tabPage12.Controls.Add(this.groupBox19);
-            this.tabPage12.Location = new System.Drawing.Point(4, 22);
-            this.tabPage12.Name = "tabPage12";
-            this.tabPage12.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage12.Size = new System.Drawing.Size(675, 322);
-            this.tabPage12.TabIndex = 8;
-            this.tabPage12.Text = "Sprite 9";
-            this.tabPage12.UseVisualStyleBackColor = true;
-            // 
-            // textSprite9
-            // 
-            this.textSprite9.Location = new System.Drawing.Point(90, 192);
-            this.textSprite9.Name = "textSprite9";
-            this.textSprite9.Size = new System.Drawing.Size(100, 20);
-            this.textSprite9.TabIndex = 5;
-            // 
-            // textTexture9
-            // 
-            this.textTexture9.Location = new System.Drawing.Point(90, 219);
-            this.textTexture9.Name = "textTexture9";
-            this.textTexture9.Size = new System.Drawing.Size(100, 20);
-            this.textTexture9.TabIndex = 4;
-            // 
-            // label58
-            // 
-            this.label58.AutoSize = true;
-            this.label58.Location = new System.Drawing.Point(3, 222);
-            this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(74, 13);
-            this.label58.TabIndex = 3;
-            this.label58.Text = "Texture Name";
-            // 
-            // label59
-            // 
-            this.label59.AutoSize = true;
-            this.label59.Location = new System.Drawing.Point(3, 195);
-            this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(65, 13);
-            this.label59.TabIndex = 2;
-            this.label59.Text = "Sprite Name";
-            // 
-            // groupBox18
-            // 
-            this.groupBox18.Controls.Add(this.numPivotY9);
-            this.groupBox18.Controls.Add(this.numPivotX9);
-            this.groupBox18.Controls.Add(this.label60);
-            this.groupBox18.Controls.Add(this.label61);
-            this.groupBox18.Location = new System.Drawing.Point(7, 119);
-            this.groupBox18.Name = "groupBox18";
-            this.groupBox18.Size = new System.Drawing.Size(211, 64);
-            this.groupBox18.TabIndex = 1;
-            this.groupBox18.TabStop = false;
-            this.groupBox18.Text = "Pivot";
-            // 
-            // numPivotY9
-            // 
-            this.numPivotY9.Location = new System.Drawing.Point(80, 37);
-            this.numPivotY9.Name = "numPivotY9";
-            this.numPivotY9.Size = new System.Drawing.Size(120, 20);
-            this.numPivotY9.TabIndex = 5;
-            // 
-            // numPivotX9
-            // 
-            this.numPivotX9.Location = new System.Drawing.Point(80, 15);
-            this.numPivotX9.Name = "numPivotX9";
-            this.numPivotX9.Size = new System.Drawing.Size(120, 20);
-            this.numPivotX9.TabIndex = 4;
-            // 
-            // label60
-            // 
-            this.label60.AutoSize = true;
-            this.label60.Location = new System.Drawing.Point(6, 37);
-            this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(12, 13);
-            this.label60.TabIndex = 1;
-            this.label60.Text = "y";
-            // 
-            // label61
-            // 
-            this.label61.AutoSize = true;
-            this.label61.Location = new System.Drawing.Point(6, 15);
-            this.label61.Name = "label61";
-            this.label61.Size = new System.Drawing.Size(12, 13);
-            this.label61.TabIndex = 0;
-            this.label61.Text = "x";
-            // 
-            // groupBox19
-            // 
-            this.groupBox19.Controls.Add(this.numRectHeight9);
-            this.groupBox19.Controls.Add(this.numRectWidth9);
-            this.groupBox19.Controls.Add(this.numRectY9);
-            this.groupBox19.Controls.Add(this.numRectX9);
-            this.groupBox19.Controls.Add(this.label62);
-            this.groupBox19.Controls.Add(this.label63);
-            this.groupBox19.Controls.Add(this.label64);
-            this.groupBox19.Controls.Add(this.label65);
-            this.groupBox19.Location = new System.Drawing.Point(7, 6);
-            this.groupBox19.Name = "groupBox19";
-            this.groupBox19.Size = new System.Drawing.Size(211, 107);
-            this.groupBox19.TabIndex = 0;
-            this.groupBox19.TabStop = false;
-            this.groupBox19.Text = "Rect";
-            // 
-            // numRectHeight9
-            // 
-            this.numRectHeight9.Location = new System.Drawing.Point(80, 81);
-            this.numRectHeight9.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.numRectHeight9.Name = "numRectHeight9";
-            this.numRectHeight9.Size = new System.Drawing.Size(120, 20);
-            this.numRectHeight9.TabIndex = 7;
-            // 
-            // numRectWidth9
-            // 
-            this.numRectWidth9.Location = new System.Drawing.Point(80, 59);
-            this.numRectWidth9.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.numRectWidth9.Name = "numRectWidth9";
-            this.numRectWidth9.Size = new System.Drawing.Size(120, 20);
-            this.numRectWidth9.TabIndex = 6;
-            // 
-            // numRectY9
-            // 
-            this.numRectY9.Location = new System.Drawing.Point(80, 37);
-            this.numRectY9.Maximum = new decimal(new int[] {
-            1024,
-            0,
-            0,
-            0});
-            this.numRectY9.Name = "numRectY9";
-            this.numRectY9.Size = new System.Drawing.Size(120, 20);
-            this.numRectY9.TabIndex = 5;
-            // 
-            // numRectX9
-            // 
-            this.numRectX9.Location = new System.Drawing.Point(80, 15);
-            this.numRectX9.Maximum = new decimal(new int[] {
-            1024,
-            0,
-            0,
-            0});
-            this.numRectX9.Name = "numRectX9";
-            this.numRectX9.Size = new System.Drawing.Size(120, 20);
-            this.numRectX9.TabIndex = 4;
-            // 
-            // label62
-            // 
-            this.label62.AutoSize = true;
-            this.label62.Location = new System.Drawing.Point(6, 81);
-            this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(36, 13);
-            this.label62.TabIndex = 3;
-            this.label62.Text = "height";
-            // 
-            // label63
-            // 
-            this.label63.AutoSize = true;
-            this.label63.Location = new System.Drawing.Point(6, 59);
-            this.label63.Name = "label63";
-            this.label63.Size = new System.Drawing.Size(32, 13);
-            this.label63.TabIndex = 2;
-            this.label63.Text = "width";
-            // 
-            // label64
-            // 
-            this.label64.AutoSize = true;
-            this.label64.Location = new System.Drawing.Point(6, 37);
-            this.label64.Name = "label64";
-            this.label64.Size = new System.Drawing.Size(12, 13);
-            this.label64.TabIndex = 1;
-            this.label64.Text = "y";
-            // 
-            // label65
-            // 
-            this.label65.AutoSize = true;
-            this.label65.Location = new System.Drawing.Point(6, 15);
-            this.label65.Name = "label65";
-            this.label65.Size = new System.Drawing.Size(12, 13);
-            this.label65.TabIndex = 0;
-            this.label65.Text = "x";
-            // 
-            // tabPage13
-            // 
-            this.tabPage13.Controls.Add(this.textSprite10);
-            this.tabPage13.Controls.Add(this.textTexture10);
-            this.tabPage13.Controls.Add(this.label66);
-            this.tabPage13.Controls.Add(this.label67);
-            this.tabPage13.Controls.Add(this.groupBox20);
-            this.tabPage13.Controls.Add(this.groupBox21);
-            this.tabPage13.Location = new System.Drawing.Point(4, 22);
-            this.tabPage13.Name = "tabPage13";
-            this.tabPage13.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage13.Size = new System.Drawing.Size(675, 322);
-            this.tabPage13.TabIndex = 9;
-            this.tabPage13.Text = "Sprite 10";
-            this.tabPage13.UseVisualStyleBackColor = true;
-            // 
-            // textSprite10
-            // 
-            this.textSprite10.Location = new System.Drawing.Point(90, 192);
-            this.textSprite10.Name = "textSprite10";
-            this.textSprite10.Size = new System.Drawing.Size(100, 20);
-            this.textSprite10.TabIndex = 5;
-            // 
-            // textTexture10
-            // 
-            this.textTexture10.Location = new System.Drawing.Point(90, 219);
-            this.textTexture10.Name = "textTexture10";
-            this.textTexture10.Size = new System.Drawing.Size(100, 20);
-            this.textTexture10.TabIndex = 4;
-            // 
-            // label66
-            // 
-            this.label66.AutoSize = true;
-            this.label66.Location = new System.Drawing.Point(3, 222);
-            this.label66.Name = "label66";
-            this.label66.Size = new System.Drawing.Size(74, 13);
-            this.label66.TabIndex = 3;
-            this.label66.Text = "Texture Name";
-            // 
-            // label67
-            // 
-            this.label67.AutoSize = true;
-            this.label67.Location = new System.Drawing.Point(3, 195);
-            this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(65, 13);
-            this.label67.TabIndex = 2;
-            this.label67.Text = "Sprite Name";
-            // 
-            // groupBox20
-            // 
-            this.groupBox20.Controls.Add(this.numPivotY10);
-            this.groupBox20.Controls.Add(this.numPivotX10);
-            this.groupBox20.Controls.Add(this.label68);
-            this.groupBox20.Controls.Add(this.label69);
-            this.groupBox20.Location = new System.Drawing.Point(7, 119);
-            this.groupBox20.Name = "groupBox20";
-            this.groupBox20.Size = new System.Drawing.Size(211, 64);
-            this.groupBox20.TabIndex = 1;
-            this.groupBox20.TabStop = false;
-            this.groupBox20.Text = "Pivot";
-            // 
-            // numPivotY10
-            // 
-            this.numPivotY10.Location = new System.Drawing.Point(80, 37);
-            this.numPivotY10.Name = "numPivotY10";
-            this.numPivotY10.Size = new System.Drawing.Size(120, 20);
-            this.numPivotY10.TabIndex = 5;
-            // 
-            // numPivotX10
-            // 
-            this.numPivotX10.Location = new System.Drawing.Point(80, 15);
-            this.numPivotX10.Name = "numPivotX10";
-            this.numPivotX10.Size = new System.Drawing.Size(120, 20);
-            this.numPivotX10.TabIndex = 4;
-            // 
-            // label68
-            // 
-            this.label68.AutoSize = true;
-            this.label68.Location = new System.Drawing.Point(6, 37);
-            this.label68.Name = "label68";
-            this.label68.Size = new System.Drawing.Size(12, 13);
-            this.label68.TabIndex = 1;
-            this.label68.Text = "y";
-            // 
-            // label69
-            // 
-            this.label69.AutoSize = true;
-            this.label69.Location = new System.Drawing.Point(6, 15);
-            this.label69.Name = "label69";
-            this.label69.Size = new System.Drawing.Size(12, 13);
-            this.label69.TabIndex = 0;
-            this.label69.Text = "x";
-            // 
-            // groupBox21
-            // 
-            this.groupBox21.Controls.Add(this.numRectHeight10);
-            this.groupBox21.Controls.Add(this.numRectWidth10);
-            this.groupBox21.Controls.Add(this.numRectY10);
-            this.groupBox21.Controls.Add(this.numRectX10);
-            this.groupBox21.Controls.Add(this.label70);
-            this.groupBox21.Controls.Add(this.label71);
-            this.groupBox21.Controls.Add(this.label72);
-            this.groupBox21.Controls.Add(this.label73);
-            this.groupBox21.Location = new System.Drawing.Point(7, 6);
-            this.groupBox21.Name = "groupBox21";
-            this.groupBox21.Size = new System.Drawing.Size(211, 107);
-            this.groupBox21.TabIndex = 0;
-            this.groupBox21.TabStop = false;
-            this.groupBox21.Text = "Rect";
-            // 
-            // numRectHeight10
-            // 
-            this.numRectHeight10.Location = new System.Drawing.Point(80, 81);
-            this.numRectHeight10.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.numRectHeight10.Name = "numRectHeight10";
-            this.numRectHeight10.Size = new System.Drawing.Size(120, 20);
-            this.numRectHeight10.TabIndex = 7;
-            // 
-            // numRectWidth10
-            // 
-            this.numRectWidth10.Location = new System.Drawing.Point(80, 59);
-            this.numRectWidth10.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.numRectWidth10.Name = "numRectWidth10";
-            this.numRectWidth10.Size = new System.Drawing.Size(120, 20);
-            this.numRectWidth10.TabIndex = 6;
-            // 
-            // numRectY10
-            // 
-            this.numRectY10.Location = new System.Drawing.Point(80, 37);
-            this.numRectY10.Maximum = new decimal(new int[] {
-            1024,
-            0,
-            0,
-            0});
-            this.numRectY10.Name = "numRectY10";
-            this.numRectY10.Size = new System.Drawing.Size(120, 20);
-            this.numRectY10.TabIndex = 5;
-            // 
-            // numRectX10
-            // 
-            this.numRectX10.Location = new System.Drawing.Point(80, 15);
-            this.numRectX10.Maximum = new decimal(new int[] {
-            1024,
-            0,
-            0,
-            0});
-            this.numRectX10.Name = "numRectX10";
-            this.numRectX10.Size = new System.Drawing.Size(120, 20);
-            this.numRectX10.TabIndex = 4;
-            // 
-            // label70
-            // 
-            this.label70.AutoSize = true;
-            this.label70.Location = new System.Drawing.Point(6, 81);
-            this.label70.Name = "label70";
-            this.label70.Size = new System.Drawing.Size(36, 13);
-            this.label70.TabIndex = 3;
-            this.label70.Text = "height";
-            // 
-            // label71
-            // 
-            this.label71.AutoSize = true;
-            this.label71.Location = new System.Drawing.Point(6, 59);
-            this.label71.Name = "label71";
-            this.label71.Size = new System.Drawing.Size(32, 13);
-            this.label71.TabIndex = 2;
-            this.label71.Text = "width";
-            // 
-            // label72
-            // 
-            this.label72.AutoSize = true;
-            this.label72.Location = new System.Drawing.Point(6, 37);
-            this.label72.Name = "label72";
-            this.label72.Size = new System.Drawing.Size(12, 13);
-            this.label72.TabIndex = 1;
-            this.label72.Text = "y";
-            // 
-            // label73
-            // 
-            this.label73.AutoSize = true;
-            this.label73.Location = new System.Drawing.Point(6, 15);
-            this.label73.Name = "label73";
-            this.label73.Size = new System.Drawing.Size(12, 13);
-            this.label73.TabIndex = 0;
-            this.label73.Text = "x";
-            // 
-            // tabPage14
-            // 
-            this.tabPage14.Controls.Add(this.textSprite11);
-            this.tabPage14.Controls.Add(this.textTexture11);
-            this.tabPage14.Controls.Add(this.label74);
-            this.tabPage14.Controls.Add(this.label75);
-            this.tabPage14.Controls.Add(this.groupBox22);
-            this.tabPage14.Controls.Add(this.groupBox23);
-            this.tabPage14.Location = new System.Drawing.Point(4, 22);
-            this.tabPage14.Name = "tabPage14";
-            this.tabPage14.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage14.Size = new System.Drawing.Size(675, 322);
-            this.tabPage14.TabIndex = 10;
-            this.tabPage14.Text = "Sprite 11";
-            this.tabPage14.UseVisualStyleBackColor = true;
-            // 
-            // textSprite11
-            // 
-            this.textSprite11.Location = new System.Drawing.Point(90, 192);
-            this.textSprite11.Name = "textSprite11";
-            this.textSprite11.Size = new System.Drawing.Size(100, 20);
-            this.textSprite11.TabIndex = 5;
-            // 
-            // textTexture11
-            // 
-            this.textTexture11.Location = new System.Drawing.Point(90, 219);
-            this.textTexture11.Name = "textTexture11";
-            this.textTexture11.Size = new System.Drawing.Size(100, 20);
-            this.textTexture11.TabIndex = 4;
-            // 
-            // label74
-            // 
-            this.label74.AutoSize = true;
-            this.label74.Location = new System.Drawing.Point(3, 222);
-            this.label74.Name = "label74";
-            this.label74.Size = new System.Drawing.Size(74, 13);
-            this.label74.TabIndex = 3;
-            this.label74.Text = "Texture Name";
-            // 
-            // label75
-            // 
-            this.label75.AutoSize = true;
-            this.label75.Location = new System.Drawing.Point(3, 195);
-            this.label75.Name = "label75";
-            this.label75.Size = new System.Drawing.Size(65, 13);
-            this.label75.TabIndex = 2;
-            this.label75.Text = "Sprite Name";
-            // 
-            // groupBox22
-            // 
-            this.groupBox22.Controls.Add(this.numPivotY11);
-            this.groupBox22.Controls.Add(this.numPivotX11);
-            this.groupBox22.Controls.Add(this.label76);
-            this.groupBox22.Controls.Add(this.label77);
-            this.groupBox22.Location = new System.Drawing.Point(7, 119);
-            this.groupBox22.Name = "groupBox22";
-            this.groupBox22.Size = new System.Drawing.Size(211, 64);
-            this.groupBox22.TabIndex = 1;
-            this.groupBox22.TabStop = false;
-            this.groupBox22.Text = "Pivot";
-            // 
-            // numPivotY11
-            // 
-            this.numPivotY11.Location = new System.Drawing.Point(80, 37);
-            this.numPivotY11.Name = "numPivotY11";
-            this.numPivotY11.Size = new System.Drawing.Size(120, 20);
-            this.numPivotY11.TabIndex = 5;
-            // 
-            // numPivotX11
-            // 
-            this.numPivotX11.Location = new System.Drawing.Point(80, 15);
-            this.numPivotX11.Name = "numPivotX11";
-            this.numPivotX11.Size = new System.Drawing.Size(120, 20);
-            this.numPivotX11.TabIndex = 4;
-            // 
-            // label76
-            // 
-            this.label76.AutoSize = true;
-            this.label76.Location = new System.Drawing.Point(6, 37);
-            this.label76.Name = "label76";
-            this.label76.Size = new System.Drawing.Size(12, 13);
-            this.label76.TabIndex = 1;
-            this.label76.Text = "y";
-            // 
-            // label77
-            // 
-            this.label77.AutoSize = true;
-            this.label77.Location = new System.Drawing.Point(6, 15);
-            this.label77.Name = "label77";
-            this.label77.Size = new System.Drawing.Size(12, 13);
-            this.label77.TabIndex = 0;
-            this.label77.Text = "x";
-            // 
-            // groupBox23
-            // 
-            this.groupBox23.Controls.Add(this.numRectHeight11);
-            this.groupBox23.Controls.Add(this.numRectWidth11);
-            this.groupBox23.Controls.Add(this.numRectY11);
-            this.groupBox23.Controls.Add(this.numRectX11);
-            this.groupBox23.Controls.Add(this.label78);
-            this.groupBox23.Controls.Add(this.label79);
-            this.groupBox23.Controls.Add(this.label80);
-            this.groupBox23.Controls.Add(this.label81);
-            this.groupBox23.Location = new System.Drawing.Point(7, 6);
-            this.groupBox23.Name = "groupBox23";
-            this.groupBox23.Size = new System.Drawing.Size(211, 107);
-            this.groupBox23.TabIndex = 0;
-            this.groupBox23.TabStop = false;
-            this.groupBox23.Text = "Rect";
-            // 
-            // numRectHeight11
-            // 
-            this.numRectHeight11.Location = new System.Drawing.Point(80, 81);
-            this.numRectHeight11.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.numRectHeight11.Name = "numRectHeight11";
-            this.numRectHeight11.Size = new System.Drawing.Size(120, 20);
-            this.numRectHeight11.TabIndex = 7;
-            // 
-            // numRectWidth11
-            // 
-            this.numRectWidth11.Location = new System.Drawing.Point(80, 59);
-            this.numRectWidth11.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.numRectWidth11.Name = "numRectWidth11";
-            this.numRectWidth11.Size = new System.Drawing.Size(120, 20);
-            this.numRectWidth11.TabIndex = 6;
-            // 
-            // numRectY11
-            // 
-            this.numRectY11.Location = new System.Drawing.Point(80, 37);
-            this.numRectY11.Maximum = new decimal(new int[] {
-            1024,
-            0,
-            0,
-            0});
-            this.numRectY11.Name = "numRectY11";
-            this.numRectY11.Size = new System.Drawing.Size(120, 20);
-            this.numRectY11.TabIndex = 5;
-            // 
-            // numRectX11
-            // 
-            this.numRectX11.Location = new System.Drawing.Point(80, 15);
-            this.numRectX11.Maximum = new decimal(new int[] {
-            1024,
-            0,
-            0,
-            0});
-            this.numRectX11.Name = "numRectX11";
-            this.numRectX11.Size = new System.Drawing.Size(120, 20);
-            this.numRectX11.TabIndex = 4;
-            // 
-            // label78
-            // 
-            this.label78.AutoSize = true;
-            this.label78.Location = new System.Drawing.Point(6, 81);
-            this.label78.Name = "label78";
-            this.label78.Size = new System.Drawing.Size(36, 13);
-            this.label78.TabIndex = 3;
-            this.label78.Text = "height";
-            // 
-            // label79
-            // 
-            this.label79.AutoSize = true;
-            this.label79.Location = new System.Drawing.Point(6, 59);
-            this.label79.Name = "label79";
-            this.label79.Size = new System.Drawing.Size(32, 13);
-            this.label79.TabIndex = 2;
-            this.label79.Text = "width";
-            // 
-            // label80
-            // 
-            this.label80.AutoSize = true;
-            this.label80.Location = new System.Drawing.Point(6, 37);
-            this.label80.Name = "label80";
-            this.label80.Size = new System.Drawing.Size(12, 13);
-            this.label80.TabIndex = 1;
-            this.label80.Text = "y";
-            // 
-            // label81
-            // 
-            this.label81.AutoSize = true;
-            this.label81.Location = new System.Drawing.Point(6, 15);
-            this.label81.Name = "label81";
-            this.label81.Size = new System.Drawing.Size(12, 13);
-            this.label81.TabIndex = 0;
-            this.label81.Text = "x";
-            // 
-            // tabPage15
-            // 
-            this.tabPage15.Controls.Add(this.textSprite12);
-            this.tabPage15.Controls.Add(this.textTexture12);
-            this.tabPage15.Controls.Add(this.label82);
-            this.tabPage15.Controls.Add(this.label83);
-            this.tabPage15.Controls.Add(this.groupBox24);
-            this.tabPage15.Controls.Add(this.groupBox25);
-            this.tabPage15.Location = new System.Drawing.Point(4, 22);
-            this.tabPage15.Name = "tabPage15";
-            this.tabPage15.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage15.Size = new System.Drawing.Size(675, 322);
-            this.tabPage15.TabIndex = 11;
-            this.tabPage15.Text = "Sprite 12";
-            this.tabPage15.UseVisualStyleBackColor = true;
-            // 
-            // textSprite12
-            // 
-            this.textSprite12.Location = new System.Drawing.Point(90, 192);
-            this.textSprite12.Name = "textSprite12";
-            this.textSprite12.Size = new System.Drawing.Size(100, 20);
-            this.textSprite12.TabIndex = 5;
-            // 
-            // textTexture12
-            // 
-            this.textTexture12.Location = new System.Drawing.Point(90, 219);
-            this.textTexture12.Name = "textTexture12";
-            this.textTexture12.Size = new System.Drawing.Size(100, 20);
-            this.textTexture12.TabIndex = 4;
-            // 
-            // label82
-            // 
-            this.label82.AutoSize = true;
-            this.label82.Location = new System.Drawing.Point(3, 222);
-            this.label82.Name = "label82";
-            this.label82.Size = new System.Drawing.Size(74, 13);
-            this.label82.TabIndex = 3;
-            this.label82.Text = "Texture Name";
-            // 
-            // label83
-            // 
-            this.label83.AutoSize = true;
-            this.label83.Location = new System.Drawing.Point(3, 195);
-            this.label83.Name = "label83";
-            this.label83.Size = new System.Drawing.Size(65, 13);
-            this.label83.TabIndex = 2;
-            this.label83.Text = "Sprite Name";
-            // 
-            // groupBox24
-            // 
-            this.groupBox24.Controls.Add(this.numPivotY12);
-            this.groupBox24.Controls.Add(this.numPivotX12);
-            this.groupBox24.Controls.Add(this.label84);
-            this.groupBox24.Controls.Add(this.label85);
-            this.groupBox24.Location = new System.Drawing.Point(7, 119);
-            this.groupBox24.Name = "groupBox24";
-            this.groupBox24.Size = new System.Drawing.Size(211, 64);
-            this.groupBox24.TabIndex = 1;
-            this.groupBox24.TabStop = false;
-            this.groupBox24.Text = "Pivot";
-            // 
-            // numPivotY12
-            // 
-            this.numPivotY12.Location = new System.Drawing.Point(80, 37);
-            this.numPivotY12.Name = "numPivotY12";
-            this.numPivotY12.Size = new System.Drawing.Size(120, 20);
-            this.numPivotY12.TabIndex = 5;
-            // 
-            // numPivotX12
-            // 
-            this.numPivotX12.Location = new System.Drawing.Point(80, 15);
-            this.numPivotX12.Name = "numPivotX12";
-            this.numPivotX12.Size = new System.Drawing.Size(120, 20);
-            this.numPivotX12.TabIndex = 4;
-            // 
-            // label84
-            // 
-            this.label84.AutoSize = true;
-            this.label84.Location = new System.Drawing.Point(6, 37);
-            this.label84.Name = "label84";
-            this.label84.Size = new System.Drawing.Size(12, 13);
-            this.label84.TabIndex = 1;
-            this.label84.Text = "y";
-            // 
-            // label85
-            // 
-            this.label85.AutoSize = true;
-            this.label85.Location = new System.Drawing.Point(6, 15);
-            this.label85.Name = "label85";
-            this.label85.Size = new System.Drawing.Size(12, 13);
-            this.label85.TabIndex = 0;
-            this.label85.Text = "x";
-            // 
-            // groupBox25
-            // 
-            this.groupBox25.Controls.Add(this.numRectHeight12);
-            this.groupBox25.Controls.Add(this.numRectWidth12);
-            this.groupBox25.Controls.Add(this.numRectY12);
-            this.groupBox25.Controls.Add(this.numRectX12);
-            this.groupBox25.Controls.Add(this.label86);
-            this.groupBox25.Controls.Add(this.label87);
-            this.groupBox25.Controls.Add(this.label88);
-            this.groupBox25.Controls.Add(this.label89);
-            this.groupBox25.Location = new System.Drawing.Point(7, 6);
-            this.groupBox25.Name = "groupBox25";
-            this.groupBox25.Size = new System.Drawing.Size(211, 107);
-            this.groupBox25.TabIndex = 0;
-            this.groupBox25.TabStop = false;
-            this.groupBox25.Text = "Rect";
-            // 
-            // numRectHeight12
-            // 
-            this.numRectHeight12.Location = new System.Drawing.Point(80, 81);
-            this.numRectHeight12.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.numRectHeight12.Name = "numRectHeight12";
-            this.numRectHeight12.Size = new System.Drawing.Size(120, 20);
-            this.numRectHeight12.TabIndex = 7;
-            // 
-            // numRectWidth12
-            // 
-            this.numRectWidth12.Location = new System.Drawing.Point(80, 59);
-            this.numRectWidth12.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.numRectWidth12.Name = "numRectWidth12";
-            this.numRectWidth12.Size = new System.Drawing.Size(120, 20);
-            this.numRectWidth12.TabIndex = 6;
-            // 
-            // numRectY12
-            // 
-            this.numRectY12.Location = new System.Drawing.Point(80, 37);
-            this.numRectY12.Maximum = new decimal(new int[] {
-            1024,
-            0,
-            0,
-            0});
-            this.numRectY12.Name = "numRectY12";
-            this.numRectY12.Size = new System.Drawing.Size(120, 20);
-            this.numRectY12.TabIndex = 5;
-            // 
-            // numRectX12
-            // 
-            this.numRectX12.Location = new System.Drawing.Point(80, 15);
-            this.numRectX12.Maximum = new decimal(new int[] {
-            1024,
-            0,
-            0,
-            0});
-            this.numRectX12.Name = "numRectX12";
-            this.numRectX12.Size = new System.Drawing.Size(120, 20);
-            this.numRectX12.TabIndex = 4;
-            // 
-            // label86
-            // 
-            this.label86.AutoSize = true;
-            this.label86.Location = new System.Drawing.Point(6, 81);
-            this.label86.Name = "label86";
-            this.label86.Size = new System.Drawing.Size(36, 13);
-            this.label86.TabIndex = 3;
-            this.label86.Text = "height";
-            // 
-            // label87
-            // 
-            this.label87.AutoSize = true;
-            this.label87.Location = new System.Drawing.Point(6, 59);
-            this.label87.Name = "label87";
-            this.label87.Size = new System.Drawing.Size(32, 13);
-            this.label87.TabIndex = 2;
-            this.label87.Text = "width";
-            // 
-            // label88
-            // 
-            this.label88.AutoSize = true;
-            this.label88.Location = new System.Drawing.Point(6, 37);
-            this.label88.Name = "label88";
-            this.label88.Size = new System.Drawing.Size(12, 13);
-            this.label88.TabIndex = 1;
-            this.label88.Text = "y";
-            // 
-            // label89
-            // 
-            this.label89.AutoSize = true;
-            this.label89.Location = new System.Drawing.Point(6, 15);
-            this.label89.Name = "label89";
-            this.label89.Size = new System.Drawing.Size(12, 13);
-            this.label89.TabIndex = 0;
-            this.label89.Text = "x";
-            // 
-            // tabPage16
-            // 
-            this.tabPage16.Controls.Add(this.textSprite13);
-            this.tabPage16.Controls.Add(this.textTexture13);
-            this.tabPage16.Controls.Add(this.label90);
-            this.tabPage16.Controls.Add(this.label91);
-            this.tabPage16.Controls.Add(this.groupBox26);
-            this.tabPage16.Controls.Add(this.groupBox27);
-            this.tabPage16.Location = new System.Drawing.Point(4, 22);
-            this.tabPage16.Name = "tabPage16";
-            this.tabPage16.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage16.Size = new System.Drawing.Size(675, 322);
-            this.tabPage16.TabIndex = 12;
-            this.tabPage16.Text = "Sprite 13";
-            this.tabPage16.UseVisualStyleBackColor = true;
-            // 
-            // textSprite13
-            // 
-            this.textSprite13.Location = new System.Drawing.Point(90, 192);
-            this.textSprite13.Name = "textSprite13";
-            this.textSprite13.Size = new System.Drawing.Size(100, 20);
-            this.textSprite13.TabIndex = 5;
-            // 
-            // textTexture13
-            // 
-            this.textTexture13.Location = new System.Drawing.Point(90, 219);
-            this.textTexture13.Name = "textTexture13";
-            this.textTexture13.Size = new System.Drawing.Size(100, 20);
-            this.textTexture13.TabIndex = 4;
-            // 
-            // label90
-            // 
-            this.label90.AutoSize = true;
-            this.label90.Location = new System.Drawing.Point(3, 222);
-            this.label90.Name = "label90";
-            this.label90.Size = new System.Drawing.Size(74, 13);
-            this.label90.TabIndex = 3;
-            this.label90.Text = "Texture Name";
-            // 
-            // label91
-            // 
-            this.label91.AutoSize = true;
-            this.label91.Location = new System.Drawing.Point(3, 195);
-            this.label91.Name = "label91";
-            this.label91.Size = new System.Drawing.Size(65, 13);
-            this.label91.TabIndex = 2;
-            this.label91.Text = "Sprite Name";
-            // 
-            // groupBox26
-            // 
-            this.groupBox26.Controls.Add(this.numPivotY13);
-            this.groupBox26.Controls.Add(this.numPivotX13);
-            this.groupBox26.Controls.Add(this.label92);
-            this.groupBox26.Controls.Add(this.label93);
-            this.groupBox26.Location = new System.Drawing.Point(7, 119);
-            this.groupBox26.Name = "groupBox26";
-            this.groupBox26.Size = new System.Drawing.Size(211, 64);
-            this.groupBox26.TabIndex = 1;
-            this.groupBox26.TabStop = false;
-            this.groupBox26.Text = "Pivot";
-            // 
-            // numPivotY13
-            // 
-            this.numPivotY13.Location = new System.Drawing.Point(80, 37);
-            this.numPivotY13.Name = "numPivotY13";
-            this.numPivotY13.Size = new System.Drawing.Size(120, 20);
-            this.numPivotY13.TabIndex = 5;
-            // 
-            // numPivotX13
-            // 
-            this.numPivotX13.Location = new System.Drawing.Point(80, 15);
-            this.numPivotX13.Name = "numPivotX13";
-            this.numPivotX13.Size = new System.Drawing.Size(120, 20);
-            this.numPivotX13.TabIndex = 4;
-            // 
-            // label92
-            // 
-            this.label92.AutoSize = true;
-            this.label92.Location = new System.Drawing.Point(6, 37);
-            this.label92.Name = "label92";
-            this.label92.Size = new System.Drawing.Size(12, 13);
-            this.label92.TabIndex = 1;
-            this.label92.Text = "y";
-            // 
-            // label93
-            // 
-            this.label93.AutoSize = true;
-            this.label93.Location = new System.Drawing.Point(6, 15);
-            this.label93.Name = "label93";
-            this.label93.Size = new System.Drawing.Size(12, 13);
-            this.label93.TabIndex = 0;
-            this.label93.Text = "x";
-            // 
-            // groupBox27
-            // 
-            this.groupBox27.Controls.Add(this.numRectHeight13);
-            this.groupBox27.Controls.Add(this.numRectWidth13);
-            this.groupBox27.Controls.Add(this.numRectY13);
-            this.groupBox27.Controls.Add(this.numRectX13);
-            this.groupBox27.Controls.Add(this.label94);
-            this.groupBox27.Controls.Add(this.label95);
-            this.groupBox27.Controls.Add(this.label96);
-            this.groupBox27.Controls.Add(this.label97);
-            this.groupBox27.Location = new System.Drawing.Point(7, 6);
-            this.groupBox27.Name = "groupBox27";
-            this.groupBox27.Size = new System.Drawing.Size(211, 107);
-            this.groupBox27.TabIndex = 0;
-            this.groupBox27.TabStop = false;
-            this.groupBox27.Text = "Rect";
-            // 
-            // numRectHeight13
-            // 
-            this.numRectHeight13.Location = new System.Drawing.Point(80, 81);
-            this.numRectHeight13.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.numRectHeight13.Name = "numRectHeight13";
-            this.numRectHeight13.Size = new System.Drawing.Size(120, 20);
-            this.numRectHeight13.TabIndex = 7;
-            // 
-            // numRectWidth13
-            // 
-            this.numRectWidth13.Location = new System.Drawing.Point(80, 59);
-            this.numRectWidth13.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.numRectWidth13.Name = "numRectWidth13";
-            this.numRectWidth13.Size = new System.Drawing.Size(120, 20);
-            this.numRectWidth13.TabIndex = 6;
-            // 
-            // numRectY13
-            // 
-            this.numRectY13.Location = new System.Drawing.Point(80, 37);
-            this.numRectY13.Maximum = new decimal(new int[] {
-            1024,
-            0,
-            0,
-            0});
-            this.numRectY13.Name = "numRectY13";
-            this.numRectY13.Size = new System.Drawing.Size(120, 20);
-            this.numRectY13.TabIndex = 5;
-            // 
-            // numRectX13
-            // 
-            this.numRectX13.Location = new System.Drawing.Point(80, 15);
-            this.numRectX13.Maximum = new decimal(new int[] {
-            1024,
-            0,
-            0,
-            0});
-            this.numRectX13.Name = "numRectX13";
-            this.numRectX13.Size = new System.Drawing.Size(120, 20);
-            this.numRectX13.TabIndex = 4;
-            // 
-            // label94
-            // 
-            this.label94.AutoSize = true;
-            this.label94.Location = new System.Drawing.Point(6, 81);
-            this.label94.Name = "label94";
-            this.label94.Size = new System.Drawing.Size(36, 13);
-            this.label94.TabIndex = 3;
-            this.label94.Text = "height";
-            // 
-            // label95
-            // 
-            this.label95.AutoSize = true;
-            this.label95.Location = new System.Drawing.Point(6, 59);
-            this.label95.Name = "label95";
-            this.label95.Size = new System.Drawing.Size(32, 13);
-            this.label95.TabIndex = 2;
-            this.label95.Text = "width";
-            // 
-            // label96
-            // 
-            this.label96.AutoSize = true;
-            this.label96.Location = new System.Drawing.Point(6, 37);
-            this.label96.Name = "label96";
-            this.label96.Size = new System.Drawing.Size(12, 13);
-            this.label96.TabIndex = 1;
-            this.label96.Text = "y";
-            // 
-            // label97
-            // 
-            this.label97.AutoSize = true;
-            this.label97.Location = new System.Drawing.Point(6, 15);
-            this.label97.Name = "label97";
-            this.label97.Size = new System.Drawing.Size(12, 13);
-            this.label97.TabIndex = 0;
-            this.label97.Text = "x";
-            // 
-            // tabPage17
-            // 
-            this.tabPage17.Controls.Add(this.textSprite14);
-            this.tabPage17.Controls.Add(this.textTexture14);
-            this.tabPage17.Controls.Add(this.label98);
-            this.tabPage17.Controls.Add(this.label99);
-            this.tabPage17.Controls.Add(this.groupBox28);
-            this.tabPage17.Controls.Add(this.groupBox29);
-            this.tabPage17.Location = new System.Drawing.Point(4, 22);
-            this.tabPage17.Name = "tabPage17";
-            this.tabPage17.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage17.Size = new System.Drawing.Size(675, 322);
-            this.tabPage17.TabIndex = 13;
-            this.tabPage17.Text = "Sprite 14";
-            this.tabPage17.UseVisualStyleBackColor = true;
-            // 
-            // textSprite14
-            // 
-            this.textSprite14.Location = new System.Drawing.Point(90, 192);
-            this.textSprite14.Name = "textSprite14";
-            this.textSprite14.Size = new System.Drawing.Size(100, 20);
-            this.textSprite14.TabIndex = 5;
-            // 
-            // textTexture14
-            // 
-            this.textTexture14.Location = new System.Drawing.Point(90, 219);
-            this.textTexture14.Name = "textTexture14";
-            this.textTexture14.Size = new System.Drawing.Size(100, 20);
-            this.textTexture14.TabIndex = 4;
-            // 
-            // label98
-            // 
-            this.label98.AutoSize = true;
-            this.label98.Location = new System.Drawing.Point(3, 222);
-            this.label98.Name = "label98";
-            this.label98.Size = new System.Drawing.Size(74, 13);
-            this.label98.TabIndex = 3;
-            this.label98.Text = "Texture Name";
-            // 
-            // label99
-            // 
-            this.label99.AutoSize = true;
-            this.label99.Location = new System.Drawing.Point(3, 195);
-            this.label99.Name = "label99";
-            this.label99.Size = new System.Drawing.Size(65, 13);
-            this.label99.TabIndex = 2;
-            this.label99.Text = "Sprite Name";
-            // 
-            // groupBox28
-            // 
-            this.groupBox28.Controls.Add(this.numPivotY14);
-            this.groupBox28.Controls.Add(this.numPivotX14);
-            this.groupBox28.Controls.Add(this.label100);
-            this.groupBox28.Controls.Add(this.label101);
-            this.groupBox28.Location = new System.Drawing.Point(7, 119);
-            this.groupBox28.Name = "groupBox28";
-            this.groupBox28.Size = new System.Drawing.Size(211, 64);
-            this.groupBox28.TabIndex = 1;
-            this.groupBox28.TabStop = false;
-            this.groupBox28.Text = "Pivot";
-            // 
-            // numPivotY14
-            // 
-            this.numPivotY14.Location = new System.Drawing.Point(80, 37);
-            this.numPivotY14.Name = "numPivotY14";
-            this.numPivotY14.Size = new System.Drawing.Size(120, 20);
-            this.numPivotY14.TabIndex = 5;
-            // 
-            // numPivotX14
-            // 
-            this.numPivotX14.Location = new System.Drawing.Point(80, 15);
-            this.numPivotX14.Name = "numPivotX14";
-            this.numPivotX14.Size = new System.Drawing.Size(120, 20);
-            this.numPivotX14.TabIndex = 4;
-            // 
-            // label100
-            // 
-            this.label100.AutoSize = true;
-            this.label100.Location = new System.Drawing.Point(6, 37);
-            this.label100.Name = "label100";
-            this.label100.Size = new System.Drawing.Size(12, 13);
-            this.label100.TabIndex = 1;
-            this.label100.Text = "y";
-            // 
-            // label101
-            // 
-            this.label101.AutoSize = true;
-            this.label101.Location = new System.Drawing.Point(6, 15);
-            this.label101.Name = "label101";
-            this.label101.Size = new System.Drawing.Size(12, 13);
-            this.label101.TabIndex = 0;
-            this.label101.Text = "x";
-            // 
-            // groupBox29
-            // 
-            this.groupBox29.Controls.Add(this.numRectHeight14);
-            this.groupBox29.Controls.Add(this.numRectWidth14);
-            this.groupBox29.Controls.Add(this.numRectY14);
-            this.groupBox29.Controls.Add(this.numRectX14);
-            this.groupBox29.Controls.Add(this.label102);
-            this.groupBox29.Controls.Add(this.label103);
-            this.groupBox29.Controls.Add(this.label104);
-            this.groupBox29.Controls.Add(this.label105);
-            this.groupBox29.Location = new System.Drawing.Point(7, 6);
-            this.groupBox29.Name = "groupBox29";
-            this.groupBox29.Size = new System.Drawing.Size(211, 107);
-            this.groupBox29.TabIndex = 0;
-            this.groupBox29.TabStop = false;
-            this.groupBox29.Text = "Rect";
-            // 
-            // numRectHeight14
-            // 
-            this.numRectHeight14.Location = new System.Drawing.Point(80, 81);
-            this.numRectHeight14.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.numRectHeight14.Name = "numRectHeight14";
-            this.numRectHeight14.Size = new System.Drawing.Size(120, 20);
-            this.numRectHeight14.TabIndex = 7;
-            // 
-            // numRectWidth14
-            // 
-            this.numRectWidth14.Location = new System.Drawing.Point(80, 59);
-            this.numRectWidth14.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.numRectWidth14.Name = "numRectWidth14";
-            this.numRectWidth14.Size = new System.Drawing.Size(120, 20);
-            this.numRectWidth14.TabIndex = 6;
-            // 
-            // numRectY14
-            // 
-            this.numRectY14.Location = new System.Drawing.Point(80, 37);
-            this.numRectY14.Maximum = new decimal(new int[] {
-            1024,
-            0,
-            0,
-            0});
-            this.numRectY14.Name = "numRectY14";
-            this.numRectY14.Size = new System.Drawing.Size(120, 20);
-            this.numRectY14.TabIndex = 5;
-            // 
-            // numRectX14
-            // 
-            this.numRectX14.Location = new System.Drawing.Point(80, 15);
-            this.numRectX14.Maximum = new decimal(new int[] {
-            1024,
-            0,
-            0,
-            0});
-            this.numRectX14.Name = "numRectX14";
-            this.numRectX14.Size = new System.Drawing.Size(120, 20);
-            this.numRectX14.TabIndex = 4;
-            // 
-            // label102
-            // 
-            this.label102.AutoSize = true;
-            this.label102.Location = new System.Drawing.Point(6, 81);
-            this.label102.Name = "label102";
-            this.label102.Size = new System.Drawing.Size(36, 13);
-            this.label102.TabIndex = 3;
-            this.label102.Text = "height";
-            // 
-            // label103
-            // 
-            this.label103.AutoSize = true;
-            this.label103.Location = new System.Drawing.Point(6, 59);
-            this.label103.Name = "label103";
-            this.label103.Size = new System.Drawing.Size(32, 13);
-            this.label103.TabIndex = 2;
-            this.label103.Text = "width";
-            // 
-            // label104
-            // 
-            this.label104.AutoSize = true;
-            this.label104.Location = new System.Drawing.Point(6, 37);
-            this.label104.Name = "label104";
-            this.label104.Size = new System.Drawing.Size(12, 13);
-            this.label104.TabIndex = 1;
-            this.label104.Text = "y";
-            // 
-            // label105
-            // 
-            this.label105.AutoSize = true;
-            this.label105.Location = new System.Drawing.Point(6, 15);
-            this.label105.Name = "label105";
-            this.label105.Size = new System.Drawing.Size(12, 13);
-            this.label105.TabIndex = 0;
-            this.label105.Text = "x";
-            // 
-            // tabPage18
-            // 
-            this.tabPage18.Controls.Add(this.textSprite15);
-            this.tabPage18.Controls.Add(this.textTexture15);
-            this.tabPage18.Controls.Add(this.label106);
-            this.tabPage18.Controls.Add(this.label107);
-            this.tabPage18.Controls.Add(this.groupBox30);
-            this.tabPage18.Controls.Add(this.groupBox31);
-            this.tabPage18.Location = new System.Drawing.Point(4, 22);
-            this.tabPage18.Name = "tabPage18";
-            this.tabPage18.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage18.Size = new System.Drawing.Size(675, 322);
-            this.tabPage18.TabIndex = 14;
-            this.tabPage18.Text = "Sprite 15";
-            this.tabPage18.UseVisualStyleBackColor = true;
-            // 
-            // textSprite15
-            // 
-            this.textSprite15.Location = new System.Drawing.Point(90, 192);
-            this.textSprite15.Name = "textSprite15";
-            this.textSprite15.Size = new System.Drawing.Size(100, 20);
-            this.textSprite15.TabIndex = 5;
-            // 
-            // textTexture15
-            // 
-            this.textTexture15.Location = new System.Drawing.Point(90, 219);
-            this.textTexture15.Name = "textTexture15";
-            this.textTexture15.Size = new System.Drawing.Size(100, 20);
-            this.textTexture15.TabIndex = 4;
-            // 
-            // label106
-            // 
-            this.label106.AutoSize = true;
-            this.label106.Location = new System.Drawing.Point(3, 222);
-            this.label106.Name = "label106";
-            this.label106.Size = new System.Drawing.Size(74, 13);
-            this.label106.TabIndex = 3;
-            this.label106.Text = "Texture Name";
-            // 
-            // label107
-            // 
-            this.label107.AutoSize = true;
-            this.label107.Location = new System.Drawing.Point(3, 195);
-            this.label107.Name = "label107";
-            this.label107.Size = new System.Drawing.Size(65, 13);
-            this.label107.TabIndex = 2;
-            this.label107.Text = "Sprite Name";
-            // 
-            // groupBox30
-            // 
-            this.groupBox30.Controls.Add(this.numPivotY15);
-            this.groupBox30.Controls.Add(this.numPivotX15);
-            this.groupBox30.Controls.Add(this.label108);
-            this.groupBox30.Controls.Add(this.label109);
-            this.groupBox30.Location = new System.Drawing.Point(7, 119);
-            this.groupBox30.Name = "groupBox30";
-            this.groupBox30.Size = new System.Drawing.Size(211, 64);
-            this.groupBox30.TabIndex = 1;
-            this.groupBox30.TabStop = false;
-            this.groupBox30.Text = "Pivot";
-            // 
-            // numPivotY15
-            // 
-            this.numPivotY15.Location = new System.Drawing.Point(80, 37);
-            this.numPivotY15.Name = "numPivotY15";
-            this.numPivotY15.Size = new System.Drawing.Size(120, 20);
-            this.numPivotY15.TabIndex = 5;
-            // 
-            // numPivotX15
-            // 
-            this.numPivotX15.Location = new System.Drawing.Point(80, 15);
-            this.numPivotX15.Name = "numPivotX15";
-            this.numPivotX15.Size = new System.Drawing.Size(120, 20);
-            this.numPivotX15.TabIndex = 4;
-            // 
-            // label108
-            // 
-            this.label108.AutoSize = true;
-            this.label108.Location = new System.Drawing.Point(6, 37);
-            this.label108.Name = "label108";
-            this.label108.Size = new System.Drawing.Size(12, 13);
-            this.label108.TabIndex = 1;
-            this.label108.Text = "y";
-            // 
-            // label109
-            // 
-            this.label109.AutoSize = true;
-            this.label109.Location = new System.Drawing.Point(6, 15);
-            this.label109.Name = "label109";
-            this.label109.Size = new System.Drawing.Size(12, 13);
-            this.label109.TabIndex = 0;
-            this.label109.Text = "x";
-            // 
-            // groupBox31
-            // 
-            this.groupBox31.Controls.Add(this.numRectHeight15);
-            this.groupBox31.Controls.Add(this.numRectWidth15);
-            this.groupBox31.Controls.Add(this.numRectY15);
-            this.groupBox31.Controls.Add(this.numRectX15);
-            this.groupBox31.Controls.Add(this.label110);
-            this.groupBox31.Controls.Add(this.label111);
-            this.groupBox31.Controls.Add(this.label112);
-            this.groupBox31.Controls.Add(this.label113);
-            this.groupBox31.Location = new System.Drawing.Point(7, 6);
-            this.groupBox31.Name = "groupBox31";
-            this.groupBox31.Size = new System.Drawing.Size(211, 107);
-            this.groupBox31.TabIndex = 0;
-            this.groupBox31.TabStop = false;
-            this.groupBox31.Text = "Rect";
-            // 
-            // numRectHeight15
-            // 
-            this.numRectHeight15.Location = new System.Drawing.Point(80, 81);
-            this.numRectHeight15.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.numRectHeight15.Name = "numRectHeight15";
-            this.numRectHeight15.Size = new System.Drawing.Size(120, 20);
-            this.numRectHeight15.TabIndex = 7;
-            // 
-            // numRectWidth15
-            // 
-            this.numRectWidth15.Location = new System.Drawing.Point(80, 59);
-            this.numRectWidth15.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.numRectWidth15.Name = "numRectWidth15";
-            this.numRectWidth15.Size = new System.Drawing.Size(120, 20);
-            this.numRectWidth15.TabIndex = 6;
-            // 
-            // numRectY15
-            // 
-            this.numRectY15.Location = new System.Drawing.Point(80, 37);
-            this.numRectY15.Maximum = new decimal(new int[] {
-            1024,
-            0,
-            0,
-            0});
-            this.numRectY15.Name = "numRectY15";
-            this.numRectY15.Size = new System.Drawing.Size(120, 20);
-            this.numRectY15.TabIndex = 5;
-            // 
-            // numRectX15
-            // 
-            this.numRectX15.Location = new System.Drawing.Point(80, 15);
-            this.numRectX15.Maximum = new decimal(new int[] {
-            1024,
-            0,
-            0,
-            0});
-            this.numRectX15.Name = "numRectX15";
-            this.numRectX15.Size = new System.Drawing.Size(120, 20);
-            this.numRectX15.TabIndex = 4;
-            // 
-            // label110
-            // 
-            this.label110.AutoSize = true;
-            this.label110.Location = new System.Drawing.Point(6, 81);
-            this.label110.Name = "label110";
-            this.label110.Size = new System.Drawing.Size(36, 13);
-            this.label110.TabIndex = 3;
-            this.label110.Text = "height";
-            // 
-            // label111
-            // 
-            this.label111.AutoSize = true;
-            this.label111.Location = new System.Drawing.Point(6, 59);
-            this.label111.Name = "label111";
-            this.label111.Size = new System.Drawing.Size(32, 13);
-            this.label111.TabIndex = 2;
-            this.label111.Text = "width";
-            // 
-            // label112
-            // 
-            this.label112.AutoSize = true;
-            this.label112.Location = new System.Drawing.Point(6, 37);
-            this.label112.Name = "label112";
-            this.label112.Size = new System.Drawing.Size(12, 13);
-            this.label112.TabIndex = 1;
-            this.label112.Text = "y";
-            // 
-            // label113
-            // 
-            this.label113.AutoSize = true;
-            this.label113.Location = new System.Drawing.Point(6, 15);
-            this.label113.Name = "label113";
-            this.label113.Size = new System.Drawing.Size(12, 13);
-            this.label113.TabIndex = 0;
-            this.label113.Text = "x";
-            // 
-            // tabPage19
-            // 
-            this.tabPage19.Controls.Add(this.textSprite16);
-            this.tabPage19.Controls.Add(this.textTexture16);
-            this.tabPage19.Controls.Add(this.label114);
-            this.tabPage19.Controls.Add(this.label115);
-            this.tabPage19.Controls.Add(this.groupBox32);
-            this.tabPage19.Controls.Add(this.groupBox33);
-            this.tabPage19.Location = new System.Drawing.Point(4, 22);
-            this.tabPage19.Name = "tabPage19";
-            this.tabPage19.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage19.Size = new System.Drawing.Size(675, 322);
-            this.tabPage19.TabIndex = 15;
-            this.tabPage19.Text = "Sprite 16";
-            this.tabPage19.UseVisualStyleBackColor = true;
-            // 
-            // textSprite16
-            // 
-            this.textSprite16.Location = new System.Drawing.Point(90, 192);
-            this.textSprite16.Name = "textSprite16";
-            this.textSprite16.Size = new System.Drawing.Size(100, 20);
-            this.textSprite16.TabIndex = 5;
-            // 
-            // textTexture16
-            // 
-            this.textTexture16.Location = new System.Drawing.Point(90, 219);
-            this.textTexture16.Name = "textTexture16";
-            this.textTexture16.Size = new System.Drawing.Size(100, 20);
-            this.textTexture16.TabIndex = 4;
-            // 
-            // label114
-            // 
-            this.label114.AutoSize = true;
-            this.label114.Location = new System.Drawing.Point(3, 222);
-            this.label114.Name = "label114";
-            this.label114.Size = new System.Drawing.Size(74, 13);
-            this.label114.TabIndex = 3;
-            this.label114.Text = "Texture Name";
-            // 
-            // label115
-            // 
-            this.label115.AutoSize = true;
-            this.label115.Location = new System.Drawing.Point(3, 195);
-            this.label115.Name = "label115";
-            this.label115.Size = new System.Drawing.Size(65, 13);
-            this.label115.TabIndex = 2;
-            this.label115.Text = "Sprite Name";
-            // 
-            // groupBox32
-            // 
-            this.groupBox32.Controls.Add(this.numPivotY16);
-            this.groupBox32.Controls.Add(this.numPivotX16);
-            this.groupBox32.Controls.Add(this.label116);
-            this.groupBox32.Controls.Add(this.label117);
-            this.groupBox32.Location = new System.Drawing.Point(7, 119);
-            this.groupBox32.Name = "groupBox32";
-            this.groupBox32.Size = new System.Drawing.Size(211, 64);
-            this.groupBox32.TabIndex = 1;
-            this.groupBox32.TabStop = false;
-            this.groupBox32.Text = "Pivot";
-            // 
-            // numPivotY16
-            // 
-            this.numPivotY16.Location = new System.Drawing.Point(80, 37);
-            this.numPivotY16.Name = "numPivotY16";
-            this.numPivotY16.Size = new System.Drawing.Size(120, 20);
-            this.numPivotY16.TabIndex = 5;
-            // 
-            // numPivotX16
-            // 
-            this.numPivotX16.Location = new System.Drawing.Point(80, 15);
-            this.numPivotX16.Name = "numPivotX16";
-            this.numPivotX16.Size = new System.Drawing.Size(120, 20);
-            this.numPivotX16.TabIndex = 4;
-            // 
-            // label116
-            // 
-            this.label116.AutoSize = true;
-            this.label116.Location = new System.Drawing.Point(6, 37);
-            this.label116.Name = "label116";
-            this.label116.Size = new System.Drawing.Size(12, 13);
-            this.label116.TabIndex = 1;
-            this.label116.Text = "y";
-            // 
-            // label117
-            // 
-            this.label117.AutoSize = true;
-            this.label117.Location = new System.Drawing.Point(6, 15);
-            this.label117.Name = "label117";
-            this.label117.Size = new System.Drawing.Size(12, 13);
-            this.label117.TabIndex = 0;
-            this.label117.Text = "x";
-            // 
-            // groupBox33
-            // 
-            this.groupBox33.Controls.Add(this.numRectHeight16);
-            this.groupBox33.Controls.Add(this.numRectWidth16);
-            this.groupBox33.Controls.Add(this.numRectY16);
-            this.groupBox33.Controls.Add(this.numRectX16);
-            this.groupBox33.Controls.Add(this.label118);
-            this.groupBox33.Controls.Add(this.label119);
-            this.groupBox33.Controls.Add(this.label120);
-            this.groupBox33.Controls.Add(this.label121);
-            this.groupBox33.Location = new System.Drawing.Point(7, 6);
-            this.groupBox33.Name = "groupBox33";
-            this.groupBox33.Size = new System.Drawing.Size(211, 107);
-            this.groupBox33.TabIndex = 0;
-            this.groupBox33.TabStop = false;
-            this.groupBox33.Text = "Rect";
-            // 
-            // numRectHeight16
-            // 
-            this.numRectHeight16.Location = new System.Drawing.Point(80, 81);
-            this.numRectHeight16.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.numRectHeight16.Name = "numRectHeight16";
-            this.numRectHeight16.Size = new System.Drawing.Size(120, 20);
-            this.numRectHeight16.TabIndex = 7;
-            // 
-            // numRectWidth16
-            // 
-            this.numRectWidth16.Location = new System.Drawing.Point(80, 59);
-            this.numRectWidth16.Maximum = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.numRectWidth16.Name = "numRectWidth16";
-            this.numRectWidth16.Size = new System.Drawing.Size(120, 20);
-            this.numRectWidth16.TabIndex = 6;
-            // 
-            // numRectY16
-            // 
-            this.numRectY16.Location = new System.Drawing.Point(80, 37);
-            this.numRectY16.Maximum = new decimal(new int[] {
-            1024,
-            0,
-            0,
-            0});
-            this.numRectY16.Name = "numRectY16";
-            this.numRectY16.Size = new System.Drawing.Size(120, 20);
-            this.numRectY16.TabIndex = 5;
-            // 
-            // numRectX16
-            // 
-            this.numRectX16.Location = new System.Drawing.Point(80, 15);
-            this.numRectX16.Maximum = new decimal(new int[] {
-            1024,
-            0,
-            0,
-            0});
-            this.numRectX16.Name = "numRectX16";
-            this.numRectX16.Size = new System.Drawing.Size(120, 20);
-            this.numRectX16.TabIndex = 4;
-            // 
-            // label118
-            // 
-            this.label118.AutoSize = true;
-            this.label118.Location = new System.Drawing.Point(6, 81);
-            this.label118.Name = "label118";
-            this.label118.Size = new System.Drawing.Size(36, 13);
-            this.label118.TabIndex = 3;
-            this.label118.Text = "height";
-            // 
-            // label119
-            // 
-            this.label119.AutoSize = true;
-            this.label119.Location = new System.Drawing.Point(6, 59);
-            this.label119.Name = "label119";
-            this.label119.Size = new System.Drawing.Size(32, 13);
-            this.label119.TabIndex = 2;
-            this.label119.Text = "width";
-            // 
-            // label120
-            // 
-            this.label120.AutoSize = true;
-            this.label120.Location = new System.Drawing.Point(6, 37);
-            this.label120.Name = "label120";
-            this.label120.Size = new System.Drawing.Size(12, 13);
-            this.label120.TabIndex = 1;
-            this.label120.Text = "y";
-            // 
-            // label121
-            // 
-            this.label121.AutoSize = true;
-            this.label121.Location = new System.Drawing.Point(6, 15);
-            this.label121.Name = "label121";
-            this.label121.Size = new System.Drawing.Size(12, 13);
-            this.label121.TabIndex = 0;
-            this.label121.Text = "x";
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(142, 38);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 5;
-            this.button3.Text = "Add Sprites";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(3, 43);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(93, 13);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Number Of Sprites";
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(223, 38);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(134, 23);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Add Equidistance Sprites";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox1.Location = new System.Drawing.Point(426, 6);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(259, 55);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(6, 6);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(97, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Load Spritesheet";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // SpriteSheetBox
+            // 
+            this.SpriteSheetBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.SpriteSheetBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.SpriteSheetBox.Location = new System.Drawing.Point(447, 6);
+            this.SpriteSheetBox.Name = "SpriteSheetBox";
+            this.SpriteSheetBox.Size = new System.Drawing.Size(240, 90);
+            this.SpriteSheetBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.SpriteSheetBox.TabIndex = 1;
+            this.SpriteSheetBox.TabStop = false;
+            // 
+            // LoadSpriteSheet
+            // 
+            this.LoadSpriteSheet.Location = new System.Drawing.Point(6, 6);
+            this.LoadSpriteSheet.Name = "LoadSpriteSheet";
+            this.LoadSpriteSheet.Size = new System.Drawing.Size(173, 40);
+            this.LoadSpriteSheet.TabIndex = 0;
+            this.LoadSpriteSheet.Text = "Load Spritesheet";
+            this.LoadSpriteSheet.UseVisualStyleBackColor = true;
+            this.LoadSpriteSheet.Click += new System.EventHandler(this.LoadSpriteSheet_Click);
             // 
             // tabPage2
             // 
@@ -4356,7 +1374,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(693, 484);
+            this.tabPage2.Size = new System.Drawing.Size(693, 485);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Characters";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -6858,6 +3876,11 @@
             0,
             0,
             0});
+            this.OnAmount.Minimum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            -2147483648});
             this.OnAmount.Name = "OnAmount";
             this.OnAmount.Size = new System.Drawing.Size(48, 20);
             this.OnAmount.TabIndex = 15;
@@ -11271,237 +8294,66 @@
             // 
             // tabPage3
             // 
-            this.tabPage3.Controls.Add(this.richTextBox1);
+            this.tabPage3.Controls.Add(this.JsonView);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(693, 484);
+            this.tabPage3.Size = new System.Drawing.Size(693, 485);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Json File";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // richTextBox1
+            // JsonView
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(3, 3);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.ReadOnly = true;
-            this.richTextBox1.Size = new System.Drawing.Size(687, 478);
-            this.richTextBox1.TabIndex = 0;
-            this.richTextBox1.Text = "";
+            this.JsonView.Location = new System.Drawing.Point(3, 3);
+            this.JsonView.Name = "JsonView";
+            this.JsonView.ReadOnly = true;
+            this.JsonView.Size = new System.Drawing.Size(687, 478);
+            this.JsonView.TabIndex = 0;
+            this.JsonView.Text = "";
             // 
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // Form1
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(725, 586);
+            this.ClientSize = new System.Drawing.Size(725, 587);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.groupBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MinimumSize = new System.Drawing.Size(680, 551);
-            this.Name = "Form1";
+            this.MinimumSize = new System.Drawing.Size(741, 626);
+            this.Name = "MainForm";
             this.Text = "Bloodlines Json Editor";
             this.groupBox1.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
-            this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            this.tabControl2.ResumeLayout(false);
-            this.tabPage4.ResumeLayout(false);
-            this.tabPage4.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numPivotY1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numPivotX1)).EndInit();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectHeight1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectWidth1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectY1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectX1)).EndInit();
-            this.tabPage5.ResumeLayout(false);
-            this.tabPage5.PerformLayout();
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numPivotY2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numPivotX2)).EndInit();
+            this.SpriteTab.ResumeLayout(false);
+            this.SpriteTab.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.EmptySpriteRows)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CurrentEditingSprite)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CurrentSpriteRow)).EndInit();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectHeight2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectWidth2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectY2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectX2)).EndInit();
-            this.tabPage6.ResumeLayout(false);
-            this.tabPage6.PerformLayout();
-            this.groupBox6.ResumeLayout(false);
-            this.groupBox6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numPivotY3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numPivotX3)).EndInit();
-            this.groupBox7.ResumeLayout(false);
-            this.groupBox7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectHeight3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectWidth3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectY3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectX3)).EndInit();
-            this.tabPage7.ResumeLayout(false);
-            this.tabPage7.PerformLayout();
-            this.groupBox8.ResumeLayout(false);
-            this.groupBox8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numPivotY4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numPivotX4)).EndInit();
-            this.groupBox9.ResumeLayout(false);
-            this.groupBox9.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectHeight4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectWidth4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectY4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectX4)).EndInit();
-            this.tabPage8.ResumeLayout(false);
-            this.tabPage8.PerformLayout();
-            this.groupBox10.ResumeLayout(false);
-            this.groupBox10.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numPivotY5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numPivotX5)).EndInit();
-            this.groupBox11.ResumeLayout(false);
-            this.groupBox11.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectHeight5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectWidth5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectY5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectX5)).EndInit();
-            this.tabPage9.ResumeLayout(false);
-            this.tabPage9.PerformLayout();
-            this.groupBox12.ResumeLayout(false);
-            this.groupBox12.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numPivotY6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numPivotX6)).EndInit();
-            this.groupBox13.ResumeLayout(false);
-            this.groupBox13.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectHeight6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectWidth6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectY6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectX6)).EndInit();
-            this.tabPage10.ResumeLayout(false);
-            this.tabPage10.PerformLayout();
-            this.groupBox14.ResumeLayout(false);
-            this.groupBox14.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numPivotY7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numPivotX7)).EndInit();
-            this.groupBox15.ResumeLayout(false);
-            this.groupBox15.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectHeight7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectWidth7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectY7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectX7)).EndInit();
-            this.tabPage11.ResumeLayout(false);
-            this.tabPage11.PerformLayout();
-            this.groupBox16.ResumeLayout(false);
-            this.groupBox16.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numPivotY8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numPivotX8)).EndInit();
-            this.groupBox17.ResumeLayout(false);
-            this.groupBox17.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectHeight8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectWidth8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectY8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectX8)).EndInit();
-            this.tabPage12.ResumeLayout(false);
-            this.tabPage12.PerformLayout();
-            this.groupBox18.ResumeLayout(false);
-            this.groupBox18.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numPivotY9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numPivotX9)).EndInit();
-            this.groupBox19.ResumeLayout(false);
-            this.groupBox19.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectHeight9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectWidth9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectY9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectX9)).EndInit();
-            this.tabPage13.ResumeLayout(false);
-            this.tabPage13.PerformLayout();
-            this.groupBox20.ResumeLayout(false);
-            this.groupBox20.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numPivotY10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numPivotX10)).EndInit();
-            this.groupBox21.ResumeLayout(false);
-            this.groupBox21.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectHeight10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectWidth10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectY10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectX10)).EndInit();
-            this.tabPage14.ResumeLayout(false);
-            this.tabPage14.PerformLayout();
-            this.groupBox22.ResumeLayout(false);
-            this.groupBox22.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numPivotY11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numPivotX11)).EndInit();
-            this.groupBox23.ResumeLayout(false);
-            this.groupBox23.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectHeight11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectWidth11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectY11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectX11)).EndInit();
-            this.tabPage15.ResumeLayout(false);
-            this.tabPage15.PerformLayout();
-            this.groupBox24.ResumeLayout(false);
-            this.groupBox24.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numPivotY12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numPivotX12)).EndInit();
-            this.groupBox25.ResumeLayout(false);
-            this.groupBox25.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectHeight12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectWidth12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectY12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectX12)).EndInit();
-            this.tabPage16.ResumeLayout(false);
-            this.tabPage16.PerformLayout();
-            this.groupBox26.ResumeLayout(false);
-            this.groupBox26.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numPivotY13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numPivotX13)).EndInit();
-            this.groupBox27.ResumeLayout(false);
-            this.groupBox27.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectHeight13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectWidth13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectY13)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectX13)).EndInit();
-            this.tabPage17.ResumeLayout(false);
-            this.tabPage17.PerformLayout();
-            this.groupBox28.ResumeLayout(false);
-            this.groupBox28.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numPivotY14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numPivotX14)).EndInit();
-            this.groupBox29.ResumeLayout(false);
-            this.groupBox29.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectHeight14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectWidth14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectY14)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectX14)).EndInit();
-            this.tabPage18.ResumeLayout(false);
-            this.tabPage18.PerformLayout();
-            this.groupBox30.ResumeLayout(false);
-            this.groupBox30.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numPivotY15)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numPivotX15)).EndInit();
-            this.groupBox31.ResumeLayout(false);
-            this.groupBox31.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectHeight15)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectWidth15)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectY15)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectX15)).EndInit();
-            this.tabPage19.ResumeLayout(false);
-            this.tabPage19.PerformLayout();
-            this.groupBox32.ResumeLayout(false);
-            this.groupBox32.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numPivotY16)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numPivotX16)).EndInit();
-            this.groupBox33.ResumeLayout(false);
-            this.groupBox33.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectHeight16)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectWidth16)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectY16)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numRectX16)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SpriteScaleX)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SpritePlacement)).EndInit();
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.spriteBox)).EndInit();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numRectHeight)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numRectWidth)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numRectY)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numRectX)).EndInit();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numPivotY)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numPivotX)).EndInit();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.SpriteRowNum)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SpritePerRow)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SpriteSheetBox)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabControlChar.ResumeLayout(false);
             this.tabPage21.ResumeLayout(false);
@@ -11675,327 +8527,13 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage SpriteTab;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.OpenFileDialog openFileDialog1;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        internal System.Windows.Forms.OpenFileDialog openFileDialog1;
+        internal System.Windows.Forms.NumericUpDown SpritePerRow;
         private System.Windows.Forms.TabPage tabPage20;
-        private System.Windows.Forms.TabControl tabControl2;
-        private System.Windows.Forms.TabPage tabPage4;
-        private System.Windows.Forms.TextBox textSprite1;
-        private System.Windows.Forms.TextBox textTexture1;
-        private System.Windows.Forms.Label TextureName1;
-        private System.Windows.Forms.Label SpriteName1;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.NumericUpDown numPivotY1;
-        private System.Windows.Forms.NumericUpDown numPivotX1;
-        private System.Windows.Forms.Label PivotY1;
-        private System.Windows.Forms.Label PivotX1;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.NumericUpDown numRectHeight1;
-        private System.Windows.Forms.NumericUpDown numRectWidth1;
-        private System.Windows.Forms.NumericUpDown numRectY1;
-        private System.Windows.Forms.NumericUpDown numRectX1;
-        private System.Windows.Forms.Label RectHeight1;
-        private System.Windows.Forms.Label RectWidth1;
-        private System.Windows.Forms.Label RectY1;
-        private System.Windows.Forms.Label RectX1;
-        private System.Windows.Forms.TabPage tabPage5;
-        private System.Windows.Forms.TextBox textSprite2;
-        private System.Windows.Forms.TextBox textTexture2;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.NumericUpDown numPivotY2;
-        private System.Windows.Forms.NumericUpDown numPivotX2;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.NumericUpDown numRectHeight2;
-        private System.Windows.Forms.NumericUpDown numRectWidth2;
-        private System.Windows.Forms.NumericUpDown numRectY2;
-        private System.Windows.Forms.NumericUpDown numRectX2;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TabPage tabPage6;
-        private System.Windows.Forms.TextBox textSprite3;
-        private System.Windows.Forms.TextBox textTexture3;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.GroupBox groupBox6;
-        private System.Windows.Forms.NumericUpDown numPivotY3;
-        private System.Windows.Forms.NumericUpDown numPivotX3;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.GroupBox groupBox7;
-        private System.Windows.Forms.NumericUpDown numRectHeight3;
-        private System.Windows.Forms.NumericUpDown numRectWidth3;
-        private System.Windows.Forms.NumericUpDown numRectY3;
-        private System.Windows.Forms.NumericUpDown numRectX3;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.TabPage tabPage7;
-        private System.Windows.Forms.TextBox textSprite4;
-        private System.Windows.Forms.TextBox textTexture4;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.GroupBox groupBox8;
-        private System.Windows.Forms.NumericUpDown numPivotY4;
-        private System.Windows.Forms.NumericUpDown numPivotX4;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.GroupBox groupBox9;
-        private System.Windows.Forms.NumericUpDown numRectHeight4;
-        private System.Windows.Forms.NumericUpDown numRectWidth4;
-        private System.Windows.Forms.NumericUpDown numRectY4;
-        private System.Windows.Forms.NumericUpDown numRectX4;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.TabPage tabPage8;
-        private System.Windows.Forms.TextBox textSprite5;
-        private System.Windows.Forms.TextBox textTexture5;
-        private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.GroupBox groupBox10;
-        private System.Windows.Forms.NumericUpDown numPivotY5;
-        private System.Windows.Forms.NumericUpDown numPivotX5;
-        private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.GroupBox groupBox11;
-        private System.Windows.Forms.NumericUpDown numRectHeight5;
-        private System.Windows.Forms.NumericUpDown numRectWidth5;
-        private System.Windows.Forms.NumericUpDown numRectY5;
-        private System.Windows.Forms.NumericUpDown numRectX5;
-        private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.TabPage tabPage9;
-        private System.Windows.Forms.TextBox textSprite6;
-        private System.Windows.Forms.TextBox textTexture6;
-        private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.Label label35;
-        private System.Windows.Forms.GroupBox groupBox12;
-        private System.Windows.Forms.NumericUpDown numPivotY6;
-        private System.Windows.Forms.NumericUpDown numPivotX6;
-        private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.Label label37;
-        private System.Windows.Forms.GroupBox groupBox13;
-        private System.Windows.Forms.NumericUpDown numRectHeight6;
-        private System.Windows.Forms.NumericUpDown numRectWidth6;
-        private System.Windows.Forms.NumericUpDown numRectY6;
-        private System.Windows.Forms.NumericUpDown numRectX6;
-        private System.Windows.Forms.Label label38;
-        private System.Windows.Forms.Label label39;
-        private System.Windows.Forms.Label label40;
-        private System.Windows.Forms.Label label41;
-        private System.Windows.Forms.TabPage tabPage10;
-        private System.Windows.Forms.TextBox textSprite7;
-        private System.Windows.Forms.TextBox textTexture7;
-        private System.Windows.Forms.Label label42;
-        private System.Windows.Forms.Label label43;
-        private System.Windows.Forms.GroupBox groupBox14;
-        private System.Windows.Forms.NumericUpDown numPivotY7;
-        private System.Windows.Forms.NumericUpDown numPivotX7;
-        private System.Windows.Forms.Label label44;
-        private System.Windows.Forms.Label label45;
-        private System.Windows.Forms.GroupBox groupBox15;
-        private System.Windows.Forms.NumericUpDown numRectHeight7;
-        private System.Windows.Forms.NumericUpDown numRectWidth7;
-        private System.Windows.Forms.NumericUpDown numRectY7;
-        private System.Windows.Forms.NumericUpDown numRectX7;
-        private System.Windows.Forms.Label label46;
-        private System.Windows.Forms.Label label47;
-        private System.Windows.Forms.Label label48;
-        private System.Windows.Forms.Label label49;
-        private System.Windows.Forms.TabPage tabPage11;
-        private System.Windows.Forms.TextBox textSprite8;
-        private System.Windows.Forms.TextBox textTexture8;
-        private System.Windows.Forms.Label label50;
-        private System.Windows.Forms.Label label51;
-        private System.Windows.Forms.GroupBox groupBox16;
-        private System.Windows.Forms.NumericUpDown numPivotY8;
-        private System.Windows.Forms.NumericUpDown numPivotX8;
-        private System.Windows.Forms.Label label52;
-        private System.Windows.Forms.Label label53;
-        private System.Windows.Forms.GroupBox groupBox17;
-        private System.Windows.Forms.NumericUpDown numRectHeight8;
-        private System.Windows.Forms.NumericUpDown numRectWidth8;
-        private System.Windows.Forms.NumericUpDown numRectY8;
-        private System.Windows.Forms.NumericUpDown numRectX8;
-        private System.Windows.Forms.Label label54;
-        private System.Windows.Forms.Label label55;
-        private System.Windows.Forms.Label label56;
-        private System.Windows.Forms.Label label57;
-        private System.Windows.Forms.TabPage tabPage12;
-        private System.Windows.Forms.TextBox textSprite9;
-        private System.Windows.Forms.TextBox textTexture9;
-        private System.Windows.Forms.Label label58;
-        private System.Windows.Forms.Label label59;
-        private System.Windows.Forms.GroupBox groupBox18;
-        private System.Windows.Forms.NumericUpDown numPivotY9;
-        private System.Windows.Forms.NumericUpDown numPivotX9;
-        private System.Windows.Forms.Label label60;
-        private System.Windows.Forms.Label label61;
-        private System.Windows.Forms.GroupBox groupBox19;
-        private System.Windows.Forms.NumericUpDown numRectHeight9;
-        private System.Windows.Forms.NumericUpDown numRectWidth9;
-        private System.Windows.Forms.NumericUpDown numRectY9;
-        private System.Windows.Forms.NumericUpDown numRectX9;
-        private System.Windows.Forms.Label label62;
-        private System.Windows.Forms.Label label63;
-        private System.Windows.Forms.Label label64;
-        private System.Windows.Forms.Label label65;
-        private System.Windows.Forms.TabPage tabPage13;
-        private System.Windows.Forms.TextBox textSprite10;
-        private System.Windows.Forms.TextBox textTexture10;
-        private System.Windows.Forms.Label label66;
-        private System.Windows.Forms.Label label67;
-        private System.Windows.Forms.GroupBox groupBox20;
-        private System.Windows.Forms.NumericUpDown numPivotY10;
-        private System.Windows.Forms.NumericUpDown numPivotX10;
-        private System.Windows.Forms.Label label68;
-        private System.Windows.Forms.Label label69;
-        private System.Windows.Forms.GroupBox groupBox21;
-        private System.Windows.Forms.NumericUpDown numRectHeight10;
-        private System.Windows.Forms.NumericUpDown numRectWidth10;
-        private System.Windows.Forms.NumericUpDown numRectY10;
-        private System.Windows.Forms.NumericUpDown numRectX10;
-        private System.Windows.Forms.Label label70;
-        private System.Windows.Forms.Label label71;
-        private System.Windows.Forms.Label label72;
-        private System.Windows.Forms.Label label73;
-        private System.Windows.Forms.TabPage tabPage14;
-        private System.Windows.Forms.TextBox textSprite11;
-        private System.Windows.Forms.TextBox textTexture11;
-        private System.Windows.Forms.Label label74;
-        private System.Windows.Forms.Label label75;
-        private System.Windows.Forms.GroupBox groupBox22;
-        private System.Windows.Forms.NumericUpDown numPivotY11;
-        private System.Windows.Forms.NumericUpDown numPivotX11;
-        private System.Windows.Forms.Label label76;
-        private System.Windows.Forms.Label label77;
-        private System.Windows.Forms.GroupBox groupBox23;
-        private System.Windows.Forms.NumericUpDown numRectHeight11;
-        private System.Windows.Forms.NumericUpDown numRectWidth11;
-        private System.Windows.Forms.NumericUpDown numRectY11;
-        private System.Windows.Forms.NumericUpDown numRectX11;
-        private System.Windows.Forms.Label label78;
-        private System.Windows.Forms.Label label79;
-        private System.Windows.Forms.Label label80;
-        private System.Windows.Forms.Label label81;
-        private System.Windows.Forms.TabPage tabPage15;
-        private System.Windows.Forms.TextBox textSprite12;
-        private System.Windows.Forms.TextBox textTexture12;
-        private System.Windows.Forms.Label label82;
-        private System.Windows.Forms.Label label83;
-        private System.Windows.Forms.GroupBox groupBox24;
-        private System.Windows.Forms.NumericUpDown numPivotY12;
-        private System.Windows.Forms.NumericUpDown numPivotX12;
-        private System.Windows.Forms.Label label84;
-        private System.Windows.Forms.Label label85;
-        private System.Windows.Forms.GroupBox groupBox25;
-        private System.Windows.Forms.NumericUpDown numRectHeight12;
-        private System.Windows.Forms.NumericUpDown numRectWidth12;
-        private System.Windows.Forms.NumericUpDown numRectY12;
-        private System.Windows.Forms.NumericUpDown numRectX12;
-        private System.Windows.Forms.Label label86;
-        private System.Windows.Forms.Label label87;
-        private System.Windows.Forms.Label label88;
-        private System.Windows.Forms.Label label89;
-        private System.Windows.Forms.TabPage tabPage16;
-        private System.Windows.Forms.TextBox textSprite13;
-        private System.Windows.Forms.TextBox textTexture13;
-        private System.Windows.Forms.Label label90;
-        private System.Windows.Forms.Label label91;
-        private System.Windows.Forms.GroupBox groupBox26;
-        private System.Windows.Forms.NumericUpDown numPivotY13;
-        private System.Windows.Forms.NumericUpDown numPivotX13;
-        private System.Windows.Forms.Label label92;
-        private System.Windows.Forms.Label label93;
-        private System.Windows.Forms.GroupBox groupBox27;
-        private System.Windows.Forms.NumericUpDown numRectHeight13;
-        private System.Windows.Forms.NumericUpDown numRectWidth13;
-        private System.Windows.Forms.NumericUpDown numRectY13;
-        private System.Windows.Forms.NumericUpDown numRectX13;
-        private System.Windows.Forms.Label label94;
-        private System.Windows.Forms.Label label95;
-        private System.Windows.Forms.Label label96;
-        private System.Windows.Forms.Label label97;
-        private System.Windows.Forms.TabPage tabPage17;
-        private System.Windows.Forms.TextBox textSprite14;
-        private System.Windows.Forms.TextBox textTexture14;
-        private System.Windows.Forms.Label label98;
-        private System.Windows.Forms.Label label99;
-        private System.Windows.Forms.GroupBox groupBox28;
-        private System.Windows.Forms.NumericUpDown numPivotY14;
-        private System.Windows.Forms.NumericUpDown numPivotX14;
-        private System.Windows.Forms.Label label100;
-        private System.Windows.Forms.Label label101;
-        private System.Windows.Forms.GroupBox groupBox29;
-        private System.Windows.Forms.NumericUpDown numRectHeight14;
-        private System.Windows.Forms.NumericUpDown numRectWidth14;
-        private System.Windows.Forms.NumericUpDown numRectY14;
-        private System.Windows.Forms.NumericUpDown numRectX14;
-        private System.Windows.Forms.Label label102;
-        private System.Windows.Forms.Label label103;
-        private System.Windows.Forms.Label label104;
-        private System.Windows.Forms.Label label105;
-        private System.Windows.Forms.TabPage tabPage18;
-        private System.Windows.Forms.TextBox textSprite15;
-        private System.Windows.Forms.TextBox textTexture15;
-        private System.Windows.Forms.Label label106;
-        private System.Windows.Forms.Label label107;
-        private System.Windows.Forms.GroupBox groupBox30;
-        private System.Windows.Forms.NumericUpDown numPivotY15;
-        private System.Windows.Forms.NumericUpDown numPivotX15;
-        private System.Windows.Forms.Label label108;
-        private System.Windows.Forms.Label label109;
-        private System.Windows.Forms.GroupBox groupBox31;
-        private System.Windows.Forms.NumericUpDown numRectHeight15;
-        private System.Windows.Forms.NumericUpDown numRectWidth15;
-        private System.Windows.Forms.NumericUpDown numRectY15;
-        private System.Windows.Forms.NumericUpDown numRectX15;
-        private System.Windows.Forms.Label label110;
-        private System.Windows.Forms.Label label111;
-        private System.Windows.Forms.Label label112;
-        private System.Windows.Forms.Label label113;
-        private System.Windows.Forms.TabPage tabPage19;
-        private System.Windows.Forms.TextBox textSprite16;
-        private System.Windows.Forms.TextBox textTexture16;
-        private System.Windows.Forms.Label label114;
-        private System.Windows.Forms.Label label115;
-        private System.Windows.Forms.GroupBox groupBox32;
-        private System.Windows.Forms.NumericUpDown numPivotY16;
-        private System.Windows.Forms.NumericUpDown numPivotX16;
-        private System.Windows.Forms.Label label116;
-        private System.Windows.Forms.Label label117;
-        private System.Windows.Forms.GroupBox groupBox33;
-        private System.Windows.Forms.NumericUpDown numRectHeight16;
-        private System.Windows.Forms.NumericUpDown numRectWidth16;
-        private System.Windows.Forms.NumericUpDown numRectY16;
-        private System.Windows.Forms.NumericUpDown numRectX16;
-        private System.Windows.Forms.Label label118;
-        private System.Windows.Forms.Label label119;
-        private System.Windows.Forms.Label label120;
-        private System.Windows.Forms.Label label121;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox JsonView;
         private System.Windows.Forms.TabControl tabControlChar;
         private System.Windows.Forms.TabPage tabPage21;
         private System.Windows.Forms.Label label138;
@@ -12379,9 +8917,60 @@
         private System.Windows.Forms.CheckBox SkinEveryLevelUp;
         private System.Windows.Forms.TextBox CharName;
         private System.Windows.Forms.Label label287;
-        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.ComboBox spriteCombo;
+        internal System.Windows.Forms.TextBox TextureName;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.GroupBox groupBox2;
+        internal System.Windows.Forms.NumericUpDown SpriteRowNum;
+        internal System.Windows.Forms.TextBox ImageHeight;
+        internal System.Windows.Forms.TextBox ImageWidth;
+        internal System.Windows.Forms.GroupBox groupBox1;
+        internal System.Windows.Forms.TabControl tabControl1;
+        internal System.Windows.Forms.Button LoadSpriteSheet;
+        internal System.Windows.Forms.PictureBox SpriteSheetBox;
+        internal System.Windows.Forms.Button button4;
+        internal System.Windows.Forms.Button button11;
+        internal System.Windows.Forms.ComboBox spriteCombo;
+        internal System.Windows.Forms.GroupBox groupBox4;
+        internal System.Windows.Forms.GroupBox groupBox5;
+        internal System.Windows.Forms.NumericUpDown CurrentSpriteRow;
+        internal System.Windows.Forms.Label label4;
+        internal System.Windows.Forms.NumericUpDown CurrentEditingSprite;
+        internal System.Windows.Forms.Label label5;
+        internal System.Windows.Forms.NumericUpDown EmptySpriteRows;
+        internal System.Windows.Forms.Label label6;
+        internal System.Windows.Forms.SaveFileDialog saveFileDialog1;
+        internal System.Windows.Forms.Label label1;
+        internal System.Windows.Forms.TextBox SpriteName;
+        internal System.Windows.Forms.Label TextureName1;
+        internal System.Windows.Forms.Label SpriteName1;
+        internal System.Windows.Forms.NumericUpDown numPivotY;
+        internal System.Windows.Forms.NumericUpDown numPivotX;
+        internal System.Windows.Forms.Label PivotY;
+        internal System.Windows.Forms.Label PivotX;
+        internal System.Windows.Forms.NumericUpDown numRectHeight;
+        internal System.Windows.Forms.NumericUpDown numRectWidth;
+        internal System.Windows.Forms.NumericUpDown numRectY;
+        internal System.Windows.Forms.NumericUpDown numRectX;
+        internal System.Windows.Forms.Label RectHeight;
+        internal System.Windows.Forms.Label RectWidth;
+        internal System.Windows.Forms.Label RectY;
+        internal System.Windows.Forms.Label RectX;
+        internal System.Windows.Forms.Label SpriteRows;
+        internal System.Windows.Forms.Label label2;
+        internal System.Windows.Forms.Label label3;
+        internal System.Windows.Forms.PictureBox spriteBox;
+        private System.Windows.Forms.Panel panel1;
+        internal System.Windows.Forms.NumericUpDown SpriteScaleX;
+        internal System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button button1;
+        internal System.Windows.Forms.NumericUpDown SpritePlacement;
+        internal System.Windows.Forms.Label label9;
+        internal System.Windows.Forms.Label label8;
+        private System.Windows.Forms.ComboBox SpriteAnimation;
+        private System.Windows.Forms.CheckBox CustomPivot;
+        private System.Windows.Forms.CheckBox GenerateSpriteInfo;
+        internal System.Windows.Forms.Label label10;
+        internal System.Windows.Forms.TextBox SpriteNameAppend;
     }
 }
 

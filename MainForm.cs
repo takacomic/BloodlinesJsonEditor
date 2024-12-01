@@ -4,178 +4,331 @@ using Newtonsoft.Json.Serialization;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.Drawing.Imaging;
 using System.IO;
 using System.IO.Compression;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Windows.Forms;
-using static System.Net.Mime.MediaTypeNames;
 
 namespace BloodlineJsonEditor
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
+        
         JsonFile jsonFile = new JsonFile();
         EmptyJson json = new EmptyJson();
-        TabPage[] tabPages;
-        List<string> sprites = new List<string>();
-        List<string> textures = new List<string>();
+        Image imageStore;
+        SpriteHelper spriteHelper = new SpriteHelper();
+        SpriteObject spriteObject = new SpriteObject();
         Dictionary<string, StatModifier> AltStats = new Dictionary<string, StatModifier>();
         Dictionary<string, CharacterObject> Characters = new Dictionary<string, CharacterObject>();
         Dictionary<string, SkinObject> Skins = new Dictionary<string, SkinObject>();
-        NumericUpDown[] rectXs;
-        NumericUpDown[] rectYs;
-        NumericUpDown[] rectWidths;
-        NumericUpDown[] rectHeights;
-        NumericUpDown[] pivotXs;
-        NumericUpDown[] pivotYs;
-        TextBox[] spriteNames;
-        TextBox[] textureNames;
         Dictionary<string, byte[]> spriteSheets = new Dictionary<string, byte[]>();
 
-        public Form1()
+        public MainForm()
         {
+            spriteHelper = spriteHelper.Instance;
+            spriteHelper.mainForm = this;
             InitializeComponent();
-            pictureBox1.Paint += pictureBox1_Paint;
-            TabPage[] tabPages2 = { tabPage4, tabPage5, tabPage6, tabPage7, tabPage8, tabPage9, tabPage10, tabPage11, 
-                tabPage12, tabPage13, tabPage14, tabPage15, tabPage16, tabPage17, tabPage18, tabPage19 };
-            tabPages = tabPages2;
-            foreach (TabPage page in tabPages)
-            {
-                tabControl2.TabPages.Remove(page);
-            }
-
+            SpriteSheetBox.Paint += pictureBox1_Paint;
             tabControlChar.TabPages.Remove(tabPageCharOn);
             tabControlSkins.TabPages.Remove(SkinOnEveryLevelUp);
-
-            // Probably a better way than doing this
-            NumericUpDown[] rectXs2 = { numRectX1, numRectX2, numRectX3, numRectX4, numRectX5, numRectX6, numRectX7, numRectX8,
-                numRectX9, numRectX10, numRectX11, numRectX12, numRectX13, numRectX14, numRectX15, numRectX16 };
-            NumericUpDown[] rectYs2 = { numRectY1, numRectY2, numRectY3, numRectY4, numRectY5, numRectY6, numRectY7, numRectY8,
-                numRectY9, numRectY10, numRectY11, numRectY12, numRectY13, numRectY14, numRectY15, numRectY16 };
-            NumericUpDown[] rectWidths2 = { numRectWidth1, numRectWidth2, numRectWidth3, numRectWidth4, numRectWidth5, numRectWidth6, numRectWidth7, numRectWidth8,
-                numRectWidth9, numRectWidth10, numRectWidth11, numRectWidth12, numRectWidth13, numRectWidth14, numRectWidth15, numRectWidth16 };
-            NumericUpDown[] rectHeights2 = { numRectHeight1, numRectHeight2, numRectHeight3, numRectHeight4, numRectHeight5, numRectHeight6, numRectHeight7, numRectHeight8,
-                numRectHeight9, numRectHeight10, numRectHeight11, numRectHeight12, numRectHeight13, numRectHeight14, numRectHeight15, numRectHeight16 };
-            NumericUpDown[] pivotXs2 = { numPivotX1, numPivotX2, numPivotX3, numPivotX4, numPivotX5, numPivotX6, numPivotX7, numPivotX8,
-                numPivotX9, numPivotX10, numPivotX11, numPivotX12, numPivotX13, numPivotX14, numPivotX15, numPivotX16 };
-            NumericUpDown[] pivotYs2 = { numPivotY1, numPivotY2, numPivotY3, numPivotY4, numPivotY5, numPivotY6, numPivotY7, numPivotY8,
-                numPivotY9, numPivotY10, numPivotY11, numPivotY12, numPivotY13, numPivotY14, numPivotY15, numPivotY16 };
-            TextBox[] spriteNames2 = { textSprite1, textSprite2, textSprite3, textSprite4, textSprite5, textSprite6, textSprite7, textSprite8,
-                textSprite9, textSprite10, textSprite11, textSprite12, textSprite13, textSprite14, textSprite15, textSprite16 };
-            TextBox[] textureNames2 = { textTexture1, textTexture2, textTexture3, textTexture4, textTexture5, textTexture6, textTexture7, textTexture8,
-                textTexture9, textTexture10, textTexture11, textTexture12, textTexture13, textTexture14, textTexture15, textTexture16 };
-
-            rectXs = rectXs2;
-            rectYs = rectYs2;
-            rectWidths = rectWidths2;
-            rectHeights = rectHeights2;
-            pivotXs = pivotXs2;
-            pivotYs = pivotYs2;
-            spriteNames = spriteNames2;
-            textureNames = textureNames2;
             jsonFile.wepSet();
 
             string parsedJson = JsonConvert.SerializeObject(json, Formatting.Indented);
-            richTextBox1.Text = parsedJson;
+            JsonView.Text = parsedJson;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        ///
+        /// Start Sprite Section
+        ///
+        internal void LoadSpriteSheet_Click(object sender, EventArgs e)
         {
             openFileDialog1.Filter = "Image|*.png;*.jpg;*.bmp;*.gif";
-            openFileDialog1.ShowDialog();
-            string selectedFileName = openFileDialog1.FileName;
-            pictureBox1.Load(selectedFileName);
-        }
-
-        private void pictureBox1_Paint(object sender, EventArgs e)
-        {
-            if (pictureBox1.Image != null)
+            if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
-                button2.Enabled = true;
-                button2.Visible = true;
+                SpriteSheetBox.Load(openFileDialog1.FileName);
+                spriteBox.Load(openFileDialog1.FileName);
+                spriteBox.Image.RotateFlip(RotateFlipType.RotateNoneFlipY);
+                imageStore = SpriteSheetBox.Image;
+                ImageWidth.Text = SpriteSheetBox.Image.Width.ToString();
+                ImageHeight.Text = SpriteSheetBox.Image.Height.ToString();
+                string[] filename = SpriteSheetBox.ImageLocation.Split('.');
+                filename[0] = filename[0].Substring(filename[0].LastIndexOf("\\"));
+                filename[0] = filename[0].Remove(0, 1);
+                TextureName.Text = filename[0];
+            }
+        }
+        internal void pictureBox1_Paint(object sender, EventArgs e)
+        {
+            if (SpriteSheetBox.Image != null)
+            {
+                GenerateSpriteInfo.Enabled = true;
+                GenerateSpriteInfo.Visible = true;
             }
             else
             {
-                button2.Visible = false;
-                button2.Enabled = false;
+                GenerateSpriteInfo.Visible = false;
+                GenerateSpriteInfo.Enabled = false;
             }
         }
-
-        private void button3_Click(object sender, EventArgs e)
+        internal void SpriteRowNum_ValueChanged(object sender, EventArgs e)
         {
-            for (int i = 0; i < numericUpDown1.Value; i++)
+            if (SpriteRowNum.Value < CurrentSpriteRow.Value)
             {
-                if (!tabControl2.TabPages.Contains(tabPages[i])) tabControl2.TabPages.Insert(i, tabPages[i]);
+                MessageBox.Show("Can't set Number of Sprite Rows under the Current Editing Sprite Row");
+                SpriteRowNum.Value = CurrentSpriteRow.Maximum;
             }
-        }
+            else
+                CurrentSpriteRow.Maximum = SpriteRowNum.Value;
 
-        private void button2_Click(object sender, EventArgs e)
+
+        }
+        internal void SpritePerRow_ValueChanged(object sender, EventArgs e)
         {
-            for (int i = 0; i < numericUpDown1.Value; i++)
+            if (SpritePerRow.Value < EmptySpriteRows.Value)
             {
-                string[] filename = pictureBox1.ImageLocation.Split('.');
-                filename[0] = filename[0].Substring(filename[0].LastIndexOf("\\"));
-                filename[0] = filename[0].Remove(0, 1);
-                int baseWidth = pictureBox1.Image.Width / (int)numericUpDown1.Value;
-                rectXs[i].Value = baseWidth * i;
-                rectWidths[i].Value = baseWidth;
-                rectHeights[i].Value = pictureBox1.Image.Height;
-                pivotXs[i].Value = baseWidth / 2;
-                spriteNames[i].Text = filename[0] + "_0ChangeMe." + filename[1];
-                textureNames[i].Text = filename[0] + "." + filename[1];
-                if (!tabControl2.TabPages.Contains(tabPages[i])) tabControl2.TabPages.Insert(i, tabPages[i]);
+                MessageBox.Show("Can't set Number of Sprites per Row under the Empty Sprite Slots in Row");
+                SpritePerRow.Value = EmptySpriteRows.Maximum;
+            }
+            else if (SpritePerRow.Value < CurrentEditingSprite.Value)
+            {
+                MessageBox.Show("Can't set Number of Sprites per Row under the Current Editing Sprite in Row");
+                SpritePerRow.Value = EmptySpriteRows.Maximum;
+            }
+            else
+            {
+                CurrentEditingSprite.Maximum = SpritePerRow.Value;
+                EmptySpriteRows.Maximum = SpritePerRow.Value - 1;
             }
         }
+        internal void EmptySpriteRows_ValueChanged(object sender, EventArgs e)
+        {
+            if (EmptySpriteRows.Value + CurrentEditingSprite.Value > SpritePerRow.Value)
+            {
+                MessageBox.Show("Can't set Empty Sprites per Row above the Current Editing Sprite in Row");
+                EmptySpriteRows.Value -= 1;
+            }
+            else
+            {
+                CurrentEditingSprite.Maximum = SpritePerRow.Value - EmptySpriteRows.Value;
+            }
+        }
+        internal void CurrentSpriteRow_ValueChanged(object sender, EventArgs e)
+        {
+            CurrentEditingSprite.ValueChanged -= CurrrentEditingSprite_ValueChanged;
+            CurrentEditingSprite.Value = 1;
+            spriteHelper.CurrentSprite = 0;
+            CurrentEditingSprite.ValueChanged += CurrrentEditingSprite_ValueChanged;
 
+            spriteHelper.CurrentRow = (int)CurrentSpriteRow.Value - 1;
+            spriteObject = spriteHelper.GetSprite();
+            SpriteObjectSet();
+        }
+        internal void CurrrentEditingSprite_ValueChanged(object sender, EventArgs e)
+        {
+            SpriteObjectValueSet();
+
+            spriteHelper.CurrentSprite = (int)CurrentEditingSprite.Value - 1;
+            spriteObject = spriteHelper.GetSprite();
+
+            SpriteObjectSet();
+        }
+        private void GenerateSpriteInfo_CheckedChanged(object sender, EventArgs e)
+        {
+            if (GenerateSpriteInfo.Checked)
+            {
+                int baseWidth = imageStore.Width / (int)SpritePerRow.Value;
+                int baseHeight = imageStore.Height / (int)SpriteRowNum.Value;
+                string filename = SpriteSheetBox.ImageLocation.Split('.')[0];
+                filename = filename.Substring(filename.LastIndexOf("\\")).Remove(0, 1);
+
+                SpriteName.Text = "";
+                TextureName.Text = filename;
+                numRectX.Value = baseWidth * ((int)CurrentEditingSprite.Value - 1);
+                numRectY.Value = baseHeight * ((int)CurrentSpriteRow.Value - 1);
+                numRectWidth.Value = baseWidth;
+                numRectHeight.Value = baseHeight;
+                numPivotX.Value = baseWidth / 2;
+                numPivotY.Value = 0;
+            }
+        }
+        private void numRectX_ValueChanged(object sender, EventArgs e)
+        {
+            spriteBox.Left = -(int)numRectX.Value * (int)SpriteScaleX.Value;
+        }
+        private void numRectY_ValueChanged(object sender, EventArgs e)
+        {
+            spriteBox.Top = -(int)numRectY.Value * (int)SpriteScaleX.Value;
+        }
+        private void numRectWidth_ValueChanged(object sender, EventArgs e)
+        {
+            panel1.Width = (int)numRectWidth.Value * (int)SpriteScaleX.Value;
+            if (!CustomPivot.Checked)
+                numPivotX.Value = (int)numRectWidth.Value / 2;
+        }
+        private void numRectHeight_ValueChanged(object sender, EventArgs e)
+        {
+            panel1.Height = (int)numRectHeight.Value * (int)SpriteScaleX.Value;
+        }
+        private void SpriteScaleX_ValueChanged(object sender, EventArgs e)
+        {
+            panel1.Height = (int)numRectHeight.Value * (int)SpriteScaleX.Value;
+            panel1.Width = (int)numRectWidth.Value * (int)SpriteScaleX.Value;
+            spriteBox.Image = ResizeImage(imageStore, imageStore.Width * (int)SpriteScaleX.Value, imageStore.Height * (int)SpriteScaleX.Value);
+            spriteBox.Image.RotateFlip(RotateFlipType.RotateNoneFlipY);
+            numRectX.Value += 1;
+            numRectY.Value += 1;
+            numRectX.Value -= 1;
+            numRectY.Value -= 1;
+        }
+        private void CustomPivot_CheckedChanged(object sender, EventArgs e)
+        {
+            if (CustomPivot.Checked)
+            {
+                numPivotX.ReadOnly = false;
+                numPivotX.Enabled = true;
+            }
+            else
+            {
+                numPivotX.ReadOnly = true;
+                numPivotX.Enabled = false;
+            }
+        }
+        private void SpriteAnimation_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            SpriteNameAppend.Text = $"_{SpriteAnimation.Text.ToLower()}0{(int)SpritePlacement.Value}";
+        }
+        private void SpritePlacement_ValueChanged(object sender, EventArgs e)
+        {
+            SpriteNameAppend.Text = $"_{SpriteAnimation.Text.ToLower()}0{(int)SpritePlacement.Value}";
+        }
+        private void SpriteObjectSet()
+        {
+            if (spriteObject.IsEmpty())
+            {
+                SpriteName.Text = spriteObject.SpriteName.Split('_')[0];
+                TextureName.Text = spriteObject.TextureName.Split('.')[0];
+                SpriteRect rect = spriteObject.Rect;
+                numRectX.Value = rect.X;
+                numRectY.Value = rect.Y;
+                numRectWidth.Value = rect.Width;
+                numRectHeight.Value = rect.Height;
+                SpritePivot pivot = spriteObject.Pivot;
+                numPivotX.Value = pivot.X;
+                numPivotY.Value = pivot.Y;
+                SpriteAnimation.Text = spriteObject.AnimationType;
+                SpritePlacement.Value = spriteObject.SpritePlacement;
+            }
+            else if (GenerateSpriteInfo.Checked)
+            {
+                int baseWidth = imageStore.Width / (int)SpritePerRow.Value;
+                int baseHeight = imageStore.Height / (int)SpriteRowNum.Value;
+                string filename = SpriteSheetBox.ImageLocation.Split('.')[0];
+                filename = filename.Substring(filename.LastIndexOf("\\")).Remove(0, 1);
+
+                SpriteName.Text = "";
+                TextureName.Text = filename;
+                numRectX.Value = baseWidth * ((int)CurrentEditingSprite.Value - 1);
+                numRectY.Value = baseHeight * ((int)CurrentSpriteRow.Value - 1);
+                numRectWidth.Value = baseWidth;
+                numRectHeight.Value = baseHeight;
+                numPivotX.Value = baseWidth / 2;
+                numPivotY.Value = 0;
+            }
+            else
+            {
+                string filename = SpriteSheetBox.ImageLocation.Split('.')[0];
+                filename = filename.Substring(filename.LastIndexOf("\\")).Remove(0, 1);
+
+                SpriteName.Text = "";
+                TextureName.Text = filename;
+                numRectX.Value = 0;
+                numRectY.Value = 0;
+                numRectWidth.Value = 0;
+                numRectHeight.Value = 0;
+                numPivotX.Value = 0;
+                numPivotY.Value = 0;
+            }
+        }
+        private void SpriteObjectValueSet()
+        {
+            spriteObject.SpriteName = SpriteName.Text + SpriteNameAppend.Text + ".png";
+            spriteObject.TextureName = TextureName.Text + ".png";
+            SpriteRect rect = new SpriteRect();
+            rect.X = (int)numRectX.Value;
+            rect.Y = (int)numRectY.Value;
+            rect.Width = (int)numRectWidth.Value;
+            rect.Height = (int)numRectHeight.Value;
+            SpritePivot pivot = new SpritePivot();
+            pivot.X = (int)numPivotX.Value;
+            pivot.Y = (int)numPivotY.Value;
+            spriteObject.Pivot = pivot;
+            spriteObject.Rect = rect;
+            spriteObject.AnimationType = SpriteAnimation.Text;
+            spriteObject.SpritePlacement = (int)SpritePlacement.Value;
+
+            if (spriteHelper.ChangedSprite(spriteObject))
+                spriteHelper.AddSprite(spriteObject);
+        }
+        private void SpriteName_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar.Equals('.'))
+            {
+                e.Handled = true;
+                MessageBox.Show("You do not need to add .png");
+            }
+            else
+                e.Handled = false;
+        }
+        private static Bitmap ResizeImage(Image image, int width, int height)
+        {
+            var destRect = new Rectangle(0, 0, width, height);
+            var destImage = new Bitmap(width, height);
+
+            destImage.SetResolution(image.HorizontalResolution, image.VerticalResolution);
+
+            using (var graphics = Graphics.FromImage(destImage))
+            {
+                graphics.CompositingMode = System.Drawing.Drawing2D.CompositingMode.SourceCopy;
+                graphics.CompositingQuality = System.Drawing.Drawing2D.CompositingQuality.HighQuality;
+                graphics.InterpolationMode = System.Drawing.Drawing2D.InterpolationMode.HighQualityBicubic;
+                graphics.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.HighQuality;
+                graphics.PixelOffsetMode = System.Drawing.Drawing2D.PixelOffsetMode.HighQuality;
+
+                using (var wrapmode = new ImageAttributes())
+                {
+                    wrapmode.SetWrapMode(System.Drawing.Drawing2D.WrapMode.TileFlipX);
+                    graphics.DrawImage(image, destRect, 0, 0, image.Width, image.Height, GraphicsUnit.Pixel, wrapmode);
+                }
+            }
+
+            return destImage;
+        }
         private void button4_Click(object sender, EventArgs e)
         {
-            List<SpriteObject> spriteArray = json.Sprites;
-            if (pictureBox1.Image != null)
+            SpriteObjectValueSet();
+            spriteHelper.AddSprite(spriteObject);
+            if (SpriteSheetBox.Image != null)
             {
-                string[] filename = pictureBox1.ImageLocation.Split('.');
-                filename[0] = filename[0].Substring(filename[0].LastIndexOf("\\"));
-                filename[0] = filename[0].Remove(0, 1);
+                string filename = SpriteSheetBox.ImageLocation.Split('.')[0];
+                filename = filename.Substring(filename.LastIndexOf("\\")).Remove(0, 1);
                 ImageConverter imageConverter = new ImageConverter();
-                byte[] bytes = (byte[])imageConverter.ConvertTo(pictureBox1.Image, typeof(byte[]));
-                if (!spriteSheets.ContainsValue(bytes)) spriteSheets.Add(filename[0] + "." + filename[1], bytes);
+                byte[] bytes = (byte[])imageConverter.ConvertTo(SpriteSheetBox.Image, typeof(byte[]));
+                if (!spriteSheets.ContainsKey(filename + ".png")) spriteSheets.Add(filename + ".png", bytes);
             }
-
-            for (int i = 0; i < tabControl2.TabPages.Count; i++)
-            {
-                SpriteObject sprite = new SpriteObject();
-                SpriteRect rect = new SpriteRect();
-                SpritePivot pivot = new SpritePivot();
-                
-                rect.X = (int)rectXs[i].Value;
-                rect.Y = (int)rectYs[i].Value;
-                rect.Width = (int)rectWidths[i].Value;
-                rect.Height = (int)rectHeights[i].Value;
-                pivot.X = (int)pivotXs[i].Value;
-                pivot.Y = (int)pivotYs[i].Value;
-                sprite.Rect = rect;
-                sprite.Pivot = pivot;
-                sprite.SpriteName = spriteNames[i].Text;
-                sprite.TextureName = textureNames[i].Text;
-                json.Sprites.Add(sprite);
-
-                if (!SkinSprite.Items.Contains(sprite.SpriteName))
-                {
-                    SkinSprite.Items.Add(sprite.SpriteName);
-                    spriteCombo.Items.Add(sprite.SpriteName);
-                }
-                if (!SkinTexture.Items.Contains(sprite.TextureName))
-                {
-                    SkinTexture.Items.Add(sprite.TextureName);
-                }
-            }
-            string parsedJson = JsonConvert.SerializeObject(json, Formatting.Indented,
+            string parsedJson = JsonConvert.SerializeObject(spriteHelper.RegisterSprites(json), Formatting.Indented,
                 new JsonSerializerSettings()
                 {
                     ReferenceLoopHandling = ReferenceLoopHandling.Ignore,
                     DefaultValueHandling = DefaultValueHandling.Ignore
                 });
-            richTextBox1.Text = parsedJson;
+            JsonView.Text = parsedJson;
         }
+        ///
+        /// End Sprite Section
+        ///
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -491,7 +644,7 @@ namespace BloodlineJsonEditor
                     DefaultValueHandling = DefaultValueHandling.Ignore,
                     NullValueHandling = NullValueHandling.Ignore,
                 });
-            richTextBox1.Text = parsedJson;
+            JsonView.Text = parsedJson;
         }
 
         private void button8_Click(object sender, EventArgs e)
@@ -509,7 +662,7 @@ namespace BloodlineJsonEditor
                     ReferenceLoopHandling = ReferenceLoopHandling.Ignore,
                     DefaultValueHandling = DefaultValueHandling.Ignore
                 });
-            richTextBox1.Text = parsedJson;
+            JsonView.Text = parsedJson;
         }
 
         private void SkinEveryLevelUp_CheckedChanged(object sender, EventArgs e)
