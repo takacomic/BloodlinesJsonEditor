@@ -347,6 +347,10 @@ namespace BloodlineJsonEditor
             {
                 MessageBox.Show($"{SkinType.Text} already has stats assigned. Delete Them First");
             }
+            else if (SkinSprite.Text == "Select A _01 Sprite" || SkinTexture.Text == "Select A Texture")
+            {
+                MessageBox.Show($"Add a Texture and/or Sprite first");
+            }
             else
             {
                 Skins.Add($"{SkinType.Text}", skin.Cleaner());
@@ -476,7 +480,11 @@ namespace BloodlineJsonEditor
 
             if (Characters.ContainsKey($"{CharName.Text}"))
             {
-                MessageBox.Show($"{SkinType.Text} already has stats assigned. Delete Them First");
+                MessageBox.Show($"{SkinType.Text} already exists. Delete Them First");
+            }
+            else if (character.Skins.Count < 1)
+            {
+                MessageBox.Show($"A Skin has not been added, Please add one first");
             }
             else
             {

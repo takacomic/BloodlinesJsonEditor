@@ -8897,6 +8897,7 @@
             this.SkinTexture.Name = "SkinTexture";
             this.SkinTexture.Size = new System.Drawing.Size(121, 21);
             this.SkinTexture.TabIndex = 46;
+            this.SkinTexture.Text = "Select A Texture";
             // 
             // label234
             // 
@@ -8914,6 +8915,7 @@
             this.SkinSprite.Name = "SkinSprite";
             this.SkinSprite.Size = new System.Drawing.Size(121, 21);
             this.SkinSprite.TabIndex = 44;
+            this.SkinSprite.Text = "Select A _01 Sprite";
             // 
             // SkinHiddenWeapons
             // 
