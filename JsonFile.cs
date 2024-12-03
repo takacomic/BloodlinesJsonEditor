@@ -17,6 +17,7 @@ namespace BloodlineJsonEditor
         //Why this worked but not setting during initialization beats me
         public void wepSet()
         {
+            wepNameToKey.Add("Nothing", "VOID");
             wepNameToKey.Add("Magic Wand", "MAGIC_MISSILE");
             wepNameToKey.Add("Holy Wand", "HOLY_MISSILE" ); 
             wepNameToKey.Add("Whip", "WHIP" ); 

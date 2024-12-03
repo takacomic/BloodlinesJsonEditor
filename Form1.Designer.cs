@@ -4616,6 +4616,7 @@
             // 
             this.CharStartingWeapon.FormattingEnabled = true;
             this.CharStartingWeapon.Items.AddRange(new object[] {
+            "Nothing",
             "Magic Wand",
             "Holy Wand",
             "Whip",
