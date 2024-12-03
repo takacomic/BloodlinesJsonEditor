@@ -47,7 +47,6 @@
             this.SpriteNameAppend = new System.Windows.Forms.TextBox();
             this.SpriteScaleX = new System.Windows.Forms.NumericUpDown();
             this.label7 = new System.Windows.Forms.Label();
-            this.CustomPivot = new System.Windows.Forms.CheckBox();
             this.SpritePlacement = new System.Windows.Forms.NumericUpDown();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -63,11 +62,6 @@
             this.RectWidth = new System.Windows.Forms.Label();
             this.RectY = new System.Windows.Forms.Label();
             this.RectX = new System.Windows.Forms.Label();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.numPivotY = new System.Windows.Forms.NumericUpDown();
-            this.numPivotX = new System.Windows.Forms.NumericUpDown();
-            this.PivotY = new System.Windows.Forms.Label();
-            this.PivotX = new System.Windows.Forms.Label();
             this.SpriteName1 = new System.Windows.Forms.Label();
             this.TextureName1 = new System.Windows.Forms.Label();
             this.SpriteName = new System.Windows.Forms.TextBox();
@@ -488,9 +482,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numRectWidth)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numRectY)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numRectX)).BeginInit();
-            this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numPivotY)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numPivotX)).BeginInit();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SpriteRowNum)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.SpritePerRow)).BeginInit();
@@ -846,14 +837,12 @@
             this.groupBox5.Controls.Add(this.SpriteNameAppend);
             this.groupBox5.Controls.Add(this.SpriteScaleX);
             this.groupBox5.Controls.Add(this.label7);
-            this.groupBox5.Controls.Add(this.CustomPivot);
             this.groupBox5.Controls.Add(this.SpritePlacement);
             this.groupBox5.Controls.Add(this.label9);
             this.groupBox5.Controls.Add(this.label8);
             this.groupBox5.Controls.Add(this.SpriteAnimation);
             this.groupBox5.Controls.Add(this.panel1);
             this.groupBox5.Controls.Add(this.groupBox2);
-            this.groupBox5.Controls.Add(this.groupBox3);
             this.groupBox5.Controls.Add(this.SpriteName1);
             this.groupBox5.Controls.Add(this.TextureName1);
             this.groupBox5.Controls.Add(this.SpriteName);
@@ -868,7 +857,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(114, 173);
+            this.label10.Location = new System.Drawing.Point(7, 161);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(75, 13);
             this.label10.TabIndex = 28;
@@ -877,7 +866,7 @@
             // SpriteNameAppend
             // 
             this.SpriteNameAppend.Enabled = false;
-            this.SpriteNameAppend.Location = new System.Drawing.Point(201, 170);
+            this.SpriteNameAppend.Location = new System.Drawing.Point(94, 158);
             this.SpriteNameAppend.Name = "SpriteNameAppend";
             this.SpriteNameAppend.ReadOnly = true;
             this.SpriteNameAppend.Size = new System.Drawing.Size(100, 20);
@@ -916,17 +905,6 @@
             this.label7.Size = new System.Drawing.Size(67, 13);
             this.label7.TabIndex = 23;
             this.label7.Text = "Sprite Scaler";
-            // 
-            // CustomPivot
-            // 
-            this.CustomPivot.AutoSize = true;
-            this.CustomPivot.Location = new System.Drawing.Point(9, 202);
-            this.CustomPivot.Name = "CustomPivot";
-            this.CustomPivot.Size = new System.Drawing.Size(88, 17);
-            this.CustomPivot.TabIndex = 27;
-            this.CustomPivot.Text = "Custom Pivot";
-            this.CustomPivot.UseVisualStyleBackColor = true;
-            this.CustomPivot.CheckedChanged += new System.EventHandler(this.CustomPivot_CheckedChanged);
             // 
             // SpritePlacement
             // 
@@ -1108,61 +1086,10 @@
             this.RectX.TabIndex = 0;
             this.RectX.Text = "x";
             // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.numPivotY);
-            this.groupBox3.Controls.Add(this.numPivotX);
-            this.groupBox3.Controls.Add(this.PivotY);
-            this.groupBox3.Controls.Add(this.PivotX);
-            this.groupBox3.Location = new System.Drawing.Point(6, 132);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(102, 64);
-            this.groupBox3.TabIndex = 1;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Pivot";
-            // 
-            // numPivotY
-            // 
-            this.numPivotY.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.numPivotY.Enabled = false;
-            this.numPivotY.Location = new System.Drawing.Point(45, 37);
-            this.numPivotY.Name = "numPivotY";
-            this.numPivotY.ReadOnly = true;
-            this.numPivotY.Size = new System.Drawing.Size(51, 20);
-            this.numPivotY.TabIndex = 5;
-            // 
-            // numPivotX
-            // 
-            this.numPivotX.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.numPivotX.Enabled = false;
-            this.numPivotX.Location = new System.Drawing.Point(45, 13);
-            this.numPivotX.Name = "numPivotX";
-            this.numPivotX.ReadOnly = true;
-            this.numPivotX.Size = new System.Drawing.Size(51, 20);
-            this.numPivotX.TabIndex = 4;
-            // 
-            // PivotY
-            // 
-            this.PivotY.AutoSize = true;
-            this.PivotY.Location = new System.Drawing.Point(6, 37);
-            this.PivotY.Name = "PivotY";
-            this.PivotY.Size = new System.Drawing.Size(12, 13);
-            this.PivotY.TabIndex = 1;
-            this.PivotY.Text = "y";
-            // 
-            // PivotX
-            // 
-            this.PivotX.AutoSize = true;
-            this.PivotX.Location = new System.Drawing.Point(6, 15);
-            this.PivotX.Name = "PivotX";
-            this.PivotX.Size = new System.Drawing.Size(12, 13);
-            this.PivotX.TabIndex = 0;
-            this.PivotX.Text = "x";
-            // 
             // SpriteName1
             // 
             this.SpriteName1.AutoSize = true;
-            this.SpriteName1.Location = new System.Drawing.Point(114, 147);
+            this.SpriteName1.Location = new System.Drawing.Point(7, 135);
             this.SpriteName1.Name = "SpriteName1";
             this.SpriteName1.Size = new System.Drawing.Size(65, 13);
             this.SpriteName1.TabIndex = 2;
@@ -1171,7 +1098,7 @@
             // TextureName1
             // 
             this.TextureName1.AutoSize = true;
-            this.TextureName1.Location = new System.Drawing.Point(114, 199);
+            this.TextureName1.Location = new System.Drawing.Point(7, 187);
             this.TextureName1.Name = "TextureName1";
             this.TextureName1.Size = new System.Drawing.Size(74, 13);
             this.TextureName1.TabIndex = 3;
@@ -1179,7 +1106,7 @@
             // 
             // SpriteName
             // 
-            this.SpriteName.Location = new System.Drawing.Point(201, 144);
+            this.SpriteName.Location = new System.Drawing.Point(94, 132);
             this.SpriteName.Name = "SpriteName";
             this.SpriteName.Size = new System.Drawing.Size(100, 20);
             this.SpriteName.TabIndex = 5;
@@ -1188,7 +1115,7 @@
             // TextureName
             // 
             this.TextureName.Enabled = false;
-            this.TextureName.Location = new System.Drawing.Point(201, 196);
+            this.TextureName.Location = new System.Drawing.Point(94, 184);
             this.TextureName.Name = "TextureName";
             this.TextureName.ReadOnly = true;
             this.TextureName.Size = new System.Drawing.Size(100, 20);
@@ -8345,10 +8272,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.numRectWidth)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numRectY)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numRectX)).EndInit();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numPivotY)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numPivotX)).EndInit();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SpriteRowNum)).EndInit();
@@ -8918,7 +8841,6 @@
         private System.Windows.Forms.TextBox CharName;
         private System.Windows.Forms.Label label287;
         internal System.Windows.Forms.TextBox TextureName;
-        private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.GroupBox groupBox2;
         internal System.Windows.Forms.NumericUpDown SpriteRowNum;
         internal System.Windows.Forms.TextBox ImageHeight;
@@ -8943,10 +8865,6 @@
         internal System.Windows.Forms.TextBox SpriteName;
         internal System.Windows.Forms.Label TextureName1;
         internal System.Windows.Forms.Label SpriteName1;
-        internal System.Windows.Forms.NumericUpDown numPivotY;
-        internal System.Windows.Forms.NumericUpDown numPivotX;
-        internal System.Windows.Forms.Label PivotY;
-        internal System.Windows.Forms.Label PivotX;
         internal System.Windows.Forms.NumericUpDown numRectHeight;
         internal System.Windows.Forms.NumericUpDown numRectWidth;
         internal System.Windows.Forms.NumericUpDown numRectY;
@@ -8967,7 +8885,6 @@
         internal System.Windows.Forms.Label label9;
         internal System.Windows.Forms.Label label8;
         private System.Windows.Forms.ComboBox SpriteAnimation;
-        private System.Windows.Forms.CheckBox CustomPivot;
         private System.Windows.Forms.CheckBox GenerateSpriteInfo;
         internal System.Windows.Forms.Label label10;
         internal System.Windows.Forms.TextBox SpriteNameAppend;

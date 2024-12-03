@@ -150,8 +150,6 @@ namespace BloodlineJsonEditor
                 numRectY.Value = baseHeight * ((int)CurrentSpriteRow.Value - 1);
                 numRectWidth.Value = baseWidth;
                 numRectHeight.Value = baseHeight;
-                numPivotX.Value = baseWidth / 2;
-                numPivotY.Value = 0;
             }
         }
         private void numRectX_ValueChanged(object sender, EventArgs e)
@@ -165,8 +163,6 @@ namespace BloodlineJsonEditor
         private void numRectWidth_ValueChanged(object sender, EventArgs e)
         {
             panel1.Width = (int)numRectWidth.Value * (int)SpriteScaleX.Value;
-            if (!CustomPivot.Checked)
-                numPivotX.Value = (int)numRectWidth.Value / 2;
         }
         private void numRectHeight_ValueChanged(object sender, EventArgs e)
         {
@@ -183,26 +179,13 @@ namespace BloodlineJsonEditor
             numRectX.Value -= 1;
             numRectY.Value -= 1;
         }
-        private void CustomPivot_CheckedChanged(object sender, EventArgs e)
-        {
-            if (CustomPivot.Checked)
-            {
-                numPivotX.ReadOnly = false;
-                numPivotX.Enabled = true;
-            }
-            else
-            {
-                numPivotX.ReadOnly = true;
-                numPivotX.Enabled = false;
-            }
-        }
         private void SpriteAnimation_SelectedIndexChanged(object sender, EventArgs e)
         {
-            SpriteNameAppend.Text = $"_{SpriteAnimation.Text.ToLower()}0{(int)SpritePlacement.Value}";
+            SpriteNameAppend.Text = $"{SpriteName.Text}_{SpriteAnimation.Text.ToLower()}0{(int)SpritePlacement.Value}";
         }
         private void SpritePlacement_ValueChanged(object sender, EventArgs e)
         {
-            SpriteNameAppend.Text = $"_{SpriteAnimation.Text.ToLower()}0{(int)SpritePlacement.Value}";
+            SpriteNameAppend.Text = $"{SpriteName.Text}_{SpriteAnimation.Text.ToLower()}0{(int)SpritePlacement.Value}";
         }
         private void SpriteObjectSet()
         {
@@ -215,9 +198,6 @@ namespace BloodlineJsonEditor
                 numRectY.Value = rect.Y;
                 numRectWidth.Value = rect.Width;
                 numRectHeight.Value = rect.Height;
-                SpritePivot pivot = spriteObject.Pivot;
-                numPivotX.Value = pivot.X;
-                numPivotY.Value = pivot.Y;
                 SpriteAnimation.Text = spriteObject.AnimationType;
                 SpritePlacement.Value = spriteObject.SpritePlacement;
             }
@@ -234,8 +214,6 @@ namespace BloodlineJsonEditor
                 numRectY.Value = baseHeight * ((int)CurrentSpriteRow.Value - 1);
                 numRectWidth.Value = baseWidth;
                 numRectHeight.Value = baseHeight;
-                numPivotX.Value = baseWidth / 2;
-                numPivotY.Value = 0;
             }
             else
             {
@@ -248,8 +226,6 @@ namespace BloodlineJsonEditor
                 numRectY.Value = 0;
                 numRectWidth.Value = 0;
                 numRectHeight.Value = 0;
-                numPivotX.Value = 0;
-                numPivotY.Value = 0;
             }
         }
         private void SpriteObjectValueSet()
@@ -261,10 +237,6 @@ namespace BloodlineJsonEditor
             rect.Y = (int)numRectY.Value;
             rect.Width = (int)numRectWidth.Value;
             rect.Height = (int)numRectHeight.Value;
-            SpritePivot pivot = new SpritePivot();
-            pivot.X = (int)numPivotX.Value;
-            pivot.Y = (int)numPivotY.Value;
-            spriteObject.Pivot = pivot;
             spriteObject.Rect = rect;
             spriteObject.AnimationType = SpriteAnimation.Text;
             spriteObject.SpritePlacement = (int)SpritePlacement.Value;
