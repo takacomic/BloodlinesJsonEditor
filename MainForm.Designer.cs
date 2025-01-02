@@ -337,6 +337,47 @@
             this.label50 = new System.Windows.Forms.Label();
             this.idleTexture = new System.Windows.Forms.ComboBox();
             this.label49 = new System.Windows.Forms.Label();
+            this.tabPage21 = new System.Windows.Forms.TabPage();
+            this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.PortraitSprite = new System.Windows.Forms.ComboBox();
+            this.CharPrice = new System.Windows.Forms.NumericUpDown();
+            this.label129 = new System.Windows.Forms.Label();
+            this.CharDescription = new System.Windows.Forms.TextBox();
+            this.label128 = new System.Windows.Forms.Label();
+            this.label127 = new System.Windows.Forms.Label();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.CharAlwaysHidden = new System.Windows.Forms.CheckBox();
+            this.CharOnEveryLevelUp = new System.Windows.Forms.CheckBox();
+            this.CharIsBought = new System.Windows.Forms.CheckBox();
+            this.CharHidden = new System.Windows.Forms.CheckBox();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.CharExLevels = new System.Windows.Forms.NumericUpDown();
+            this.label122 = new System.Windows.Forms.Label();
+            this.CharExWeaponsCombo = new System.Windows.Forms.ComboBox();
+            this.CharHiddenWeaponsCombo = new System.Windows.Forms.ComboBox();
+            this.label136 = new System.Windows.Forms.Label();
+            this.CharShowcaseCombo = new System.Windows.Forms.ComboBox();
+            this.label135 = new System.Windows.Forms.Label();
+            this.label134 = new System.Windows.Forms.Label();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.label287 = new System.Windows.Forms.Label();
+            this.CharName = new System.Windows.Forms.TextBox();
+            this.label126 = new System.Windows.Forms.Label();
+            this.CharSuffix = new System.Windows.Forms.TextBox();
+            this.CharSurname = new System.Windows.Forms.TextBox();
+            this.CharPrefix = new System.Windows.Forms.TextBox();
+            this.label133 = new System.Windows.Forms.Label();
+            this.label132 = new System.Windows.Forms.Label();
+            this.label138 = new System.Windows.Forms.Label();
+            this.CharShowcase = new System.Windows.Forms.RichTextBox();
+            this.CharHiddenWeapons = new System.Windows.Forms.RichTextBox();
+            this.CharExWeapons = new System.Windows.Forms.RichTextBox();
+            this.label131 = new System.Windows.Forms.Label();
+            this.CharStartingWeapon = new System.Windows.Forms.ComboBox();
+            this.label130 = new System.Windows.Forms.Label();
+            this.label124 = new System.Windows.Forms.Label();
+            this.label123 = new System.Windows.Forms.Label();
+            this.CharCurrentSkin = new System.Windows.Forms.ComboBox();
             this.tabPage22 = new System.Windows.Forms.TabPage();
             this.tabControl3 = new System.Windows.Forms.TabControl();
             this.BaseStatsTab = new System.Windows.Forms.TabPage();
@@ -512,47 +553,6 @@
             this.PustAltStatButton = new System.Windows.Forms.Button();
             this.AltLevelText = new System.Windows.Forms.Label();
             this.AltLevel = new System.Windows.Forms.NumericUpDown();
-            this.tabPage21 = new System.Windows.Forms.TabPage();
-            this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.PortraitSprite = new System.Windows.Forms.ComboBox();
-            this.CharPrice = new System.Windows.Forms.NumericUpDown();
-            this.label129 = new System.Windows.Forms.Label();
-            this.CharDescription = new System.Windows.Forms.TextBox();
-            this.label128 = new System.Windows.Forms.Label();
-            this.label127 = new System.Windows.Forms.Label();
-            this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.CharAlwaysHidden = new System.Windows.Forms.CheckBox();
-            this.CharOnEveryLevelUp = new System.Windows.Forms.CheckBox();
-            this.CharIsBought = new System.Windows.Forms.CheckBox();
-            this.CharHidden = new System.Windows.Forms.CheckBox();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.CharExLevels = new System.Windows.Forms.NumericUpDown();
-            this.label122 = new System.Windows.Forms.Label();
-            this.CharExWeaponsCombo = new System.Windows.Forms.ComboBox();
-            this.CharHiddenWeaponsCombo = new System.Windows.Forms.ComboBox();
-            this.label136 = new System.Windows.Forms.Label();
-            this.CharShowcaseCombo = new System.Windows.Forms.ComboBox();
-            this.label135 = new System.Windows.Forms.Label();
-            this.label134 = new System.Windows.Forms.Label();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label287 = new System.Windows.Forms.Label();
-            this.CharName = new System.Windows.Forms.TextBox();
-            this.label126 = new System.Windows.Forms.Label();
-            this.CharSuffix = new System.Windows.Forms.TextBox();
-            this.CharSurname = new System.Windows.Forms.TextBox();
-            this.CharPrefix = new System.Windows.Forms.TextBox();
-            this.label133 = new System.Windows.Forms.Label();
-            this.label132 = new System.Windows.Forms.Label();
-            this.label138 = new System.Windows.Forms.Label();
-            this.CharShowcase = new System.Windows.Forms.RichTextBox();
-            this.CharHiddenWeapons = new System.Windows.Forms.RichTextBox();
-            this.CharExWeapons = new System.Windows.Forms.RichTextBox();
-            this.label131 = new System.Windows.Forms.Label();
-            this.CharStartingWeapon = new System.Windows.Forms.ComboBox();
-            this.label130 = new System.Windows.Forms.Label();
-            this.label124 = new System.Windows.Forms.Label();
-            this.label123 = new System.Windows.Forms.Label();
-            this.CharCurrentSkin = new System.Windows.Forms.ComboBox();
             this.tabPageCharOn = new System.Windows.Forms.TabPage();
             this.SinesOn = new System.Windows.Forms.GroupBox();
             this.label149 = new System.Windows.Forms.Label();
@@ -732,6 +732,13 @@
             this.IdleGroup.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.idleRate)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.idleFrames)).BeginInit();
+            this.tabPage21.SuspendLayout();
+            this.groupBox8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.CharPrice)).BeginInit();
+            this.groupBox7.SuspendLayout();
+            this.groupBox6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.CharExLevels)).BeginInit();
+            this.groupBox3.SuspendLayout();
             this.tabPage22.SuspendLayout();
             this.tabControl3.SuspendLayout();
             this.BaseStatsTab.SuspendLayout();
@@ -804,13 +811,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.AltSineDuration)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.AltSineSpeed)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.AltLevel)).BeginInit();
-            this.tabPage21.SuspendLayout();
-            this.groupBox8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.CharPrice)).BeginInit();
-            this.groupBox7.SuspendLayout();
-            this.groupBox6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.CharExLevels)).BeginInit();
-            this.groupBox3.SuspendLayout();
             this.tabPageCharOn.SuspendLayout();
             this.SinesOn.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.OnSineSpeed)).BeginInit();
@@ -5347,6 +5347,1570 @@
             this.label49.TabIndex = 6;
             this.label49.Text = "Sprite Name";
             // 
+            // tabPage21
+            // 
+            this.tabPage21.Controls.Add(this.groupBox8);
+            this.tabPage21.Controls.Add(this.groupBox7);
+            this.tabPage21.Controls.Add(this.groupBox6);
+            this.tabPage21.Controls.Add(this.groupBox3);
+            this.tabPage21.Controls.Add(this.label138);
+            this.tabPage21.Controls.Add(this.CharShowcase);
+            this.tabPage21.Controls.Add(this.CharHiddenWeapons);
+            this.tabPage21.Controls.Add(this.CharExWeapons);
+            this.tabPage21.Controls.Add(this.label131);
+            this.tabPage21.Controls.Add(this.CharStartingWeapon);
+            this.tabPage21.Controls.Add(this.label130);
+            this.tabPage21.Controls.Add(this.label124);
+            this.tabPage21.Controls.Add(this.label123);
+            this.tabPage21.Controls.Add(this.CharCurrentSkin);
+            this.tabPage21.Location = new System.Drawing.Point(4, 22);
+            this.tabPage21.Name = "tabPage21";
+            this.tabPage21.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage21.Size = new System.Drawing.Size(684, 460);
+            this.tabPage21.TabIndex = 0;
+            this.tabPage21.Text = "Character";
+            this.tabPage21.UseVisualStyleBackColor = true;
+            // 
+            // groupBox8
+            // 
+            this.groupBox8.Controls.Add(this.PortraitSprite);
+            this.groupBox8.Controls.Add(this.CharPrice);
+            this.groupBox8.Controls.Add(this.label129);
+            this.groupBox8.Controls.Add(this.CharDescription);
+            this.groupBox8.Controls.Add(this.label128);
+            this.groupBox8.Controls.Add(this.label127);
+            this.groupBox8.Location = new System.Drawing.Point(489, 6);
+            this.groupBox8.Name = "groupBox8";
+            this.groupBox8.Size = new System.Drawing.Size(189, 102);
+            this.groupBox8.TabIndex = 41;
+            this.groupBox8.TabStop = false;
+            this.groupBox8.Text = "Miscellaneous";
+            // 
+            // PortraitSprite
+            // 
+            this.PortraitSprite.FormattingEnabled = true;
+            this.PortraitSprite.Location = new System.Drawing.Point(82, 70);
+            this.PortraitSprite.Name = "PortraitSprite";
+            this.PortraitSprite.Size = new System.Drawing.Size(100, 21);
+            this.PortraitSprite.TabIndex = 42;
+            // 
+            // CharPrice
+            // 
+            this.CharPrice.Location = new System.Drawing.Point(134, 18);
+            this.CharPrice.Maximum = new decimal(new int[] {
+            -727379968,
+            232,
+            0,
+            0});
+            this.CharPrice.Name = "CharPrice";
+            this.CharPrice.Size = new System.Drawing.Size(48, 20);
+            this.CharPrice.TabIndex = 20;
+            // 
+            // label129
+            // 
+            this.label129.AutoSize = true;
+            this.label129.Location = new System.Drawing.Point(5, 20);
+            this.label129.Name = "label129";
+            this.label129.Size = new System.Drawing.Size(31, 13);
+            this.label129.TabIndex = 21;
+            this.label129.Text = "Price";
+            // 
+            // CharDescription
+            // 
+            this.CharDescription.Location = new System.Drawing.Point(82, 44);
+            this.CharDescription.Name = "CharDescription";
+            this.CharDescription.Size = new System.Drawing.Size(100, 20);
+            this.CharDescription.TabIndex = 4;
+            // 
+            // label128
+            // 
+            this.label128.AutoSize = true;
+            this.label128.Location = new System.Drawing.Point(5, 47);
+            this.label128.Name = "label128";
+            this.label128.Size = new System.Drawing.Size(60, 13);
+            this.label128.TabIndex = 19;
+            this.label128.Text = "Description";
+            // 
+            // label127
+            // 
+            this.label127.AutoSize = true;
+            this.label127.Location = new System.Drawing.Point(6, 73);
+            this.label127.Name = "label127";
+            this.label127.Size = new System.Drawing.Size(70, 13);
+            this.label127.TabIndex = 18;
+            this.label127.Text = "Portrait Sprite";
+            // 
+            // groupBox7
+            // 
+            this.groupBox7.Controls.Add(this.CharAlwaysHidden);
+            this.groupBox7.Controls.Add(this.CharOnEveryLevelUp);
+            this.groupBox7.Controls.Add(this.CharIsBought);
+            this.groupBox7.Controls.Add(this.CharHidden);
+            this.groupBox7.Location = new System.Drawing.Point(6, 6);
+            this.groupBox7.Name = "groupBox7";
+            this.groupBox7.Size = new System.Drawing.Size(183, 39);
+            this.groupBox7.TabIndex = 41;
+            this.groupBox7.TabStop = false;
+            this.groupBox7.Text = "Options";
+            // 
+            // CharAlwaysHidden
+            // 
+            this.CharAlwaysHidden.AutoSize = true;
+            this.CharAlwaysHidden.Enabled = false;
+            this.CharAlwaysHidden.Location = new System.Drawing.Point(6, 39);
+            this.CharAlwaysHidden.Name = "CharAlwaysHidden";
+            this.CharAlwaysHidden.Size = new System.Drawing.Size(93, 17);
+            this.CharAlwaysHidden.TabIndex = 0;
+            this.CharAlwaysHidden.Text = "AlwaysHidden";
+            this.CharAlwaysHidden.UseVisualStyleBackColor = true;
+            this.CharAlwaysHidden.Visible = false;
+            // 
+            // CharOnEveryLevelUp
+            // 
+            this.CharOnEveryLevelUp.AutoSize = true;
+            this.CharOnEveryLevelUp.Location = new System.Drawing.Point(6, 19);
+            this.CharOnEveryLevelUp.Name = "CharOnEveryLevelUp";
+            this.CharOnEveryLevelUp.Size = new System.Drawing.Size(107, 17);
+            this.CharOnEveryLevelUp.TabIndex = 36;
+            this.CharOnEveryLevelUp.Text = "OnEveryLevelUp";
+            this.CharOnEveryLevelUp.UseVisualStyleBackColor = true;
+            this.CharOnEveryLevelUp.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            // 
+            // CharIsBought
+            // 
+            this.CharIsBought.AutoSize = true;
+            this.CharIsBought.Checked = true;
+            this.CharIsBought.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.CharIsBought.Location = new System.Drawing.Point(114, 19);
+            this.CharIsBought.Name = "CharIsBought";
+            this.CharIsBought.Size = new System.Drawing.Size(71, 17);
+            this.CharIsBought.TabIndex = 2;
+            this.CharIsBought.Text = "Is Bought";
+            this.CharIsBought.UseVisualStyleBackColor = true;
+            // 
+            // CharHidden
+            // 
+            this.CharHidden.AutoSize = true;
+            this.CharHidden.Enabled = false;
+            this.CharHidden.Location = new System.Drawing.Point(114, 39);
+            this.CharHidden.Name = "CharHidden";
+            this.CharHidden.Size = new System.Drawing.Size(60, 17);
+            this.CharHidden.TabIndex = 1;
+            this.CharHidden.Text = "Hidden";
+            this.CharHidden.UseVisualStyleBackColor = true;
+            this.CharHidden.Visible = false;
+            // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.CharExLevels);
+            this.groupBox6.Controls.Add(this.label122);
+            this.groupBox6.Controls.Add(this.CharExWeaponsCombo);
+            this.groupBox6.Controls.Add(this.CharHiddenWeaponsCombo);
+            this.groupBox6.Controls.Add(this.label136);
+            this.groupBox6.Controls.Add(this.CharShowcaseCombo);
+            this.groupBox6.Controls.Add(this.label135);
+            this.groupBox6.Controls.Add(this.label134);
+            this.groupBox6.Location = new System.Drawing.Point(6, 229);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(225, 120);
+            this.groupBox6.TabIndex = 40;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "Extra Data";
+            // 
+            // CharExLevels
+            // 
+            this.CharExLevels.Location = new System.Drawing.Point(172, 14);
+            this.CharExLevels.Name = "CharExLevels";
+            this.CharExLevels.Size = new System.Drawing.Size(48, 20);
+            this.CharExLevels.TabIndex = 5;
+            // 
+            // label122
+            // 
+            this.label122.AutoSize = true;
+            this.label122.Location = new System.Drawing.Point(6, 16);
+            this.label122.Name = "label122";
+            this.label122.Size = new System.Drawing.Size(50, 13);
+            this.label122.TabIndex = 6;
+            this.label122.Text = "ExLevels";
+            // 
+            // CharExWeaponsCombo
+            // 
+            this.CharExWeaponsCombo.FormattingEnabled = true;
+            this.CharExWeaponsCombo.Items.AddRange(new object[] {
+            "Magic Wand",
+            "Holy Wand",
+            "Whip",
+            "Bloody Tear",
+            "Axe",
+            "Death Spiral",
+            "Knife",
+            "Thousand Edge",
+            "Santa Water",
+            "La Borra",
+            "Runetracer",
+            "Fire Wand",
+            "Hellfire",
+            "King Bible",
+            "Unholy Vespers",
+            "Cross",
+            "Heaven Sword",
+            "Garlic",
+            "Soul Eater",
+            "Laurel",
+            "Lightning Ring",
+            "Thunder Loop",
+            "Pentagram",
+            "Gorgeous Moon",
+            "Peachone",
+            "Ebony Wings",
+            "Vandalier",
+            "Bone",
+            "Clock Lancet",
+            "Song of Mana",
+            "Mannajja",
+            "Cherry Bomb",
+            "Carréllo",
+            "Gatti Amari",
+            "Vicious Hunger",
+            "Celestial Dusting",
+            "Phiera Der Tuphello",
+            "Eight The Sparrow",
+            "Phieraggi",
+            "Shadow Pinion",
+            "Valkyrie Turner",
+            "NO FUTURE",
+            "Infinite Corridor",
+            "Crimson Shroud",
+            "Vento Sacro",
+            "Fuwalafuwaloo",
+            "La Robba",
+            "Candybox",
+            "Greatest Jubilee",
+            "Victory Sword",
+            "Sole Solution",
+            "Bracelet",
+            "Bi-Bracelet",
+            "Tri-Bracelet",
+            "Super Candybox II Turbo",
+            "Mille Bolle Blu",
+            "Flames of Misspell",
+            "Ashes of Muspell",
+            "Silver Wind",
+            "Festive Winds",
+            "Four Seasons",
+            "Godai Shuffle",
+            "Summon Night",
+            "Echo Night",
+            "Mirage Robe",
+            "J\'Odore",
+            "Boo Roo Boolle",
+            "Night Sword",
+            "Muramasa",
+            "108 Bocce",
+            "SpellString",
+            "SpellStream",
+            "SpellStrike",
+            "SpellStrom",
+            "Shadow Servant",
+            "Ophion",
+            "Prismatic Missile",
+            "Luminaire",
+            "Flash Arrow",
+            "Millionaire",
+            "Eskizzibur",
+            "Legionnaire",
+            "Party Popper",
+            "Phas3r",
+            "Insatiable",
+            "Glass Fandango",
+            "Celestial Voulge",
+            "Arma Dio",
+            "Photonstorm",
+            "Pako Battiliar",
+            "Mazo Familiar",
+            "Report!",
+            "Emergency Meeting",
+            "Lucky Swipe",
+            "Crossed Wires",
+            "Lifesign Scan",
+            "Paranormal Scan",
+            "Just Vent",
+            "Unjust Ejection",
+            "Clear Debris",
+            "Clear Asteroids",
+            "Sharp Tongue",
+            "Impostongue",
+            "Science Rocks",
+            "Rocket Science",
+            "Hats",
+            "Santa Javelin",
+            "Seraphic Cry",
+            "Acquazzone",
+            "Long Gun ",
+            "Short Gun  ",
+            "Spread Shot ",
+            "Sonic Bloom",
+            "Blade Crossbow",
+            "Wave Beam",
+            "C-U-Laser",
+            "Firearm",
+            "Metal Claw",
+            "Atmo-Torpedo",
+            "Homing Miss",
+            "Prism Lass",
+            "Pronto Beam",
+            "Fire-L3GS",
+            "Big Fuzzy Fist",
+            "Multistage Missiles",
+            "Time Warp",
+            "Prototype B",
+            "Prototype A",
+            "Prototype C",
+            "BFC2000-AD",
+            "Diver Mines",
+            "Confodere",
+            "Vol Confodere",
+            "Melio Confodere",
+            "Alchemy Whip",
+            "Vampire Killer",
+            "Coat of Arms",
+            "Morning Star",
+            "Belnades\' Spellbook",
+            "Ebony Diabologue",
+            "Alucart Sworb",
+            "Alucard Swords",
+            "Iron Ball",
+            "Wrecking Ball",
+            "Alucard Spear",
+            "Thunderbolt Spear",
+            "Mace",
+            "Stamazza",
+            "Trident",
+            "Gungnir-Souris",
+            "Javelin",
+            "Long Inus",
+            "Curved Knife",
+            "Bwaka Knife",
+            "Shuriken",
+            "Yagyu Shuriken",
+            "Luminatio",
+            "Vol Luminatio",
+            "Umbra",
+            "Vol Umbra",
+            "Discus",
+            "Stellar Blade",
+            "Wine Glass",
+            "Meal Ticket",
+            "Vanitas Whip",
+            "Aurablaster Tip",
+            "Dextro Custos",
+            "Sinestro Custos",
+            "Centralis Custos",
+            "Trinum Custodem",
+            "Wind Whip",
+            "Spirit Tornado Tip",
+            "Platinum Whip",
+            "Cross Crasher Tip",
+            "Dragon Water Whip",
+            "Hydrostormer Tip",
+            "Soul Steal",
+            "Hand Grenade",
+            "The RPG",
+            "Alucard Shield",
+            "Sonic Dash",
+            "Rapidus Fio",
+            "Raging Fire",
+            "Salamender",
+            "Ice Fang",
+            "Cocytus",
+            "Gale Force",
+            "Pneuma Tempestas",
+            "Rock Riot",
+            "Gemma Torpor",
+            "Fulgur",
+            "Tenebris Tonitrus",
+            "Keremet Bubbles",
+            "Keremet Morbus",
+            "Hex",
+            "Nightmare",
+            "Refectio",
+            "Sanctuary",
+            "Optical Shot",
+            "Acerbatus",
+            "Globus",
+            "Nitesco",
+            "Crissaegrim Tip",
+            "Vibhuti Whip",
+            "Daybreaker Tip",
+            "Silver Revolver",
+            "Jewel Gun",
+            "Tyrfing",
+            "Rune Sword",
+            "Universitas",
+            "Dominus Anger",
+            "Dominus Hatred",
+            "Dominus Agony",
+            "Power of Sire",
+            "Guardian\'s Targe",
+            "Sacred Beasts Tower Shield",
+            "Star Flail",
+            "Moon Rod",
+            "Jet Black Whip",
+            "Mormegil Tip",
+            "Spectral Sword",
+            "Iron Shield",
+            "Dark Iron Shield",
+            "Troll Bomb",
+            "Endo Gears",
+            "Peri Pendulum",
+            "Svarog Statue",
+            "Sonic Whip",
+            "Arrow of Goth",
+            "Hydro Storm",
+            "Dark Rift",
+            "Summon Spirit",
+            "Sword Brothers",
+            "Valmanway",
+            "Grand Cross",
+            "Summon Spirit Tornado",
+            "Myo Lift",
+            "Epi Head",
+            "Clock Tower",
+            "Aura Blast",
+            "Familiar Forge",
+            "Icebrand",
+            "Spinach",
+            "Candelabrador",
+            "Bracer",
+            "Empty Tome",
+            "Spellbinder",
+            "Duplicator",
+            "Hollow Heart",
+            "Armor",
+            "Wings",
+            "Attractorb",
+            "Crown",
+            "Clover",
+            "Stone Mask",
+            "Tirajisú",
+            "Pummarola",
+            "Skull O\'Maniac",
+            "Silver Ring",
+            "Gold Ring",
+            "Metaglio Left",
+            "Metaglio Right",
+            "Torrona\'s Box",
+            "Tetraforce",
+            "Academy Badge",
+            "Mini Crewmate",
+            "Mini Engineer",
+            "Mini Ghost",
+            "Mini Shapeshifter",
+            "Mini Guardian",
+            "Mini Impostor",
+            "Mini Scientist",
+            "Mini Horse",
+            "Parm Aegis",
+            "Karoma\'s Mana",
+            "Weapon Power-Up",
+            "Ukoback",
+            "Bitterfly",
+            "Imp",
+            "Alleged Ghost",
+            "Wood Rod",
+            "Faerie",
+            "Pumpkin",
+            "Sacred Cardinal",
+            "Sacred Dragon",
+            "Sacred Tiger",
+            "Sacred Turtle"});
+            this.CharExWeaponsCombo.Location = new System.Drawing.Point(99, 40);
+            this.CharExWeaponsCombo.Name = "CharExWeaponsCombo";
+            this.CharExWeaponsCombo.Size = new System.Drawing.Size(121, 21);
+            this.CharExWeaponsCombo.TabIndex = 7;
+            this.CharExWeaponsCombo.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
+            // 
+            // CharHiddenWeaponsCombo
+            // 
+            this.CharHiddenWeaponsCombo.FormattingEnabled = true;
+            this.CharHiddenWeaponsCombo.Items.AddRange(new object[] {
+            "Magic Wand",
+            "Holy Wand",
+            "Whip",
+            "Bloody Tear",
+            "Axe",
+            "Death Spiral",
+            "Knife",
+            "Thousand Edge",
+            "Santa Water",
+            "La Borra",
+            "Runetracer",
+            "Fire Wand",
+            "Hellfire",
+            "King Bible",
+            "Unholy Vespers",
+            "Cross",
+            "Heaven Sword",
+            "Garlic",
+            "Soul Eater",
+            "Laurel",
+            "Lightning Ring",
+            "Thunder Loop",
+            "Pentagram",
+            "Gorgeous Moon",
+            "Peachone",
+            "Ebony Wings",
+            "Vandalier",
+            "Bone",
+            "Clock Lancet",
+            "Song of Mana",
+            "Mannajja",
+            "Cherry Bomb",
+            "Carréllo",
+            "Gatti Amari",
+            "Vicious Hunger",
+            "Celestial Dusting",
+            "Phiera Der Tuphello",
+            "Eight The Sparrow",
+            "Phieraggi",
+            "Shadow Pinion",
+            "Valkyrie Turner",
+            "NO FUTURE",
+            "Infinite Corridor",
+            "Crimson Shroud",
+            "Vento Sacro",
+            "Fuwalafuwaloo",
+            "La Robba",
+            "Candybox",
+            "Greatest Jubilee",
+            "Victory Sword",
+            "Sole Solution",
+            "Bracelet",
+            "Bi-Bracelet",
+            "Tri-Bracelet",
+            "Super Candybox II Turbo",
+            "Mille Bolle Blu",
+            "Flames of Misspell",
+            "Ashes of Muspell",
+            "Silver Wind",
+            "Festive Winds",
+            "Four Seasons",
+            "Godai Shuffle",
+            "Summon Night",
+            "Echo Night",
+            "Mirage Robe",
+            "J\'Odore",
+            "Boo Roo Boolle",
+            "Night Sword",
+            "Muramasa",
+            "108 Bocce",
+            "SpellString",
+            "SpellStream",
+            "SpellStrike",
+            "SpellStrom",
+            "Shadow Servant",
+            "Ophion",
+            "Prismatic Missile",
+            "Luminaire",
+            "Flash Arrow",
+            "Millionaire",
+            "Eskizzibur",
+            "Legionnaire",
+            "Party Popper",
+            "Phas3r",
+            "Insatiable",
+            "Glass Fandango",
+            "Celestial Voulge",
+            "Arma Dio",
+            "Photonstorm",
+            "Pako Battiliar",
+            "Mazo Familiar",
+            "Report!",
+            "Emergency Meeting",
+            "Lucky Swipe",
+            "Crossed Wires",
+            "Lifesign Scan",
+            "Paranormal Scan",
+            "Just Vent",
+            "Unjust Ejection",
+            "Clear Debris",
+            "Clear Asteroids",
+            "Sharp Tongue",
+            "Impostongue",
+            "Science Rocks",
+            "Rocket Science",
+            "Hats",
+            "Santa Javelin",
+            "Seraphic Cry",
+            "Acquazzone",
+            "Long Gun ",
+            "Short Gun  ",
+            "Spread Shot ",
+            "Sonic Bloom",
+            "Blade Crossbow",
+            "Wave Beam",
+            "C-U-Laser",
+            "Firearm",
+            "Metal Claw",
+            "Atmo-Torpedo",
+            "Homing Miss",
+            "Prism Lass",
+            "Pronto Beam",
+            "Fire-L3GS",
+            "Big Fuzzy Fist",
+            "Multistage Missiles",
+            "Time Warp",
+            "Prototype B",
+            "Prototype A",
+            "Prototype C",
+            "BFC2000-AD",
+            "Diver Mines",
+            "Confodere",
+            "Vol Confodere",
+            "Melio Confodere",
+            "Alchemy Whip",
+            "Vampire Killer",
+            "Coat of Arms",
+            "Morning Star",
+            "Belnades\' Spellbook",
+            "Ebony Diabologue",
+            "Alucart Sworb",
+            "Alucard Swords",
+            "Iron Ball",
+            "Wrecking Ball",
+            "Alucard Spear",
+            "Thunderbolt Spear",
+            "Mace",
+            "Stamazza",
+            "Trident",
+            "Gungnir-Souris",
+            "Javelin",
+            "Long Inus",
+            "Curved Knife",
+            "Bwaka Knife",
+            "Shuriken",
+            "Yagyu Shuriken",
+            "Luminatio",
+            "Vol Luminatio",
+            "Umbra",
+            "Vol Umbra",
+            "Discus",
+            "Stellar Blade",
+            "Wine Glass",
+            "Meal Ticket",
+            "Vanitas Whip",
+            "Aurablaster Tip",
+            "Dextro Custos",
+            "Sinestro Custos",
+            "Centralis Custos",
+            "Trinum Custodem",
+            "Wind Whip",
+            "Spirit Tornado Tip",
+            "Platinum Whip",
+            "Cross Crasher Tip",
+            "Dragon Water Whip",
+            "Hydrostormer Tip",
+            "Soul Steal",
+            "Hand Grenade",
+            "The RPG",
+            "Alucard Shield",
+            "Sonic Dash",
+            "Rapidus Fio",
+            "Raging Fire",
+            "Salamender",
+            "Ice Fang",
+            "Cocytus",
+            "Gale Force",
+            "Pneuma Tempestas",
+            "Rock Riot",
+            "Gemma Torpor",
+            "Fulgur",
+            "Tenebris Tonitrus",
+            "Keremet Bubbles",
+            "Keremet Morbus",
+            "Hex",
+            "Nightmare",
+            "Refectio",
+            "Sanctuary",
+            "Optical Shot",
+            "Acerbatus",
+            "Globus",
+            "Nitesco",
+            "Crissaegrim Tip",
+            "Vibhuti Whip",
+            "Daybreaker Tip",
+            "Silver Revolver",
+            "Jewel Gun",
+            "Tyrfing",
+            "Rune Sword",
+            "Universitas",
+            "Dominus Anger",
+            "Dominus Hatred",
+            "Dominus Agony",
+            "Power of Sire",
+            "Guardian\'s Targe",
+            "Sacred Beasts Tower Shield",
+            "Star Flail",
+            "Moon Rod",
+            "Jet Black Whip",
+            "Mormegil Tip",
+            "Spectral Sword",
+            "Iron Shield",
+            "Dark Iron Shield",
+            "Troll Bomb",
+            "Endo Gears",
+            "Peri Pendulum",
+            "Svarog Statue",
+            "Sonic Whip",
+            "Arrow of Goth",
+            "Hydro Storm",
+            "Dark Rift",
+            "Summon Spirit",
+            "Sword Brothers",
+            "Valmanway",
+            "Grand Cross",
+            "Summon Spirit Tornado",
+            "Myo Lift",
+            "Epi Head",
+            "Clock Tower",
+            "Aura Blast",
+            "Familiar Forge",
+            "Icebrand",
+            "Spinach",
+            "Candelabrador",
+            "Bracer",
+            "Empty Tome",
+            "Spellbinder",
+            "Duplicator",
+            "Hollow Heart",
+            "Armor",
+            "Wings",
+            "Attractorb",
+            "Crown",
+            "Clover",
+            "Stone Mask",
+            "Tirajisú",
+            "Pummarola",
+            "Skull O\'Maniac",
+            "Silver Ring",
+            "Gold Ring",
+            "Metaglio Left",
+            "Metaglio Right",
+            "Torrona\'s Box",
+            "Tetraforce",
+            "Academy Badge",
+            "Mini Crewmate",
+            "Mini Engineer",
+            "Mini Ghost",
+            "Mini Shapeshifter",
+            "Mini Guardian",
+            "Mini Impostor",
+            "Mini Scientist",
+            "Mini Horse",
+            "Parm Aegis",
+            "Karoma\'s Mana",
+            "Weapon Power-Up",
+            "Ukoback",
+            "Bitterfly",
+            "Imp",
+            "Alleged Ghost",
+            "Wood Rod",
+            "Faerie",
+            "Pumpkin",
+            "Sacred Cardinal",
+            "Sacred Dragon",
+            "Sacred Tiger",
+            "Sacred Turtle"});
+            this.CharHiddenWeaponsCombo.Location = new System.Drawing.Point(99, 67);
+            this.CharHiddenWeaponsCombo.Name = "CharHiddenWeaponsCombo";
+            this.CharHiddenWeaponsCombo.Size = new System.Drawing.Size(121, 21);
+            this.CharHiddenWeaponsCombo.TabIndex = 10;
+            this.CharHiddenWeaponsCombo.SelectedIndexChanged += new System.EventHandler(this.CharHiddenWeaponsCombo_SelectedIndexChanged);
+            // 
+            // label136
+            // 
+            this.label136.AutoSize = true;
+            this.label136.Location = new System.Drawing.Point(6, 43);
+            this.label136.Name = "label136";
+            this.label136.Size = new System.Drawing.Size(65, 13);
+            this.label136.TabIndex = 33;
+            this.label136.Text = "ExWeapons";
+            // 
+            // CharShowcaseCombo
+            // 
+            this.CharShowcaseCombo.FormattingEnabled = true;
+            this.CharShowcaseCombo.Items.AddRange(new object[] {
+            "Magic Wand",
+            "Holy Wand",
+            "Whip",
+            "Bloody Tear",
+            "Axe",
+            "Death Spiral",
+            "Knife",
+            "Thousand Edge",
+            "Santa Water",
+            "La Borra",
+            "Runetracer",
+            "Fire Wand",
+            "Hellfire",
+            "King Bible",
+            "Unholy Vespers",
+            "Cross",
+            "Heaven Sword",
+            "Garlic",
+            "Soul Eater",
+            "Laurel",
+            "Lightning Ring",
+            "Thunder Loop",
+            "Pentagram",
+            "Gorgeous Moon",
+            "Peachone",
+            "Ebony Wings",
+            "Vandalier",
+            "Bone",
+            "Clock Lancet",
+            "Song of Mana",
+            "Mannajja",
+            "Cherry Bomb",
+            "Carréllo",
+            "Gatti Amari",
+            "Vicious Hunger",
+            "Celestial Dusting",
+            "Phiera Der Tuphello",
+            "Eight The Sparrow",
+            "Phieraggi",
+            "Shadow Pinion",
+            "Valkyrie Turner",
+            "NO FUTURE",
+            "Infinite Corridor",
+            "Crimson Shroud",
+            "Vento Sacro",
+            "Fuwalafuwaloo",
+            "La Robba",
+            "Candybox",
+            "Greatest Jubilee",
+            "Victory Sword",
+            "Sole Solution",
+            "Bracelet",
+            "Bi-Bracelet",
+            "Tri-Bracelet",
+            "Super Candybox II Turbo",
+            "Mille Bolle Blu",
+            "Flames of Misspell",
+            "Ashes of Muspell",
+            "Silver Wind",
+            "Festive Winds",
+            "Four Seasons",
+            "Godai Shuffle",
+            "Summon Night",
+            "Echo Night",
+            "Mirage Robe",
+            "J\'Odore",
+            "Boo Roo Boolle",
+            "Night Sword",
+            "Muramasa",
+            "108 Bocce",
+            "SpellString",
+            "SpellStream",
+            "SpellStrike",
+            "SpellStrom",
+            "Shadow Servant",
+            "Ophion",
+            "Prismatic Missile",
+            "Luminaire",
+            "Flash Arrow",
+            "Millionaire",
+            "Eskizzibur",
+            "Legionnaire",
+            "Party Popper",
+            "Phas3r",
+            "Insatiable",
+            "Glass Fandango",
+            "Celestial Voulge",
+            "Arma Dio",
+            "Photonstorm",
+            "Pako Battiliar",
+            "Mazo Familiar",
+            "Report!",
+            "Emergency Meeting",
+            "Lucky Swipe",
+            "Crossed Wires",
+            "Lifesign Scan",
+            "Paranormal Scan",
+            "Just Vent",
+            "Unjust Ejection",
+            "Clear Debris",
+            "Clear Asteroids",
+            "Sharp Tongue",
+            "Impostongue",
+            "Science Rocks",
+            "Rocket Science",
+            "Hats",
+            "Santa Javelin",
+            "Seraphic Cry",
+            "Acquazzone",
+            "Long Gun ",
+            "Short Gun  ",
+            "Spread Shot ",
+            "Sonic Bloom",
+            "Blade Crossbow",
+            "Wave Beam",
+            "C-U-Laser",
+            "Firearm",
+            "Metal Claw",
+            "Atmo-Torpedo",
+            "Homing Miss",
+            "Prism Lass",
+            "Pronto Beam",
+            "Fire-L3GS",
+            "Big Fuzzy Fist",
+            "Multistage Missiles",
+            "Time Warp",
+            "Prototype B",
+            "Prototype A",
+            "Prototype C",
+            "BFC2000-AD",
+            "Diver Mines",
+            "Confodere",
+            "Vol Confodere",
+            "Melio Confodere",
+            "Alchemy Whip",
+            "Vampire Killer",
+            "Coat of Arms",
+            "Morning Star",
+            "Belnades\' Spellbook",
+            "Ebony Diabologue",
+            "Alucart Sworb",
+            "Alucard Swords",
+            "Iron Ball",
+            "Wrecking Ball",
+            "Alucard Spear",
+            "Thunderbolt Spear",
+            "Mace",
+            "Stamazza",
+            "Trident",
+            "Gungnir-Souris",
+            "Javelin",
+            "Long Inus",
+            "Curved Knife",
+            "Bwaka Knife",
+            "Shuriken",
+            "Yagyu Shuriken",
+            "Luminatio",
+            "Vol Luminatio",
+            "Umbra",
+            "Vol Umbra",
+            "Discus",
+            "Stellar Blade",
+            "Wine Glass",
+            "Meal Ticket",
+            "Vanitas Whip",
+            "Aurablaster Tip",
+            "Dextro Custos",
+            "Sinestro Custos",
+            "Centralis Custos",
+            "Trinum Custodem",
+            "Wind Whip",
+            "Spirit Tornado Tip",
+            "Platinum Whip",
+            "Cross Crasher Tip",
+            "Dragon Water Whip",
+            "Hydrostormer Tip",
+            "Soul Steal",
+            "Hand Grenade",
+            "The RPG",
+            "Alucard Shield",
+            "Sonic Dash",
+            "Rapidus Fio",
+            "Raging Fire",
+            "Salamender",
+            "Ice Fang",
+            "Cocytus",
+            "Gale Force",
+            "Pneuma Tempestas",
+            "Rock Riot",
+            "Gemma Torpor",
+            "Fulgur",
+            "Tenebris Tonitrus",
+            "Keremet Bubbles",
+            "Keremet Morbus",
+            "Hex",
+            "Nightmare",
+            "Refectio",
+            "Sanctuary",
+            "Optical Shot",
+            "Acerbatus",
+            "Globus",
+            "Nitesco",
+            "Crissaegrim Tip",
+            "Vibhuti Whip",
+            "Daybreaker Tip",
+            "Silver Revolver",
+            "Jewel Gun",
+            "Tyrfing",
+            "Rune Sword",
+            "Universitas",
+            "Dominus Anger",
+            "Dominus Hatred",
+            "Dominus Agony",
+            "Power of Sire",
+            "Guardian\'s Targe",
+            "Sacred Beasts Tower Shield",
+            "Star Flail",
+            "Moon Rod",
+            "Jet Black Whip",
+            "Mormegil Tip",
+            "Spectral Sword",
+            "Iron Shield",
+            "Dark Iron Shield",
+            "Troll Bomb",
+            "Endo Gears",
+            "Peri Pendulum",
+            "Svarog Statue",
+            "Sonic Whip",
+            "Arrow of Goth",
+            "Hydro Storm",
+            "Dark Rift",
+            "Summon Spirit",
+            "Sword Brothers",
+            "Valmanway",
+            "Grand Cross",
+            "Summon Spirit Tornado",
+            "Myo Lift",
+            "Epi Head",
+            "Clock Tower",
+            "Aura Blast",
+            "Familiar Forge",
+            "Icebrand",
+            "Spinach",
+            "Candelabrador",
+            "Bracer",
+            "Empty Tome",
+            "Spellbinder",
+            "Duplicator",
+            "Hollow Heart",
+            "Armor",
+            "Wings",
+            "Attractorb",
+            "Crown",
+            "Clover",
+            "Stone Mask",
+            "Tirajisú",
+            "Pummarola",
+            "Skull O\'Maniac",
+            "Silver Ring",
+            "Gold Ring",
+            "Metaglio Left",
+            "Metaglio Right",
+            "Torrona\'s Box",
+            "Tetraforce",
+            "Academy Badge",
+            "Mini Crewmate",
+            "Mini Engineer",
+            "Mini Ghost",
+            "Mini Shapeshifter",
+            "Mini Guardian",
+            "Mini Impostor",
+            "Mini Scientist",
+            "Mini Horse",
+            "Parm Aegis",
+            "Karoma\'s Mana",
+            "Weapon Power-Up",
+            "Ukoback",
+            "Bitterfly",
+            "Imp",
+            "Alleged Ghost",
+            "Wood Rod",
+            "Faerie",
+            "Pumpkin",
+            "Sacred Cardinal",
+            "Sacred Dragon",
+            "Sacred Tiger",
+            "Sacred Turtle"});
+            this.CharShowcaseCombo.Location = new System.Drawing.Point(99, 94);
+            this.CharShowcaseCombo.Name = "CharShowcaseCombo";
+            this.CharShowcaseCombo.Size = new System.Drawing.Size(121, 21);
+            this.CharShowcaseCombo.TabIndex = 24;
+            this.CharShowcaseCombo.SelectedIndexChanged += new System.EventHandler(this.CharShowcaseCombo_SelectedIndexChanged);
+            // 
+            // label135
+            // 
+            this.label135.AutoSize = true;
+            this.label135.Location = new System.Drawing.Point(6, 70);
+            this.label135.Name = "label135";
+            this.label135.Size = new System.Drawing.Size(90, 13);
+            this.label135.TabIndex = 32;
+            this.label135.Text = "Hidden Weapons";
+            // 
+            // label134
+            // 
+            this.label134.AutoSize = true;
+            this.label134.Location = new System.Drawing.Point(6, 97);
+            this.label134.Name = "label134";
+            this.label134.Size = new System.Drawing.Size(57, 13);
+            this.label134.TabIndex = 31;
+            this.label134.Text = "Showcase";
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.label287);
+            this.groupBox3.Controls.Add(this.CharName);
+            this.groupBox3.Controls.Add(this.label126);
+            this.groupBox3.Controls.Add(this.CharSuffix);
+            this.groupBox3.Controls.Add(this.CharSurname);
+            this.groupBox3.Controls.Add(this.CharPrefix);
+            this.groupBox3.Controls.Add(this.label133);
+            this.groupBox3.Controls.Add(this.label132);
+            this.groupBox3.Location = new System.Drawing.Point(6, 105);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(225, 118);
+            this.groupBox3.TabIndex = 39;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Character Info";
+            // 
+            // label287
+            // 
+            this.label287.AutoSize = true;
+            this.label287.Location = new System.Drawing.Point(5, 43);
+            this.label287.Name = "label287";
+            this.label287.Size = new System.Drawing.Size(91, 13);
+            this.label287.TabIndex = 38;
+            this.label287.Text = "Character Name *";
+            // 
+            // CharName
+            // 
+            this.CharName.Location = new System.Drawing.Point(119, 40);
+            this.CharName.Name = "CharName";
+            this.CharName.Size = new System.Drawing.Size(100, 20);
+            this.CharName.TabIndex = 37;
+            // 
+            // label126
+            // 
+            this.label126.AutoSize = true;
+            this.label126.Location = new System.Drawing.Point(5, 17);
+            this.label126.Name = "label126";
+            this.label126.Size = new System.Drawing.Size(33, 13);
+            this.label126.TabIndex = 17;
+            this.label126.Text = "Prefix";
+            // 
+            // CharSuffix
+            // 
+            this.CharSuffix.Location = new System.Drawing.Point(119, 92);
+            this.CharSuffix.Name = "CharSuffix";
+            this.CharSuffix.Size = new System.Drawing.Size(100, 20);
+            this.CharSuffix.TabIndex = 27;
+            // 
+            // CharSurname
+            // 
+            this.CharSurname.Location = new System.Drawing.Point(119, 66);
+            this.CharSurname.Name = "CharSurname";
+            this.CharSurname.Size = new System.Drawing.Size(100, 20);
+            this.CharSurname.TabIndex = 28;
+            // 
+            // CharPrefix
+            // 
+            this.CharPrefix.Location = new System.Drawing.Point(119, 14);
+            this.CharPrefix.Name = "CharPrefix";
+            this.CharPrefix.Size = new System.Drawing.Size(100, 20);
+            this.CharPrefix.TabIndex = 16;
+            // 
+            // label133
+            // 
+            this.label133.AutoSize = true;
+            this.label133.Location = new System.Drawing.Point(5, 69);
+            this.label133.Name = "label133";
+            this.label133.Size = new System.Drawing.Size(49, 13);
+            this.label133.TabIndex = 29;
+            this.label133.Text = "Surname";
+            // 
+            // label132
+            // 
+            this.label132.AutoSize = true;
+            this.label132.Location = new System.Drawing.Point(5, 95);
+            this.label132.Name = "label132";
+            this.label132.Size = new System.Drawing.Size(33, 13);
+            this.label132.TabIndex = 30;
+            this.label132.Text = "Suffix";
+            // 
+            // label138
+            // 
+            this.label138.AutoSize = true;
+            this.label138.Location = new System.Drawing.Point(6, 81);
+            this.label138.Name = "label138";
+            this.label138.Size = new System.Drawing.Size(65, 13);
+            this.label138.TabIndex = 35;
+            this.label138.Text = "Current Skin";
+            // 
+            // CharShowcase
+            // 
+            this.CharShowcase.Location = new System.Drawing.Point(538, 294);
+            this.CharShowcase.Name = "CharShowcase";
+            this.CharShowcase.Size = new System.Drawing.Size(140, 80);
+            this.CharShowcase.TabIndex = 22;
+            this.CharShowcase.Text = "";
+            // 
+            // CharHiddenWeapons
+            // 
+            this.CharHiddenWeapons.Location = new System.Drawing.Point(538, 208);
+            this.CharHiddenWeapons.Name = "CharHiddenWeapons";
+            this.CharHiddenWeapons.Size = new System.Drawing.Size(140, 80);
+            this.CharHiddenWeapons.TabIndex = 11;
+            this.CharHiddenWeapons.Text = "";
+            // 
+            // CharExWeapons
+            // 
+            this.CharExWeapons.Location = new System.Drawing.Point(538, 111);
+            this.CharExWeapons.Name = "CharExWeapons";
+            this.CharExWeapons.Size = new System.Drawing.Size(140, 80);
+            this.CharExWeapons.TabIndex = 8;
+            this.CharExWeapons.Text = "";
+            // 
+            // label131
+            // 
+            this.label131.AutoSize = true;
+            this.label131.Location = new System.Drawing.Point(6, 54);
+            this.label131.Name = "label131";
+            this.label131.Size = new System.Drawing.Size(87, 13);
+            this.label131.TabIndex = 26;
+            this.label131.Text = "Starting Weapon";
+            // 
+            // CharStartingWeapon
+            // 
+            this.CharStartingWeapon.FormattingEnabled = true;
+            this.CharStartingWeapon.Items.AddRange(new object[] {
+            "Nothing",
+            "Magic Wand",
+            "Holy Wand",
+            "Whip",
+            "Bloody Tear",
+            "Axe",
+            "Death Spiral",
+            "Knife",
+            "Thousand Edge",
+            "Santa Water",
+            "La Borra",
+            "Runetracer",
+            "Fire Wand",
+            "Hellfire",
+            "King Bible",
+            "Unholy Vespers",
+            "Cross",
+            "Heaven Sword",
+            "Garlic",
+            "Soul Eater",
+            "Laurel",
+            "Lightning Ring",
+            "Thunder Loop",
+            "Pentagram",
+            "Gorgeous Moon",
+            "Peachone",
+            "Ebony Wings",
+            "Vandalier",
+            "Bone",
+            "Clock Lancet",
+            "Song of Mana",
+            "Mannajja",
+            "Cherry Bomb",
+            "Carréllo",
+            "Gatti Amari",
+            "Vicious Hunger",
+            "Celestial Dusting",
+            "Phiera Der Tuphello",
+            "Eight The Sparrow",
+            "Phieraggi",
+            "Shadow Pinion",
+            "Valkyrie Turner",
+            "NO FUTURE",
+            "Infinite Corridor",
+            "Crimson Shroud",
+            "Vento Sacro",
+            "Fuwalafuwaloo",
+            "La Robba",
+            "Candybox",
+            "Greatest Jubilee",
+            "Victory Sword",
+            "Sole Solution",
+            "Bracelet",
+            "Bi-Bracelet",
+            "Tri-Bracelet",
+            "Super Candybox II Turbo",
+            "Mille Bolle Blu",
+            "Flames of Misspell",
+            "Ashes of Muspell",
+            "Silver Wind",
+            "Festive Winds",
+            "Four Seasons",
+            "Godai Shuffle",
+            "Summon Night",
+            "Echo Night",
+            "Mirage Robe",
+            "J\'Odore",
+            "Boo Roo Boolle",
+            "Night Sword",
+            "Muramasa",
+            "108 Bocce",
+            "SpellString",
+            "SpellStream",
+            "SpellStrike",
+            "SpellStrom",
+            "Shadow Servant",
+            "Ophion",
+            "Prismatic Missile",
+            "Luminaire",
+            "Flash Arrow",
+            "Millionaire",
+            "Eskizzibur",
+            "Legionnaire",
+            "Party Popper",
+            "Phas3r",
+            "Insatiable",
+            "Glass Fandango",
+            "Celestial Voulge",
+            "Arma Dio",
+            "Photonstorm",
+            "Pako Battiliar",
+            "Mazo Familiar",
+            "Report!",
+            "Emergency Meeting",
+            "Lucky Swipe",
+            "Crossed Wires",
+            "Lifesign Scan",
+            "Paranormal Scan",
+            "Just Vent",
+            "Unjust Ejection",
+            "Clear Debris",
+            "Clear Asteroids",
+            "Sharp Tongue",
+            "Impostongue",
+            "Science Rocks",
+            "Rocket Science",
+            "Hats",
+            "Santa Javelin",
+            "Seraphic Cry",
+            "Acquazzone",
+            "Long Gun ",
+            "Short Gun  ",
+            "Spread Shot ",
+            "Sonic Bloom",
+            "Blade Crossbow",
+            "Wave Beam",
+            "C-U-Laser",
+            "Firearm",
+            "Metal Claw",
+            "Atmo-Torpedo",
+            "Homing Miss",
+            "Prism Lass",
+            "Pronto Beam",
+            "Fire-L3GS",
+            "Big Fuzzy Fist",
+            "Multistage Missiles",
+            "Time Warp",
+            "Prototype B",
+            "Prototype A",
+            "Prototype C",
+            "BFC2000-AD",
+            "Diver Mines",
+            "Confodere",
+            "Vol Confodere",
+            "Melio Confodere",
+            "Alchemy Whip",
+            "Vampire Killer",
+            "Coat of Arms",
+            "Morning Star",
+            "Belnades\' Spellbook",
+            "Ebony Diabologue",
+            "Alucart Sworb",
+            "Alucard Swords",
+            "Iron Ball",
+            "Wrecking Ball",
+            "Alucard Spear",
+            "Thunderbolt Spear",
+            "Mace",
+            "Stamazza",
+            "Trident",
+            "Gungnir-Souris",
+            "Javelin",
+            "Long Inus",
+            "Curved Knife",
+            "Bwaka Knife",
+            "Shuriken",
+            "Yagyu Shuriken",
+            "Luminatio",
+            "Vol Luminatio",
+            "Umbra",
+            "Vol Umbra",
+            "Discus",
+            "Stellar Blade",
+            "Wine Glass",
+            "Meal Ticket",
+            "Vanitas Whip",
+            "Aurablaster Tip",
+            "Dextro Custos",
+            "Sinestro Custos",
+            "Centralis Custos",
+            "Trinum Custodem",
+            "Wind Whip",
+            "Spirit Tornado Tip",
+            "Platinum Whip",
+            "Cross Crasher Tip",
+            "Dragon Water Whip",
+            "Hydrostormer Tip",
+            "Soul Steal",
+            "Hand Grenade",
+            "The RPG",
+            "Alucard Shield",
+            "Sonic Dash",
+            "Rapidus Fio",
+            "Raging Fire",
+            "Salamender",
+            "Ice Fang",
+            "Cocytus",
+            "Gale Force",
+            "Pneuma Tempestas",
+            "Rock Riot",
+            "Gemma Torpor",
+            "Fulgur",
+            "Tenebris Tonitrus",
+            "Keremet Bubbles",
+            "Keremet Morbus",
+            "Hex",
+            "Nightmare",
+            "Refectio",
+            "Sanctuary",
+            "Optical Shot",
+            "Acerbatus",
+            "Globus",
+            "Nitesco",
+            "Crissaegrim Tip",
+            "Vibhuti Whip",
+            "Daybreaker Tip",
+            "Silver Revolver",
+            "Jewel Gun",
+            "Tyrfing",
+            "Rune Sword",
+            "Universitas",
+            "Dominus Anger",
+            "Dominus Hatred",
+            "Dominus Agony",
+            "Power of Sire",
+            "Guardian\'s Targe",
+            "Sacred Beasts Tower Shield",
+            "Star Flail",
+            "Moon Rod",
+            "Jet Black Whip",
+            "Mormegil Tip",
+            "Spectral Sword",
+            "Iron Shield",
+            "Dark Iron Shield",
+            "Troll Bomb",
+            "Endo Gears",
+            "Peri Pendulum",
+            "Svarog Statue",
+            "Sonic Whip",
+            "Arrow of Goth",
+            "Hydro Storm",
+            "Dark Rift",
+            "Summon Spirit",
+            "Sword Brothers",
+            "Valmanway",
+            "Grand Cross",
+            "Summon Spirit Tornado",
+            "Myo Lift",
+            "Epi Head",
+            "Clock Tower",
+            "Aura Blast",
+            "Familiar Forge",
+            "Icebrand",
+            "Spinach",
+            "Candelabrador",
+            "Bracer",
+            "Empty Tome",
+            "Spellbinder",
+            "Duplicator",
+            "Hollow Heart",
+            "Armor",
+            "Wings",
+            "Attractorb",
+            "Crown",
+            "Clover",
+            "Stone Mask",
+            "Tirajisú",
+            "Pummarola",
+            "Skull O\'Maniac",
+            "Silver Ring",
+            "Gold Ring",
+            "Metaglio Left",
+            "Metaglio Right",
+            "Torrona\'s Box",
+            "Tetraforce",
+            "Academy Badge",
+            "Mini Crewmate",
+            "Mini Engineer",
+            "Mini Ghost",
+            "Mini Shapeshifter",
+            "Mini Guardian",
+            "Mini Impostor",
+            "Mini Scientist",
+            "Mini Horse",
+            "Parm Aegis",
+            "Karoma\'s Mana",
+            "Weapon Power-Up",
+            "Ukoback",
+            "Bitterfly",
+            "Imp",
+            "Alleged Ghost",
+            "Wood Rod",
+            "Faerie",
+            "Pumpkin",
+            "Sacred Cardinal",
+            "Sacred Dragon",
+            "Sacred Tiger",
+            "Sacred Turtle"});
+            this.CharStartingWeapon.Location = new System.Drawing.Point(99, 51);
+            this.CharStartingWeapon.Name = "CharStartingWeapon";
+            this.CharStartingWeapon.Size = new System.Drawing.Size(121, 21);
+            this.CharStartingWeapon.TabIndex = 25;
+            this.CharStartingWeapon.Text = "Whip";
+            // 
+            // label130
+            // 
+            this.label130.AutoSize = true;
+            this.label130.Location = new System.Drawing.Point(475, 294);
+            this.label130.Name = "label130";
+            this.label130.Size = new System.Drawing.Size(57, 13);
+            this.label130.TabIndex = 23;
+            this.label130.Text = "Showcase";
+            // 
+            // label124
+            // 
+            this.label124.AutoSize = true;
+            this.label124.Location = new System.Drawing.Point(445, 206);
+            this.label124.Name = "label124";
+            this.label124.Size = new System.Drawing.Size(87, 13);
+            this.label124.TabIndex = 12;
+            this.label124.Text = "HiddenWeapons";
+            // 
+            // label123
+            // 
+            this.label123.AutoSize = true;
+            this.label123.Location = new System.Drawing.Point(467, 111);
+            this.label123.Name = "label123";
+            this.label123.Size = new System.Drawing.Size(65, 13);
+            this.label123.TabIndex = 9;
+            this.label123.Text = "ExWeapons";
+            // 
+            // CharCurrentSkin
+            // 
+            this.CharCurrentSkin.FormattingEnabled = true;
+            this.CharCurrentSkin.Items.AddRange(new object[] {
+            "DEFAULT",
+            "LEGACY"});
+            this.CharCurrentSkin.Location = new System.Drawing.Point(99, 78);
+            this.CharCurrentSkin.Name = "CharCurrentSkin";
+            this.CharCurrentSkin.Size = new System.Drawing.Size(121, 21);
+            this.CharCurrentSkin.TabIndex = 3;
+            this.CharCurrentSkin.Text = "DEFAULT";
+            // 
             // tabPage22
             // 
             this.tabPage22.Controls.Add(this.tabControl3);
@@ -8029,1570 +9593,6 @@
             0,
             0});
             // 
-            // tabPage21
-            // 
-            this.tabPage21.Controls.Add(this.groupBox8);
-            this.tabPage21.Controls.Add(this.groupBox7);
-            this.tabPage21.Controls.Add(this.groupBox6);
-            this.tabPage21.Controls.Add(this.groupBox3);
-            this.tabPage21.Controls.Add(this.label138);
-            this.tabPage21.Controls.Add(this.CharShowcase);
-            this.tabPage21.Controls.Add(this.CharHiddenWeapons);
-            this.tabPage21.Controls.Add(this.CharExWeapons);
-            this.tabPage21.Controls.Add(this.label131);
-            this.tabPage21.Controls.Add(this.CharStartingWeapon);
-            this.tabPage21.Controls.Add(this.label130);
-            this.tabPage21.Controls.Add(this.label124);
-            this.tabPage21.Controls.Add(this.label123);
-            this.tabPage21.Controls.Add(this.CharCurrentSkin);
-            this.tabPage21.Location = new System.Drawing.Point(4, 22);
-            this.tabPage21.Name = "tabPage21";
-            this.tabPage21.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage21.Size = new System.Drawing.Size(684, 460);
-            this.tabPage21.TabIndex = 0;
-            this.tabPage21.Text = "Character";
-            this.tabPage21.UseVisualStyleBackColor = true;
-            // 
-            // groupBox8
-            // 
-            this.groupBox8.Controls.Add(this.PortraitSprite);
-            this.groupBox8.Controls.Add(this.CharPrice);
-            this.groupBox8.Controls.Add(this.label129);
-            this.groupBox8.Controls.Add(this.CharDescription);
-            this.groupBox8.Controls.Add(this.label128);
-            this.groupBox8.Controls.Add(this.label127);
-            this.groupBox8.Location = new System.Drawing.Point(489, 6);
-            this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(189, 102);
-            this.groupBox8.TabIndex = 41;
-            this.groupBox8.TabStop = false;
-            this.groupBox8.Text = "Miscellaneous";
-            // 
-            // PortraitSprite
-            // 
-            this.PortraitSprite.FormattingEnabled = true;
-            this.PortraitSprite.Location = new System.Drawing.Point(82, 70);
-            this.PortraitSprite.Name = "PortraitSprite";
-            this.PortraitSprite.Size = new System.Drawing.Size(100, 21);
-            this.PortraitSprite.TabIndex = 42;
-            // 
-            // CharPrice
-            // 
-            this.CharPrice.Location = new System.Drawing.Point(134, 18);
-            this.CharPrice.Maximum = new decimal(new int[] {
-            -727379968,
-            232,
-            0,
-            0});
-            this.CharPrice.Name = "CharPrice";
-            this.CharPrice.Size = new System.Drawing.Size(48, 20);
-            this.CharPrice.TabIndex = 20;
-            // 
-            // label129
-            // 
-            this.label129.AutoSize = true;
-            this.label129.Location = new System.Drawing.Point(5, 20);
-            this.label129.Name = "label129";
-            this.label129.Size = new System.Drawing.Size(31, 13);
-            this.label129.TabIndex = 21;
-            this.label129.Text = "Price";
-            // 
-            // CharDescription
-            // 
-            this.CharDescription.Location = new System.Drawing.Point(82, 44);
-            this.CharDescription.Name = "CharDescription";
-            this.CharDescription.Size = new System.Drawing.Size(100, 20);
-            this.CharDescription.TabIndex = 4;
-            // 
-            // label128
-            // 
-            this.label128.AutoSize = true;
-            this.label128.Location = new System.Drawing.Point(5, 47);
-            this.label128.Name = "label128";
-            this.label128.Size = new System.Drawing.Size(60, 13);
-            this.label128.TabIndex = 19;
-            this.label128.Text = "Description";
-            // 
-            // label127
-            // 
-            this.label127.AutoSize = true;
-            this.label127.Location = new System.Drawing.Point(6, 73);
-            this.label127.Name = "label127";
-            this.label127.Size = new System.Drawing.Size(70, 13);
-            this.label127.TabIndex = 18;
-            this.label127.Text = "Portrait Sprite";
-            // 
-            // groupBox7
-            // 
-            this.groupBox7.Controls.Add(this.CharAlwaysHidden);
-            this.groupBox7.Controls.Add(this.CharOnEveryLevelUp);
-            this.groupBox7.Controls.Add(this.CharIsBought);
-            this.groupBox7.Controls.Add(this.CharHidden);
-            this.groupBox7.Location = new System.Drawing.Point(6, 6);
-            this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(183, 39);
-            this.groupBox7.TabIndex = 41;
-            this.groupBox7.TabStop = false;
-            this.groupBox7.Text = "Options";
-            // 
-            // CharAlwaysHidden
-            // 
-            this.CharAlwaysHidden.AutoSize = true;
-            this.CharAlwaysHidden.Enabled = false;
-            this.CharAlwaysHidden.Location = new System.Drawing.Point(6, 39);
-            this.CharAlwaysHidden.Name = "CharAlwaysHidden";
-            this.CharAlwaysHidden.Size = new System.Drawing.Size(93, 17);
-            this.CharAlwaysHidden.TabIndex = 0;
-            this.CharAlwaysHidden.Text = "AlwaysHidden";
-            this.CharAlwaysHidden.UseVisualStyleBackColor = true;
-            this.CharAlwaysHidden.Visible = false;
-            // 
-            // CharOnEveryLevelUp
-            // 
-            this.CharOnEveryLevelUp.AutoSize = true;
-            this.CharOnEveryLevelUp.Location = new System.Drawing.Point(6, 19);
-            this.CharOnEveryLevelUp.Name = "CharOnEveryLevelUp";
-            this.CharOnEveryLevelUp.Size = new System.Drawing.Size(107, 17);
-            this.CharOnEveryLevelUp.TabIndex = 36;
-            this.CharOnEveryLevelUp.Text = "OnEveryLevelUp";
-            this.CharOnEveryLevelUp.UseVisualStyleBackColor = true;
-            this.CharOnEveryLevelUp.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
-            // 
-            // CharIsBought
-            // 
-            this.CharIsBought.AutoSize = true;
-            this.CharIsBought.Checked = true;
-            this.CharIsBought.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.CharIsBought.Location = new System.Drawing.Point(114, 19);
-            this.CharIsBought.Name = "CharIsBought";
-            this.CharIsBought.Size = new System.Drawing.Size(71, 17);
-            this.CharIsBought.TabIndex = 2;
-            this.CharIsBought.Text = "Is Bought";
-            this.CharIsBought.UseVisualStyleBackColor = true;
-            // 
-            // CharHidden
-            // 
-            this.CharHidden.AutoSize = true;
-            this.CharHidden.Enabled = false;
-            this.CharHidden.Location = new System.Drawing.Point(114, 39);
-            this.CharHidden.Name = "CharHidden";
-            this.CharHidden.Size = new System.Drawing.Size(60, 17);
-            this.CharHidden.TabIndex = 1;
-            this.CharHidden.Text = "Hidden";
-            this.CharHidden.UseVisualStyleBackColor = true;
-            this.CharHidden.Visible = false;
-            // 
-            // groupBox6
-            // 
-            this.groupBox6.Controls.Add(this.CharExLevels);
-            this.groupBox6.Controls.Add(this.label122);
-            this.groupBox6.Controls.Add(this.CharExWeaponsCombo);
-            this.groupBox6.Controls.Add(this.CharHiddenWeaponsCombo);
-            this.groupBox6.Controls.Add(this.label136);
-            this.groupBox6.Controls.Add(this.CharShowcaseCombo);
-            this.groupBox6.Controls.Add(this.label135);
-            this.groupBox6.Controls.Add(this.label134);
-            this.groupBox6.Location = new System.Drawing.Point(6, 229);
-            this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(225, 120);
-            this.groupBox6.TabIndex = 40;
-            this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "Extra Data";
-            // 
-            // CharExLevels
-            // 
-            this.CharExLevels.Location = new System.Drawing.Point(172, 14);
-            this.CharExLevels.Name = "CharExLevels";
-            this.CharExLevels.Size = new System.Drawing.Size(48, 20);
-            this.CharExLevels.TabIndex = 5;
-            // 
-            // label122
-            // 
-            this.label122.AutoSize = true;
-            this.label122.Location = new System.Drawing.Point(6, 16);
-            this.label122.Name = "label122";
-            this.label122.Size = new System.Drawing.Size(50, 13);
-            this.label122.TabIndex = 6;
-            this.label122.Text = "ExLevels";
-            // 
-            // CharExWeaponsCombo
-            // 
-            this.CharExWeaponsCombo.FormattingEnabled = true;
-            this.CharExWeaponsCombo.Items.AddRange(new object[] {
-            "Magic Wand",
-            "Holy Wand",
-            "Whip",
-            "Bloody Tear",
-            "Axe",
-            "Death Spiral",
-            "Knife",
-            "Thousand Edge",
-            "Santa Water",
-            "La Borra",
-            "Runetracer",
-            "Fire Wand",
-            "Hellfire",
-            "King Bible",
-            "Unholy Vespers",
-            "Cross",
-            "Heaven Sword",
-            "Garlic",
-            "Soul Eater",
-            "Laurel",
-            "Lightning Ring",
-            "Thunder Loop",
-            "Pentagram",
-            "Gorgeous Moon",
-            "Peachone",
-            "Ebony Wings",
-            "Vandalier",
-            "Bone",
-            "Clock Lancet",
-            "Song of Mana",
-            "Mannajja",
-            "Cherry Bomb",
-            "Carréllo",
-            "Gatti Amari",
-            "Vicious Hunger",
-            "Celestial Dusting",
-            "Phiera Der Tuphello",
-            "Eight The Sparrow",
-            "Phieraggi",
-            "Shadow Pinion",
-            "Valkyrie Turner",
-            "NO FUTURE",
-            "Infinite Corridor",
-            "Crimson Shroud",
-            "Vento Sacro",
-            "Fuwalafuwaloo",
-            "La Robba",
-            "Candybox",
-            "Greatest Jubilee",
-            "Victory Sword",
-            "Sole Solution",
-            "Bracelet",
-            "Bi-Bracelet",
-            "Tri-Bracelet",
-            "Super Candybox II Turbo",
-            "Mille Bolle Blu",
-            "Flames of Misspell",
-            "Ashes of Muspell",
-            "Silver Wind",
-            "Festive Winds",
-            "Four Seasons",
-            "Godai Shuffle",
-            "Summon Night",
-            "Echo Night",
-            "Mirage Robe",
-            "J\'Odore",
-            "Boo Roo Boolle",
-            "Night Sword",
-            "Muramasa",
-            "108 Bocce",
-            "SpellString",
-            "SpellStream",
-            "SpellStrike",
-            "SpellStrom",
-            "Shadow Servant",
-            "Ophion",
-            "Prismatic Missile",
-            "Luminaire",
-            "Flash Arrow",
-            "Millionaire",
-            "Eskizzibur",
-            "Legionnaire",
-            "Party Popper",
-            "Phas3r",
-            "Insatiable",
-            "Glass Fandango",
-            "Celestial Voulge",
-            "Arma Dio",
-            "Photonstorm",
-            "Pako Battiliar",
-            "Mazo Familiar",
-            "Report!",
-            "Emergency Meeting",
-            "Lucky Swipe",
-            "Crossed Wires",
-            "Lifesign Scan",
-            "Paranormal Scan",
-            "Just Vent",
-            "Unjust Ejection",
-            "Clear Debris",
-            "Clear Asteroids",
-            "Sharp Tongue",
-            "Impostongue",
-            "Science Rocks",
-            "Rocket Science",
-            "Hats",
-            "Santa Javelin",
-            "Seraphic Cry",
-            "Acquazzone",
-            "Long Gun ",
-            "Short Gun  ",
-            "Spread Shot ",
-            "Sonic Bloom",
-            "Blade Crossbow",
-            "Wave Beam",
-            "C-U-Laser",
-            "Firearm",
-            "Metal Claw",
-            "Atmo-Torpedo",
-            "Homing Miss",
-            "Prism Lass",
-            "Pronto Beam",
-            "Fire-L3GS",
-            "Big Fuzzy Fist",
-            "Multistage Missiles",
-            "Time Warp",
-            "Prototype B",
-            "Prototype A",
-            "Prototype C",
-            "BFC2000-AD",
-            "Diver Mines",
-            "Confodere",
-            "Vol Confodere",
-            "Melio Confodere",
-            "Alchemy Whip",
-            "Vampire Killer",
-            "Coat of Arms",
-            "Morning Star",
-            "Belnades\' Spellbook",
-            "Ebony Diabologue",
-            "Alucart Sworb",
-            "Alucard Swords",
-            "Iron Ball",
-            "Wrecking Ball",
-            "Alucard Spear",
-            "Thunderbolt Spear",
-            "Mace",
-            "Stamazza",
-            "Trident",
-            "Gungnir-Souris",
-            "Javelin",
-            "Long Inus",
-            "Curved Knife",
-            "Bwaka Knife",
-            "Shuriken",
-            "Yagyu Shuriken",
-            "Luminatio",
-            "Vol Luminatio",
-            "Umbra",
-            "Vol Umbra",
-            "Discus",
-            "Stellar Blade",
-            "Wine Glass",
-            "Meal Ticket",
-            "Vanitas Whip",
-            "Aurablaster Tip",
-            "Dextro Custos",
-            "Sinestro Custos",
-            "Centralis Custos",
-            "Trinum Custodem",
-            "Wind Whip",
-            "Spirit Tornado Tip",
-            "Platinum Whip",
-            "Cross Crasher Tip",
-            "Dragon Water Whip",
-            "Hydrostormer Tip",
-            "Soul Steal",
-            "Hand Grenade",
-            "The RPG",
-            "Alucard Shield",
-            "Sonic Dash",
-            "Rapidus Fio",
-            "Raging Fire",
-            "Salamender",
-            "Ice Fang",
-            "Cocytus",
-            "Gale Force",
-            "Pneuma Tempestas",
-            "Rock Riot",
-            "Gemma Torpor",
-            "Fulgur",
-            "Tenebris Tonitrus",
-            "Keremet Bubbles",
-            "Keremet Morbus",
-            "Hex",
-            "Nightmare",
-            "Refectio",
-            "Sanctuary",
-            "Optical Shot",
-            "Acerbatus",
-            "Globus",
-            "Nitesco",
-            "Crissaegrim Tip",
-            "Vibhuti Whip",
-            "Daybreaker Tip",
-            "Silver Revolver",
-            "Jewel Gun",
-            "Tyrfing",
-            "Rune Sword",
-            "Universitas",
-            "Dominus Anger",
-            "Dominus Hatred",
-            "Dominus Agony",
-            "Power of Sire",
-            "Guardian\'s Targe",
-            "Sacred Beasts Tower Shield",
-            "Star Flail",
-            "Moon Rod",
-            "Jet Black Whip",
-            "Mormegil Tip",
-            "Spectral Sword",
-            "Iron Shield",
-            "Dark Iron Shield",
-            "Troll Bomb",
-            "Endo Gears",
-            "Peri Pendulum",
-            "Svarog Statue",
-            "Sonic Whip",
-            "Arrow of Goth",
-            "Hydro Storm",
-            "Dark Rift",
-            "Summon Spirit",
-            "Sword Brothers",
-            "Valmanway",
-            "Grand Cross",
-            "Summon Spirit Tornado",
-            "Myo Lift",
-            "Epi Head",
-            "Clock Tower",
-            "Aura Blast",
-            "Familiar Forge",
-            "Icebrand",
-            "Spinach",
-            "Candelabrador",
-            "Bracer",
-            "Empty Tome",
-            "Spellbinder",
-            "Duplicator",
-            "Hollow Heart",
-            "Armor",
-            "Wings",
-            "Attractorb",
-            "Crown",
-            "Clover",
-            "Stone Mask",
-            "Tirajisú",
-            "Pummarola",
-            "Skull O\'Maniac",
-            "Silver Ring",
-            "Gold Ring",
-            "Metaglio Left",
-            "Metaglio Right",
-            "Torrona\'s Box",
-            "Tetraforce",
-            "Academy Badge",
-            "Mini Crewmate",
-            "Mini Engineer",
-            "Mini Ghost",
-            "Mini Shapeshifter",
-            "Mini Guardian",
-            "Mini Impostor",
-            "Mini Scientist",
-            "Mini Horse",
-            "Parm Aegis",
-            "Karoma\'s Mana",
-            "Weapon Power-Up",
-            "Ukoback",
-            "Bitterfly",
-            "Imp",
-            "Alleged Ghost",
-            "Wood Rod",
-            "Faerie",
-            "Pumpkin",
-            "Sacred Cardinal",
-            "Sacred Dragon",
-            "Sacred Tiger",
-            "Sacred Turtle"});
-            this.CharExWeaponsCombo.Location = new System.Drawing.Point(99, 40);
-            this.CharExWeaponsCombo.Name = "CharExWeaponsCombo";
-            this.CharExWeaponsCombo.Size = new System.Drawing.Size(121, 21);
-            this.CharExWeaponsCombo.TabIndex = 7;
-            this.CharExWeaponsCombo.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
-            // 
-            // CharHiddenWeaponsCombo
-            // 
-            this.CharHiddenWeaponsCombo.FormattingEnabled = true;
-            this.CharHiddenWeaponsCombo.Items.AddRange(new object[] {
-            "Magic Wand",
-            "Holy Wand",
-            "Whip",
-            "Bloody Tear",
-            "Axe",
-            "Death Spiral",
-            "Knife",
-            "Thousand Edge",
-            "Santa Water",
-            "La Borra",
-            "Runetracer",
-            "Fire Wand",
-            "Hellfire",
-            "King Bible",
-            "Unholy Vespers",
-            "Cross",
-            "Heaven Sword",
-            "Garlic",
-            "Soul Eater",
-            "Laurel",
-            "Lightning Ring",
-            "Thunder Loop",
-            "Pentagram",
-            "Gorgeous Moon",
-            "Peachone",
-            "Ebony Wings",
-            "Vandalier",
-            "Bone",
-            "Clock Lancet",
-            "Song of Mana",
-            "Mannajja",
-            "Cherry Bomb",
-            "Carréllo",
-            "Gatti Amari",
-            "Vicious Hunger",
-            "Celestial Dusting",
-            "Phiera Der Tuphello",
-            "Eight The Sparrow",
-            "Phieraggi",
-            "Shadow Pinion",
-            "Valkyrie Turner",
-            "NO FUTURE",
-            "Infinite Corridor",
-            "Crimson Shroud",
-            "Vento Sacro",
-            "Fuwalafuwaloo",
-            "La Robba",
-            "Candybox",
-            "Greatest Jubilee",
-            "Victory Sword",
-            "Sole Solution",
-            "Bracelet",
-            "Bi-Bracelet",
-            "Tri-Bracelet",
-            "Super Candybox II Turbo",
-            "Mille Bolle Blu",
-            "Flames of Misspell",
-            "Ashes of Muspell",
-            "Silver Wind",
-            "Festive Winds",
-            "Four Seasons",
-            "Godai Shuffle",
-            "Summon Night",
-            "Echo Night",
-            "Mirage Robe",
-            "J\'Odore",
-            "Boo Roo Boolle",
-            "Night Sword",
-            "Muramasa",
-            "108 Bocce",
-            "SpellString",
-            "SpellStream",
-            "SpellStrike",
-            "SpellStrom",
-            "Shadow Servant",
-            "Ophion",
-            "Prismatic Missile",
-            "Luminaire",
-            "Flash Arrow",
-            "Millionaire",
-            "Eskizzibur",
-            "Legionnaire",
-            "Party Popper",
-            "Phas3r",
-            "Insatiable",
-            "Glass Fandango",
-            "Celestial Voulge",
-            "Arma Dio",
-            "Photonstorm",
-            "Pako Battiliar",
-            "Mazo Familiar",
-            "Report!",
-            "Emergency Meeting",
-            "Lucky Swipe",
-            "Crossed Wires",
-            "Lifesign Scan",
-            "Paranormal Scan",
-            "Just Vent",
-            "Unjust Ejection",
-            "Clear Debris",
-            "Clear Asteroids",
-            "Sharp Tongue",
-            "Impostongue",
-            "Science Rocks",
-            "Rocket Science",
-            "Hats",
-            "Santa Javelin",
-            "Seraphic Cry",
-            "Acquazzone",
-            "Long Gun ",
-            "Short Gun  ",
-            "Spread Shot ",
-            "Sonic Bloom",
-            "Blade Crossbow",
-            "Wave Beam",
-            "C-U-Laser",
-            "Firearm",
-            "Metal Claw",
-            "Atmo-Torpedo",
-            "Homing Miss",
-            "Prism Lass",
-            "Pronto Beam",
-            "Fire-L3GS",
-            "Big Fuzzy Fist",
-            "Multistage Missiles",
-            "Time Warp",
-            "Prototype B",
-            "Prototype A",
-            "Prototype C",
-            "BFC2000-AD",
-            "Diver Mines",
-            "Confodere",
-            "Vol Confodere",
-            "Melio Confodere",
-            "Alchemy Whip",
-            "Vampire Killer",
-            "Coat of Arms",
-            "Morning Star",
-            "Belnades\' Spellbook",
-            "Ebony Diabologue",
-            "Alucart Sworb",
-            "Alucard Swords",
-            "Iron Ball",
-            "Wrecking Ball",
-            "Alucard Spear",
-            "Thunderbolt Spear",
-            "Mace",
-            "Stamazza",
-            "Trident",
-            "Gungnir-Souris",
-            "Javelin",
-            "Long Inus",
-            "Curved Knife",
-            "Bwaka Knife",
-            "Shuriken",
-            "Yagyu Shuriken",
-            "Luminatio",
-            "Vol Luminatio",
-            "Umbra",
-            "Vol Umbra",
-            "Discus",
-            "Stellar Blade",
-            "Wine Glass",
-            "Meal Ticket",
-            "Vanitas Whip",
-            "Aurablaster Tip",
-            "Dextro Custos",
-            "Sinestro Custos",
-            "Centralis Custos",
-            "Trinum Custodem",
-            "Wind Whip",
-            "Spirit Tornado Tip",
-            "Platinum Whip",
-            "Cross Crasher Tip",
-            "Dragon Water Whip",
-            "Hydrostormer Tip",
-            "Soul Steal",
-            "Hand Grenade",
-            "The RPG",
-            "Alucard Shield",
-            "Sonic Dash",
-            "Rapidus Fio",
-            "Raging Fire",
-            "Salamender",
-            "Ice Fang",
-            "Cocytus",
-            "Gale Force",
-            "Pneuma Tempestas",
-            "Rock Riot",
-            "Gemma Torpor",
-            "Fulgur",
-            "Tenebris Tonitrus",
-            "Keremet Bubbles",
-            "Keremet Morbus",
-            "Hex",
-            "Nightmare",
-            "Refectio",
-            "Sanctuary",
-            "Optical Shot",
-            "Acerbatus",
-            "Globus",
-            "Nitesco",
-            "Crissaegrim Tip",
-            "Vibhuti Whip",
-            "Daybreaker Tip",
-            "Silver Revolver",
-            "Jewel Gun",
-            "Tyrfing",
-            "Rune Sword",
-            "Universitas",
-            "Dominus Anger",
-            "Dominus Hatred",
-            "Dominus Agony",
-            "Power of Sire",
-            "Guardian\'s Targe",
-            "Sacred Beasts Tower Shield",
-            "Star Flail",
-            "Moon Rod",
-            "Jet Black Whip",
-            "Mormegil Tip",
-            "Spectral Sword",
-            "Iron Shield",
-            "Dark Iron Shield",
-            "Troll Bomb",
-            "Endo Gears",
-            "Peri Pendulum",
-            "Svarog Statue",
-            "Sonic Whip",
-            "Arrow of Goth",
-            "Hydro Storm",
-            "Dark Rift",
-            "Summon Spirit",
-            "Sword Brothers",
-            "Valmanway",
-            "Grand Cross",
-            "Summon Spirit Tornado",
-            "Myo Lift",
-            "Epi Head",
-            "Clock Tower",
-            "Aura Blast",
-            "Familiar Forge",
-            "Icebrand",
-            "Spinach",
-            "Candelabrador",
-            "Bracer",
-            "Empty Tome",
-            "Spellbinder",
-            "Duplicator",
-            "Hollow Heart",
-            "Armor",
-            "Wings",
-            "Attractorb",
-            "Crown",
-            "Clover",
-            "Stone Mask",
-            "Tirajisú",
-            "Pummarola",
-            "Skull O\'Maniac",
-            "Silver Ring",
-            "Gold Ring",
-            "Metaglio Left",
-            "Metaglio Right",
-            "Torrona\'s Box",
-            "Tetraforce",
-            "Academy Badge",
-            "Mini Crewmate",
-            "Mini Engineer",
-            "Mini Ghost",
-            "Mini Shapeshifter",
-            "Mini Guardian",
-            "Mini Impostor",
-            "Mini Scientist",
-            "Mini Horse",
-            "Parm Aegis",
-            "Karoma\'s Mana",
-            "Weapon Power-Up",
-            "Ukoback",
-            "Bitterfly",
-            "Imp",
-            "Alleged Ghost",
-            "Wood Rod",
-            "Faerie",
-            "Pumpkin",
-            "Sacred Cardinal",
-            "Sacred Dragon",
-            "Sacred Tiger",
-            "Sacred Turtle"});
-            this.CharHiddenWeaponsCombo.Location = new System.Drawing.Point(99, 67);
-            this.CharHiddenWeaponsCombo.Name = "CharHiddenWeaponsCombo";
-            this.CharHiddenWeaponsCombo.Size = new System.Drawing.Size(121, 21);
-            this.CharHiddenWeaponsCombo.TabIndex = 10;
-            this.CharHiddenWeaponsCombo.SelectedIndexChanged += new System.EventHandler(this.CharHiddenWeaponsCombo_SelectedIndexChanged);
-            // 
-            // label136
-            // 
-            this.label136.AutoSize = true;
-            this.label136.Location = new System.Drawing.Point(6, 43);
-            this.label136.Name = "label136";
-            this.label136.Size = new System.Drawing.Size(65, 13);
-            this.label136.TabIndex = 33;
-            this.label136.Text = "ExWeapons";
-            // 
-            // CharShowcaseCombo
-            // 
-            this.CharShowcaseCombo.FormattingEnabled = true;
-            this.CharShowcaseCombo.Items.AddRange(new object[] {
-            "Magic Wand",
-            "Holy Wand",
-            "Whip",
-            "Bloody Tear",
-            "Axe",
-            "Death Spiral",
-            "Knife",
-            "Thousand Edge",
-            "Santa Water",
-            "La Borra",
-            "Runetracer",
-            "Fire Wand",
-            "Hellfire",
-            "King Bible",
-            "Unholy Vespers",
-            "Cross",
-            "Heaven Sword",
-            "Garlic",
-            "Soul Eater",
-            "Laurel",
-            "Lightning Ring",
-            "Thunder Loop",
-            "Pentagram",
-            "Gorgeous Moon",
-            "Peachone",
-            "Ebony Wings",
-            "Vandalier",
-            "Bone",
-            "Clock Lancet",
-            "Song of Mana",
-            "Mannajja",
-            "Cherry Bomb",
-            "Carréllo",
-            "Gatti Amari",
-            "Vicious Hunger",
-            "Celestial Dusting",
-            "Phiera Der Tuphello",
-            "Eight The Sparrow",
-            "Phieraggi",
-            "Shadow Pinion",
-            "Valkyrie Turner",
-            "NO FUTURE",
-            "Infinite Corridor",
-            "Crimson Shroud",
-            "Vento Sacro",
-            "Fuwalafuwaloo",
-            "La Robba",
-            "Candybox",
-            "Greatest Jubilee",
-            "Victory Sword",
-            "Sole Solution",
-            "Bracelet",
-            "Bi-Bracelet",
-            "Tri-Bracelet",
-            "Super Candybox II Turbo",
-            "Mille Bolle Blu",
-            "Flames of Misspell",
-            "Ashes of Muspell",
-            "Silver Wind",
-            "Festive Winds",
-            "Four Seasons",
-            "Godai Shuffle",
-            "Summon Night",
-            "Echo Night",
-            "Mirage Robe",
-            "J\'Odore",
-            "Boo Roo Boolle",
-            "Night Sword",
-            "Muramasa",
-            "108 Bocce",
-            "SpellString",
-            "SpellStream",
-            "SpellStrike",
-            "SpellStrom",
-            "Shadow Servant",
-            "Ophion",
-            "Prismatic Missile",
-            "Luminaire",
-            "Flash Arrow",
-            "Millionaire",
-            "Eskizzibur",
-            "Legionnaire",
-            "Party Popper",
-            "Phas3r",
-            "Insatiable",
-            "Glass Fandango",
-            "Celestial Voulge",
-            "Arma Dio",
-            "Photonstorm",
-            "Pako Battiliar",
-            "Mazo Familiar",
-            "Report!",
-            "Emergency Meeting",
-            "Lucky Swipe",
-            "Crossed Wires",
-            "Lifesign Scan",
-            "Paranormal Scan",
-            "Just Vent",
-            "Unjust Ejection",
-            "Clear Debris",
-            "Clear Asteroids",
-            "Sharp Tongue",
-            "Impostongue",
-            "Science Rocks",
-            "Rocket Science",
-            "Hats",
-            "Santa Javelin",
-            "Seraphic Cry",
-            "Acquazzone",
-            "Long Gun ",
-            "Short Gun  ",
-            "Spread Shot ",
-            "Sonic Bloom",
-            "Blade Crossbow",
-            "Wave Beam",
-            "C-U-Laser",
-            "Firearm",
-            "Metal Claw",
-            "Atmo-Torpedo",
-            "Homing Miss",
-            "Prism Lass",
-            "Pronto Beam",
-            "Fire-L3GS",
-            "Big Fuzzy Fist",
-            "Multistage Missiles",
-            "Time Warp",
-            "Prototype B",
-            "Prototype A",
-            "Prototype C",
-            "BFC2000-AD",
-            "Diver Mines",
-            "Confodere",
-            "Vol Confodere",
-            "Melio Confodere",
-            "Alchemy Whip",
-            "Vampire Killer",
-            "Coat of Arms",
-            "Morning Star",
-            "Belnades\' Spellbook",
-            "Ebony Diabologue",
-            "Alucart Sworb",
-            "Alucard Swords",
-            "Iron Ball",
-            "Wrecking Ball",
-            "Alucard Spear",
-            "Thunderbolt Spear",
-            "Mace",
-            "Stamazza",
-            "Trident",
-            "Gungnir-Souris",
-            "Javelin",
-            "Long Inus",
-            "Curved Knife",
-            "Bwaka Knife",
-            "Shuriken",
-            "Yagyu Shuriken",
-            "Luminatio",
-            "Vol Luminatio",
-            "Umbra",
-            "Vol Umbra",
-            "Discus",
-            "Stellar Blade",
-            "Wine Glass",
-            "Meal Ticket",
-            "Vanitas Whip",
-            "Aurablaster Tip",
-            "Dextro Custos",
-            "Sinestro Custos",
-            "Centralis Custos",
-            "Trinum Custodem",
-            "Wind Whip",
-            "Spirit Tornado Tip",
-            "Platinum Whip",
-            "Cross Crasher Tip",
-            "Dragon Water Whip",
-            "Hydrostormer Tip",
-            "Soul Steal",
-            "Hand Grenade",
-            "The RPG",
-            "Alucard Shield",
-            "Sonic Dash",
-            "Rapidus Fio",
-            "Raging Fire",
-            "Salamender",
-            "Ice Fang",
-            "Cocytus",
-            "Gale Force",
-            "Pneuma Tempestas",
-            "Rock Riot",
-            "Gemma Torpor",
-            "Fulgur",
-            "Tenebris Tonitrus",
-            "Keremet Bubbles",
-            "Keremet Morbus",
-            "Hex",
-            "Nightmare",
-            "Refectio",
-            "Sanctuary",
-            "Optical Shot",
-            "Acerbatus",
-            "Globus",
-            "Nitesco",
-            "Crissaegrim Tip",
-            "Vibhuti Whip",
-            "Daybreaker Tip",
-            "Silver Revolver",
-            "Jewel Gun",
-            "Tyrfing",
-            "Rune Sword",
-            "Universitas",
-            "Dominus Anger",
-            "Dominus Hatred",
-            "Dominus Agony",
-            "Power of Sire",
-            "Guardian\'s Targe",
-            "Sacred Beasts Tower Shield",
-            "Star Flail",
-            "Moon Rod",
-            "Jet Black Whip",
-            "Mormegil Tip",
-            "Spectral Sword",
-            "Iron Shield",
-            "Dark Iron Shield",
-            "Troll Bomb",
-            "Endo Gears",
-            "Peri Pendulum",
-            "Svarog Statue",
-            "Sonic Whip",
-            "Arrow of Goth",
-            "Hydro Storm",
-            "Dark Rift",
-            "Summon Spirit",
-            "Sword Brothers",
-            "Valmanway",
-            "Grand Cross",
-            "Summon Spirit Tornado",
-            "Myo Lift",
-            "Epi Head",
-            "Clock Tower",
-            "Aura Blast",
-            "Familiar Forge",
-            "Icebrand",
-            "Spinach",
-            "Candelabrador",
-            "Bracer",
-            "Empty Tome",
-            "Spellbinder",
-            "Duplicator",
-            "Hollow Heart",
-            "Armor",
-            "Wings",
-            "Attractorb",
-            "Crown",
-            "Clover",
-            "Stone Mask",
-            "Tirajisú",
-            "Pummarola",
-            "Skull O\'Maniac",
-            "Silver Ring",
-            "Gold Ring",
-            "Metaglio Left",
-            "Metaglio Right",
-            "Torrona\'s Box",
-            "Tetraforce",
-            "Academy Badge",
-            "Mini Crewmate",
-            "Mini Engineer",
-            "Mini Ghost",
-            "Mini Shapeshifter",
-            "Mini Guardian",
-            "Mini Impostor",
-            "Mini Scientist",
-            "Mini Horse",
-            "Parm Aegis",
-            "Karoma\'s Mana",
-            "Weapon Power-Up",
-            "Ukoback",
-            "Bitterfly",
-            "Imp",
-            "Alleged Ghost",
-            "Wood Rod",
-            "Faerie",
-            "Pumpkin",
-            "Sacred Cardinal",
-            "Sacred Dragon",
-            "Sacred Tiger",
-            "Sacred Turtle"});
-            this.CharShowcaseCombo.Location = new System.Drawing.Point(99, 94);
-            this.CharShowcaseCombo.Name = "CharShowcaseCombo";
-            this.CharShowcaseCombo.Size = new System.Drawing.Size(121, 21);
-            this.CharShowcaseCombo.TabIndex = 24;
-            this.CharShowcaseCombo.SelectedIndexChanged += new System.EventHandler(this.CharShowcaseCombo_SelectedIndexChanged);
-            // 
-            // label135
-            // 
-            this.label135.AutoSize = true;
-            this.label135.Location = new System.Drawing.Point(6, 70);
-            this.label135.Name = "label135";
-            this.label135.Size = new System.Drawing.Size(90, 13);
-            this.label135.TabIndex = 32;
-            this.label135.Text = "Hidden Weapons";
-            // 
-            // label134
-            // 
-            this.label134.AutoSize = true;
-            this.label134.Location = new System.Drawing.Point(6, 97);
-            this.label134.Name = "label134";
-            this.label134.Size = new System.Drawing.Size(57, 13);
-            this.label134.TabIndex = 31;
-            this.label134.Text = "Showcase";
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.label287);
-            this.groupBox3.Controls.Add(this.CharName);
-            this.groupBox3.Controls.Add(this.label126);
-            this.groupBox3.Controls.Add(this.CharSuffix);
-            this.groupBox3.Controls.Add(this.CharSurname);
-            this.groupBox3.Controls.Add(this.CharPrefix);
-            this.groupBox3.Controls.Add(this.label133);
-            this.groupBox3.Controls.Add(this.label132);
-            this.groupBox3.Location = new System.Drawing.Point(6, 105);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(225, 118);
-            this.groupBox3.TabIndex = 39;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Character Info";
-            // 
-            // label287
-            // 
-            this.label287.AutoSize = true;
-            this.label287.Location = new System.Drawing.Point(5, 43);
-            this.label287.Name = "label287";
-            this.label287.Size = new System.Drawing.Size(91, 13);
-            this.label287.TabIndex = 38;
-            this.label287.Text = "Character Name *";
-            // 
-            // CharName
-            // 
-            this.CharName.Location = new System.Drawing.Point(119, 40);
-            this.CharName.Name = "CharName";
-            this.CharName.Size = new System.Drawing.Size(100, 20);
-            this.CharName.TabIndex = 37;
-            // 
-            // label126
-            // 
-            this.label126.AutoSize = true;
-            this.label126.Location = new System.Drawing.Point(5, 17);
-            this.label126.Name = "label126";
-            this.label126.Size = new System.Drawing.Size(33, 13);
-            this.label126.TabIndex = 17;
-            this.label126.Text = "Prefix";
-            // 
-            // CharSuffix
-            // 
-            this.CharSuffix.Location = new System.Drawing.Point(119, 92);
-            this.CharSuffix.Name = "CharSuffix";
-            this.CharSuffix.Size = new System.Drawing.Size(100, 20);
-            this.CharSuffix.TabIndex = 27;
-            // 
-            // CharSurname
-            // 
-            this.CharSurname.Location = new System.Drawing.Point(119, 66);
-            this.CharSurname.Name = "CharSurname";
-            this.CharSurname.Size = new System.Drawing.Size(100, 20);
-            this.CharSurname.TabIndex = 28;
-            // 
-            // CharPrefix
-            // 
-            this.CharPrefix.Location = new System.Drawing.Point(119, 14);
-            this.CharPrefix.Name = "CharPrefix";
-            this.CharPrefix.Size = new System.Drawing.Size(100, 20);
-            this.CharPrefix.TabIndex = 16;
-            // 
-            // label133
-            // 
-            this.label133.AutoSize = true;
-            this.label133.Location = new System.Drawing.Point(5, 69);
-            this.label133.Name = "label133";
-            this.label133.Size = new System.Drawing.Size(49, 13);
-            this.label133.TabIndex = 29;
-            this.label133.Text = "Surname";
-            // 
-            // label132
-            // 
-            this.label132.AutoSize = true;
-            this.label132.Location = new System.Drawing.Point(5, 95);
-            this.label132.Name = "label132";
-            this.label132.Size = new System.Drawing.Size(33, 13);
-            this.label132.TabIndex = 30;
-            this.label132.Text = "Suffix";
-            // 
-            // label138
-            // 
-            this.label138.AutoSize = true;
-            this.label138.Location = new System.Drawing.Point(6, 81);
-            this.label138.Name = "label138";
-            this.label138.Size = new System.Drawing.Size(65, 13);
-            this.label138.TabIndex = 35;
-            this.label138.Text = "Current Skin";
-            // 
-            // CharShowcase
-            // 
-            this.CharShowcase.Location = new System.Drawing.Point(538, 294);
-            this.CharShowcase.Name = "CharShowcase";
-            this.CharShowcase.Size = new System.Drawing.Size(140, 80);
-            this.CharShowcase.TabIndex = 22;
-            this.CharShowcase.Text = "";
-            // 
-            // CharHiddenWeapons
-            // 
-            this.CharHiddenWeapons.Location = new System.Drawing.Point(538, 208);
-            this.CharHiddenWeapons.Name = "CharHiddenWeapons";
-            this.CharHiddenWeapons.Size = new System.Drawing.Size(140, 80);
-            this.CharHiddenWeapons.TabIndex = 11;
-            this.CharHiddenWeapons.Text = "";
-            // 
-            // CharExWeapons
-            // 
-            this.CharExWeapons.Location = new System.Drawing.Point(538, 111);
-            this.CharExWeapons.Name = "CharExWeapons";
-            this.CharExWeapons.Size = new System.Drawing.Size(140, 80);
-            this.CharExWeapons.TabIndex = 8;
-            this.CharExWeapons.Text = "";
-            // 
-            // label131
-            // 
-            this.label131.AutoSize = true;
-            this.label131.Location = new System.Drawing.Point(6, 54);
-            this.label131.Name = "label131";
-            this.label131.Size = new System.Drawing.Size(87, 13);
-            this.label131.TabIndex = 26;
-            this.label131.Text = "Starting Weapon";
-            // 
-            // CharStartingWeapon
-            // 
-            this.CharStartingWeapon.FormattingEnabled = true;
-            this.CharStartingWeapon.Items.AddRange(new object[] {
-            "Nothing",
-            "Magic Wand",
-            "Holy Wand",
-            "Whip",
-            "Bloody Tear",
-            "Axe",
-            "Death Spiral",
-            "Knife",
-            "Thousand Edge",
-            "Santa Water",
-            "La Borra",
-            "Runetracer",
-            "Fire Wand",
-            "Hellfire",
-            "King Bible",
-            "Unholy Vespers",
-            "Cross",
-            "Heaven Sword",
-            "Garlic",
-            "Soul Eater",
-            "Laurel",
-            "Lightning Ring",
-            "Thunder Loop",
-            "Pentagram",
-            "Gorgeous Moon",
-            "Peachone",
-            "Ebony Wings",
-            "Vandalier",
-            "Bone",
-            "Clock Lancet",
-            "Song of Mana",
-            "Mannajja",
-            "Cherry Bomb",
-            "Carréllo",
-            "Gatti Amari",
-            "Vicious Hunger",
-            "Celestial Dusting",
-            "Phiera Der Tuphello",
-            "Eight The Sparrow",
-            "Phieraggi",
-            "Shadow Pinion",
-            "Valkyrie Turner",
-            "NO FUTURE",
-            "Infinite Corridor",
-            "Crimson Shroud",
-            "Vento Sacro",
-            "Fuwalafuwaloo",
-            "La Robba",
-            "Candybox",
-            "Greatest Jubilee",
-            "Victory Sword",
-            "Sole Solution",
-            "Bracelet",
-            "Bi-Bracelet",
-            "Tri-Bracelet",
-            "Super Candybox II Turbo",
-            "Mille Bolle Blu",
-            "Flames of Misspell",
-            "Ashes of Muspell",
-            "Silver Wind",
-            "Festive Winds",
-            "Four Seasons",
-            "Godai Shuffle",
-            "Summon Night",
-            "Echo Night",
-            "Mirage Robe",
-            "J\'Odore",
-            "Boo Roo Boolle",
-            "Night Sword",
-            "Muramasa",
-            "108 Bocce",
-            "SpellString",
-            "SpellStream",
-            "SpellStrike",
-            "SpellStrom",
-            "Shadow Servant",
-            "Ophion",
-            "Prismatic Missile",
-            "Luminaire",
-            "Flash Arrow",
-            "Millionaire",
-            "Eskizzibur",
-            "Legionnaire",
-            "Party Popper",
-            "Phas3r",
-            "Insatiable",
-            "Glass Fandango",
-            "Celestial Voulge",
-            "Arma Dio",
-            "Photonstorm",
-            "Pako Battiliar",
-            "Mazo Familiar",
-            "Report!",
-            "Emergency Meeting",
-            "Lucky Swipe",
-            "Crossed Wires",
-            "Lifesign Scan",
-            "Paranormal Scan",
-            "Just Vent",
-            "Unjust Ejection",
-            "Clear Debris",
-            "Clear Asteroids",
-            "Sharp Tongue",
-            "Impostongue",
-            "Science Rocks",
-            "Rocket Science",
-            "Hats",
-            "Santa Javelin",
-            "Seraphic Cry",
-            "Acquazzone",
-            "Long Gun ",
-            "Short Gun  ",
-            "Spread Shot ",
-            "Sonic Bloom",
-            "Blade Crossbow",
-            "Wave Beam",
-            "C-U-Laser",
-            "Firearm",
-            "Metal Claw",
-            "Atmo-Torpedo",
-            "Homing Miss",
-            "Prism Lass",
-            "Pronto Beam",
-            "Fire-L3GS",
-            "Big Fuzzy Fist",
-            "Multistage Missiles",
-            "Time Warp",
-            "Prototype B",
-            "Prototype A",
-            "Prototype C",
-            "BFC2000-AD",
-            "Diver Mines",
-            "Confodere",
-            "Vol Confodere",
-            "Melio Confodere",
-            "Alchemy Whip",
-            "Vampire Killer",
-            "Coat of Arms",
-            "Morning Star",
-            "Belnades\' Spellbook",
-            "Ebony Diabologue",
-            "Alucart Sworb",
-            "Alucard Swords",
-            "Iron Ball",
-            "Wrecking Ball",
-            "Alucard Spear",
-            "Thunderbolt Spear",
-            "Mace",
-            "Stamazza",
-            "Trident",
-            "Gungnir-Souris",
-            "Javelin",
-            "Long Inus",
-            "Curved Knife",
-            "Bwaka Knife",
-            "Shuriken",
-            "Yagyu Shuriken",
-            "Luminatio",
-            "Vol Luminatio",
-            "Umbra",
-            "Vol Umbra",
-            "Discus",
-            "Stellar Blade",
-            "Wine Glass",
-            "Meal Ticket",
-            "Vanitas Whip",
-            "Aurablaster Tip",
-            "Dextro Custos",
-            "Sinestro Custos",
-            "Centralis Custos",
-            "Trinum Custodem",
-            "Wind Whip",
-            "Spirit Tornado Tip",
-            "Platinum Whip",
-            "Cross Crasher Tip",
-            "Dragon Water Whip",
-            "Hydrostormer Tip",
-            "Soul Steal",
-            "Hand Grenade",
-            "The RPG",
-            "Alucard Shield",
-            "Sonic Dash",
-            "Rapidus Fio",
-            "Raging Fire",
-            "Salamender",
-            "Ice Fang",
-            "Cocytus",
-            "Gale Force",
-            "Pneuma Tempestas",
-            "Rock Riot",
-            "Gemma Torpor",
-            "Fulgur",
-            "Tenebris Tonitrus",
-            "Keremet Bubbles",
-            "Keremet Morbus",
-            "Hex",
-            "Nightmare",
-            "Refectio",
-            "Sanctuary",
-            "Optical Shot",
-            "Acerbatus",
-            "Globus",
-            "Nitesco",
-            "Crissaegrim Tip",
-            "Vibhuti Whip",
-            "Daybreaker Tip",
-            "Silver Revolver",
-            "Jewel Gun",
-            "Tyrfing",
-            "Rune Sword",
-            "Universitas",
-            "Dominus Anger",
-            "Dominus Hatred",
-            "Dominus Agony",
-            "Power of Sire",
-            "Guardian\'s Targe",
-            "Sacred Beasts Tower Shield",
-            "Star Flail",
-            "Moon Rod",
-            "Jet Black Whip",
-            "Mormegil Tip",
-            "Spectral Sword",
-            "Iron Shield",
-            "Dark Iron Shield",
-            "Troll Bomb",
-            "Endo Gears",
-            "Peri Pendulum",
-            "Svarog Statue",
-            "Sonic Whip",
-            "Arrow of Goth",
-            "Hydro Storm",
-            "Dark Rift",
-            "Summon Spirit",
-            "Sword Brothers",
-            "Valmanway",
-            "Grand Cross",
-            "Summon Spirit Tornado",
-            "Myo Lift",
-            "Epi Head",
-            "Clock Tower",
-            "Aura Blast",
-            "Familiar Forge",
-            "Icebrand",
-            "Spinach",
-            "Candelabrador",
-            "Bracer",
-            "Empty Tome",
-            "Spellbinder",
-            "Duplicator",
-            "Hollow Heart",
-            "Armor",
-            "Wings",
-            "Attractorb",
-            "Crown",
-            "Clover",
-            "Stone Mask",
-            "Tirajisú",
-            "Pummarola",
-            "Skull O\'Maniac",
-            "Silver Ring",
-            "Gold Ring",
-            "Metaglio Left",
-            "Metaglio Right",
-            "Torrona\'s Box",
-            "Tetraforce",
-            "Academy Badge",
-            "Mini Crewmate",
-            "Mini Engineer",
-            "Mini Ghost",
-            "Mini Shapeshifter",
-            "Mini Guardian",
-            "Mini Impostor",
-            "Mini Scientist",
-            "Mini Horse",
-            "Parm Aegis",
-            "Karoma\'s Mana",
-            "Weapon Power-Up",
-            "Ukoback",
-            "Bitterfly",
-            "Imp",
-            "Alleged Ghost",
-            "Wood Rod",
-            "Faerie",
-            "Pumpkin",
-            "Sacred Cardinal",
-            "Sacred Dragon",
-            "Sacred Tiger",
-            "Sacred Turtle"});
-            this.CharStartingWeapon.Location = new System.Drawing.Point(99, 51);
-            this.CharStartingWeapon.Name = "CharStartingWeapon";
-            this.CharStartingWeapon.Size = new System.Drawing.Size(121, 21);
-            this.CharStartingWeapon.TabIndex = 25;
-            this.CharStartingWeapon.Text = "Whip";
-            // 
-            // label130
-            // 
-            this.label130.AutoSize = true;
-            this.label130.Location = new System.Drawing.Point(475, 294);
-            this.label130.Name = "label130";
-            this.label130.Size = new System.Drawing.Size(57, 13);
-            this.label130.TabIndex = 23;
-            this.label130.Text = "Showcase";
-            // 
-            // label124
-            // 
-            this.label124.AutoSize = true;
-            this.label124.Location = new System.Drawing.Point(445, 206);
-            this.label124.Name = "label124";
-            this.label124.Size = new System.Drawing.Size(87, 13);
-            this.label124.TabIndex = 12;
-            this.label124.Text = "HiddenWeapons";
-            // 
-            // label123
-            // 
-            this.label123.AutoSize = true;
-            this.label123.Location = new System.Drawing.Point(467, 111);
-            this.label123.Name = "label123";
-            this.label123.Size = new System.Drawing.Size(65, 13);
-            this.label123.TabIndex = 9;
-            this.label123.Text = "ExWeapons";
-            // 
-            // CharCurrentSkin
-            // 
-            this.CharCurrentSkin.FormattingEnabled = true;
-            this.CharCurrentSkin.Items.AddRange(new object[] {
-            "DEFAULT",
-            "LEGACY"});
-            this.CharCurrentSkin.Location = new System.Drawing.Point(99, 78);
-            this.CharCurrentSkin.Name = "CharCurrentSkin";
-            this.CharCurrentSkin.Size = new System.Drawing.Size(121, 21);
-            this.CharCurrentSkin.TabIndex = 3;
-            this.CharCurrentSkin.Text = "DEFAULT";
-            // 
             // tabPageCharOn
             // 
             this.tabPageCharOn.Controls.Add(this.SinesOn);
@@ -10734,7 +10734,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.tabControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MinimumSize = new System.Drawing.Size(680, 580);
+            this.MinimumSize = new System.Drawing.Size(749, 622);
             this.Name = "MainForm";
             this.Text = "Bloodlines Json Editor";
             this.tabControl1.ResumeLayout(false);
@@ -10865,6 +10865,18 @@
             this.IdleGroup.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.idleRate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.idleFrames)).EndInit();
+            this.tabPage21.ResumeLayout(false);
+            this.tabPage21.PerformLayout();
+            this.groupBox8.ResumeLayout(false);
+            this.groupBox8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.CharPrice)).EndInit();
+            this.groupBox7.ResumeLayout(false);
+            this.groupBox7.PerformLayout();
+            this.groupBox6.ResumeLayout(false);
+            this.groupBox6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.CharExLevels)).EndInit();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.tabPage22.ResumeLayout(false);
             this.tabControl3.ResumeLayout(false);
             this.BaseStatsTab.ResumeLayout(false);
@@ -10945,18 +10957,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.AltSineDuration)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.AltSineSpeed)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.AltLevel)).EndInit();
-            this.tabPage21.ResumeLayout(false);
-            this.tabPage21.PerformLayout();
-            this.groupBox8.ResumeLayout(false);
-            this.groupBox8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.CharPrice)).EndInit();
-            this.groupBox7.ResumeLayout(false);
-            this.groupBox7.PerformLayout();
-            this.groupBox6.ResumeLayout(false);
-            this.groupBox6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.CharExLevels)).EndInit();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
             this.tabPageCharOn.ResumeLayout(false);
             this.SinesOn.ResumeLayout(false);
             this.SinesOn.PerformLayout();
