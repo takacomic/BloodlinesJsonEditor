@@ -147,9 +147,9 @@ namespace BloodlineJsonEditor
             wepNameToKey.Add("Yatta Daikarin", "CHERRY2" ); 
             wepNameToKey.Add("Glass Fandango", "ICELANCE" ); 
             wepNameToKey.Add("Celestial Voulge", "ICELANCE2" ); 
-            wepNameToKey.Add("Acchee Pee Kia", "CART2EVO" ); 
+            //wepNameToKey.Add("Acchee Pee Kia", "CART2EVO" ); 
             wepNameToKey.Add("Profusione D'Amore", "FLOWER2" ); 
-            wepNameToKey.Add("Gravijoe", "LAROBBA2" ); 
+            //wepNameToKey.Add("Gravijoe", "LAROBBA2" ); 
             wepNameToKey.Add("Arma Dio", "ARMADIO" ); 
             wepNameToKey.Add("Photonstorm", "PHASER2" ); 
             wepNameToKey.Add("Pako Battiliar", "BATTILIA" ); 
@@ -183,8 +183,8 @@ namespace BloodlineJsonEditor
             wepNameToKey.Add("Fire Nova", "NOVA_FIRE" ); 
             wepNameToKey.Add("Ice Nova", "NOVA_ICEE" ); 
             wepNameToKey.Add("Fear Nova", "NOVA_FEAR" ); 
-            wepNameToKey.Add("Flik the Blue", "FLIK" ); 
-            wepNameToKey.Add("Blue Impulse", "FLIK2" ); 
+            //wepNameToKey.Add("Flik the Blue", "FLIK" ); 
+            //wepNameToKey.Add("Blue Impulse", "FLIK2" ); 
             wepNameToKey.Add("Take Us Away", "TRAINHAZARD" ); 
             wepNameToKey.Add("Santa Javelin", "SANTAJAVELIN" ); 
             wepNameToKey.Add("Seraphic Cry", "SANTAJAVELIN2" ); 
@@ -373,6 +373,9 @@ namespace BloodlineJsonEditor
 
         [JsonProperty("spriteData")]
         public List<SpriteObject> Sprites { get; set; } = new List<SpriteObject>();
+
+        [JsonProperty("editorData")]
+        public EditorObject Editor { get; set; } = new EditorObject();
     }
     public class StatModifier
     {
@@ -549,27 +552,18 @@ namespace BloodlineJsonEditor
 
         public bool ShouldSerializeExWeapons()
         {
+            if (ExWeapons == null) return false;
             return ExWeapons.Count > 0;
         }
         public bool ShouldSerializeHiddenWeapons()
         {
+            if (HiddenWeapons == null) return false;
             return HiddenWeapons.Count > 0;
         }
         public bool ShouldSerializeShowcase()
         {
+            if (Showcase == null) return false;
             return Showcase.Count > 0;
-        }
-        public CharacterObject Cleaner()
-        {
-            CharacterObject cleanedObject = new CharacterObject();
-
-            foreach (PropertyInfo prop in GetType().GetProperties())
-            {
-                var value = prop.GetValue(this, null);
-                if (value != null && (value.ToString() != "0" || value.ToString() != "0.0" || value.ToString() != ""))
-                   cleanedObject.GetType().GetProperty(prop.Name).SetValue(cleanedObject, value);
-            }
-            return cleanedObject;
         }
     }
     public class SkinObject
@@ -676,8 +670,14 @@ namespace BloodlineJsonEditor
         [JsonProperty("speed")]
         public float Speed { get; set; }
 
+        [JsonProperty("spriteAnims")]
+        public SpriteAnimsObject SpriteAnims { get; set; }
+
         [JsonProperty("spriteName")]
         public string SpriteName { get; set; }
+
+        [JsonProperty("startingWeapon")]
+        public string StartingWeapon { get; set; }
 
         [JsonProperty("suffix")]
         public string Suffix { get; set; }
@@ -689,33 +689,66 @@ namespace BloodlineJsonEditor
         public bool Unlocked { get; set; }
 
         [JsonProperty("walkingFrames")]
-        public int WalkingFrames { get; set; } = 4;
+        public int WalkingFrames { get; set; }
 
         public bool ShouldSerializeExAccessories()
         {
+            if (ExAccessories == null) return false;
             return ExAccessories.Count > 0;
         }
         public bool ShouldSerializeExWeapons()
         {
+            if (ExWeapons == null) return false;
             return ExWeapons.Count > 0;
         }
         public bool ShouldSerializeHiddenWeapons()
         {
+            if (HiddenWeapons == null) return false;
             return HiddenWeapons.Count > 0;
         }
-
-        public SkinObject Cleaner()
+        public bool GreaterThanZero()
         {
-            SkinObject cleanedObject = new SkinObject();
+            float value = Amount + Area + Armor + Banish + Cooldown + Curse + Duration + Greed + 
+                Growth + Luck + MoveSpeed + Magnet + MaxHp + Power + Regen + Rerolls + Revivals + 
+                Skips + Speed + Charm + Shields;
 
-            foreach (PropertyInfo prop in GetType().GetProperties())
-            {
-                var value = prop.GetValue(this, null);
-                if (value != null && (value.ToString() != "0" || value.ToString() != "0.0" || value.ToString() != ""))
-                    cleanedObject.GetType().GetProperty(prop.Name).SetValue(cleanedObject, value);
-            }
-            return cleanedObject;
+            if(value > 0) return true;
+            return false;
         }
+    }
+    public class SpriteAnimsObject
+    {
+        [JsonProperty("idleAnimation")]
+        public AnimBaseObject IdleAnimation { get; set; }
+
+        [JsonProperty("meleeAttack")]
+        public AnimBaseObject MeleeAttack { get; set; }
+
+        [JsonProperty("meleeAttack2")]
+        public AnimBaseObject MeleeAttack2 { get; set; }
+
+        [JsonProperty("rangedAttack")]
+        public AnimBaseObject RangedAttack { get; set; }
+
+        [JsonProperty("MagicAttack")]
+        public AnimBaseObject MagicAttack { get; set; }
+
+        [JsonProperty("specialAnimation")]
+        public AnimBaseObject SpecialAnimation { get; set; }
+    }
+    public class AnimBaseObject
+    {
+        [JsonProperty("spriteName")]
+        public string SpriteName { get; set; }
+
+        [JsonProperty("textureName")]
+        public string TextureName { get; set; }
+
+        [JsonProperty("framesNumber")]
+        public int FramesNumber { get; set; }
+
+        [JsonProperty("frameRate")]
+        public int FrameRate { get; set; }
     }
     public class SpriteObject
     {
@@ -735,9 +768,16 @@ namespace BloodlineJsonEditor
         [DefaultValue("")]
         public string TextureName { get; set; } = "";
 
-        [JsonIgnore]
+        [JsonProperty("animationType")]
         public string AnimationType { get; set; }
+        [JsonProperty("spritePlacement")]
         public int SpritePlacement { get; set; }
+        [JsonProperty("editingSpriteRow")]
+        [DefaultValue(-1)]
+        public int EditingSpriteRow { get; set; }
+        [JsonProperty("editingSprite")]
+        [DefaultValue(-1)]
+        public int EditingSprite { get; set; }
 
         public bool IsEmpty()
         {
@@ -790,5 +830,13 @@ namespace BloodlineJsonEditor
             return true;
         }
     }
-
+    public class EditorObject
+    {
+        [JsonProperty("spriteRows")]
+        public int SpriteRows { get; set; }
+        [JsonProperty("spritesInRow")]
+        public int SpritesInRow { get; set; }
+        [JsonProperty("customSkinCounter")]
+        public int customSkinCounter { get; set; }
+    }
 }

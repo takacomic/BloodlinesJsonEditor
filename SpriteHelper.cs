@@ -33,10 +33,22 @@ namespace BloodlineJsonEditor
 
             return sprite;
         }
+        internal SpriteObject GetSprite(int a, int b)
+        {
+            SpriteObject sprite = new SpriteObject();
+            if (sprites[a, b] != null)
+                sprite = sprites[a, b];
 
+            return sprite;
+        }
         internal void AddSprite(SpriteObject sprite)
         {
             sprites[CurrentRow, CurrentSprite] = sprite;
+        }
+
+        internal void AddSprite(SpriteObject sprite, int a, int b)
+        {
+            sprites[a, b] = sprite;
         }
 
         internal bool ChangedSprite(SpriteObject sprite)
@@ -53,26 +65,44 @@ namespace BloodlineJsonEditor
             for (int i = 0; i < (int)mainForm.CurrentSpriteRow.Maximum; i++)
                 for (int j = 0; j < (int)mainForm.CurrentEditingSprite.Maximum; j++)
                 {
-                    json.Sprites.Add(sprites[i, j]);
                     if (sprites[i, j] != null)
-                        mainForm.spriteCombo.Items.Add(sprites[i, j].SpriteName);
-                    else
                     {
-                        MessageBox.Show($"Current Sprite Row {i + 1}, Current Editing Sprite {j + 1}. Does not exist, please add and try again");
-                        return DeregisterSprites(json);
+                        if (mainForm.spriteCombo.Items.Contains(sprites[i, j].SpriteName))
+                        {
+                            MessageBox.Show($"Sprite at Row: {i+1}, Number: {j+1} has a duplicate name");
+                        }
+                        else
+                        {
+                            json.Sprites.Add(sprites[i, j]);
+                            mainForm.spriteCombo.Items.Add(sprites[i, j].SpriteName);
+                            if (sprites[i, j].SpriteName.Contains("walk01"))
+                            {
+                                mainForm.SkinSprite.Items.Add(sprites[i, j].SpriteName);
+                                mainForm.idleSprite.Items.Add(sprites[i, j].SpriteName);
+                            }
+                            if (sprites[i, j].SpriteName.Contains("idle01"))
+                                mainForm.idleSprite.Items.Add(sprites[i, j].SpriteName);
+                            if (sprites[i, j].SpriteName.Contains("melee01"))
+                                mainForm.meleeSprite.Items.Add(sprites[i, j].SpriteName);
+                            if (sprites[i, j].SpriteName.Contains("meleex01"))
+                                mainForm.melee2Sprite.Items.Add(sprites[i, j].SpriteName);
+                            if (sprites[i, j].SpriteName.Contains("ranged01"))
+                                mainForm.rangedSprite.Items.Add(sprites[i, j].SpriteName);
+                            if (sprites[i, j].SpriteName.Contains("magic01"))
+                                mainForm.magicSprite.Items.Add(sprites[i, j].SpriteName);
+                            if (sprites[i, j].SpriteName.Contains("special01"))
+                                mainForm.specialSprite.Items.Add(sprites[i, j].SpriteName);
+                        }
+                        if (!mainForm.TextureCombo.Items.Contains(sprites[i, j].TextureName))
+                            mainForm.TextureCombo.Items.Add(sprites[i, j].TextureName);
+
+                        if (mainForm.TextureToSprites.ContainsKey(sprites[i, j].TextureName))
+                            mainForm.TextureToSprites[sprites[i, j].TextureName].Add(sprites[i, j]);
+                        else
+                            mainForm.TextureToSprites.Add(sprites[i, j].TextureName, new List<SpriteObject>() { sprites[i, j] }); 
                     }
                 }
 
-            return json;
-        }
-
-        private EmptyJson DeregisterSprites(EmptyJson json)
-        {
-            foreach (var sprite in json.Sprites)
-            {
-                json.Sprites.Remove(sprite);
-                mainForm.spriteCombo.Items.Remove(sprite.SpriteName);
-            }
             return json;
         }
     }
